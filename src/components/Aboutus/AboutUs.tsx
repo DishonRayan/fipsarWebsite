@@ -1,0 +1,21 @@
+import React from 'react'
+import { StorySection } from './StorySection'
+import MissionVision from './MissionVision'
+import CoreValuesSection from './CoreValuesSection'
+import { ScrollToTop } from '../ScrollToTop'
+import DeliveryModel from './DeliveryModel'
+
+
+const AboutUs = () => {
+  return (
+    <>
+      <StorySection/>
+      <MissionVision/>
+      <CoreValuesSection/>
+      <DeliveryModel/>
+      {/* <ScrollToTop  position="right" /> */}
+    </>
+  )
+}
+
+export default AboutUs
