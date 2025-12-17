@@ -34,10 +34,11 @@ const NAV_ITEMS: NavItem[] = [
     type: 'dropdown',
     children: [
       { label: 'Data Engineering & Integration', href: '/service/dataengineering', description: '...', icon: <Layers size={16} /> },
-      { label: 'Business Intelligence & Visualization', href: '/service/bi', description: '...', icon: <Users size={16} /> },
+      { label: 'Business Intelligence & Visualization', href: '/service/businessIntelligence', description: '...', icon: <Users size={16} /> },
       { label: 'AI & Machine Learning', href: 'service/aimachine', description: '...', icon: <Factory size={16} /> },
       { label: 'Data Governance', href: '/service/governance', description: '...', icon: <Users size={16} /> },
       { label: 'Managed Services', href: '/service/managedservice', description: '...', icon: <Users size={16} /> },
+      { label: 'Digital Transformation', href: '/service/digitaltransformation', description: '...', icon: <Users size={16} /> },
     ] as SubItem[]
   },
 //   {
@@ -100,8 +101,14 @@ export default function Header() {
               <span className="font-bold text-xl tracking-tight text-slate-800">
                 Nexus<span className="text-[#02A5E6]">Corp</span>
               </span> */}
-
-              <img src='https://www.fipsar.com/assets/img/Fipsar-logo.jpg' width='110'/>
+ <Link to="/">
+  <img
+    src="https://www.fipsar.com/assets/img/Fipsar-logo.jpg"
+    width="110"
+    alt="Fipsar Logo"
+    style={{ cursor: 'pointer' }}
+  />
+</Link>
             </div>
 
             {/* Desktop Nav */}
@@ -240,7 +247,7 @@ export default function Header() {
                     {sub.icon && <div className="mt-0.5 text-slate-400 group-hover/sub:text-[#02A5E6] transition-colors">{sub.icon}</div>}
                     <div>
                       <div className="text-sm font-semibold text-slate-700 group-hover/sub:[#02A5E6]">{sub.label}</div>
-                      {sub.description && <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">{sub.description}</div>}
+                      {/* {sub.description && <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">{sub.description}</div>} */}
                     </div>
                   </div>
                 </a>
@@ -255,8 +262,8 @@ export default function Header() {
                   <div className="flex items-start gap-3">
                     {sub.icon && <div className="mt-0.5 text-slate-400 group-hover/sub:text-[#02A5E6] transition-colors">{sub.icon}</div>}
                     <div>
-                      <div className="text-sm font-semibold text-slate-700 group-hover/sub:text-indigo-700">{sub.label}</div>
-                      {sub.description && <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">{sub.description}</div>}
+                      <div className="text-sm font-semibold text-slate-700 group-hover/sub:text-[#02A5E6]">{sub.label}</div>
+                      {/* {sub.description && <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">{sub.description}</div>} */}
                     </div>
                   </div>
                 </Link>

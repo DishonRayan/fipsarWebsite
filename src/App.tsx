@@ -21,6 +21,7 @@ import Solutions from './components/Solutions/Solutions'
 import InsightsSection from './components/insights/InsightsSection'
 import GoestoTop from './components/GoestoTop'
 import Industry from './components/industry/industry'
+import { DigitalTrans } from './components/services/DigitalTrans'
 
 function App() {
  
@@ -39,12 +40,13 @@ function App() {
         <Route path='/aboutus' element ={<AboutUs/>}/>
         <Route path='/service/aimachine' element ={<AiMachine/>}/>
         <Route path='/service/dataengineering' element ={<DataEngineering/>}/>
-        <Route path='/service/bi' element ={<Business/>}/>
+        <Route path='/service/businessIntelligence' element ={<Business/>}/>
         <Route path='/service/governance' element ={<DataGovernance/>}/>
         <Route path='/service/managedservice' element ={<ManagedServices/>}/>
         <Route path='/solutions' element ={<Solutions/>}/>
         <Route path='/insights' element ={<InsightsSection/>}/>
         <Route path='/industry' element ={<Industry/>}/>
+        <Route path='/service/digitaltransformation' element ={<DigitalTrans/>}/>
       </Routes>
       <ScrollToTop position="right"/>
     <Footer/>
