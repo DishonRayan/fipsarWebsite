@@ -280,11 +280,22 @@ const InsightsSection: React.FC = () => {
         {/* === HEADER === */}
         <div className="flex flex-col items-center justify-center mb-8 md:mb-12 text-center">
             <div className="max-w-4xl">
-                <div className="flex items-center justify-center gap-3 mb-3 md:mb-5">
+                {/* <div className="flex items-center justify-center gap-3 mb-3 md:mb-5">
                     <span className="h-[2px] w-8 bg-[#02A5E6]"></span>
                     <span className="text-xs font-bold tracking-[0.2em] text-[#02A5E6] uppercase">Insights</span>
                     <span className="h-[2px] w-8 bg-[#02A5E6]"></span>
+                </div> */}
+
+
+                     <div className="flex justify-center mb-4">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
+                <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
+                </span>
+                Insights
                 </div>
+          </div>
                 <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
                     Strategic Insights & <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#02A5E6] to-[#0077b6]">Future Perspectives</span>

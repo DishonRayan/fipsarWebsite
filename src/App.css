@@ -6,3 +6,67 @@ p,body{
     font-family: "Roboto Serif", serif;
 
 }
+
+
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 80vh; /* full viewport height */
+  overflow: hidden;
+}
+
+/* Background Image */
+.hero-bg {
+  position: absolute;
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Overlay Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 2rem;
+  /* max-width: 900px; */
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #334155;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-content button {
+  padding: 12px 28px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 999px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background: #1e40af;
+}

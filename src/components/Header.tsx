@@ -40,18 +40,19 @@ const NAV_ITEMS: NavItem[] = [
       { label: 'Managed Services', href: '/service/managedservice', description: '...', icon: <Users size={16} /> },
     ] as SubItem[]
   },
-  {
-    id: 'industries',
-    label: 'Industries',
-    type: 'dropdown',
-        children: [
-        { label: 'Banking & Financial', href: '/industries/bsfi', description: 'Fintech innovation and security.', icon: <BarChart size={16} /> },
-        { label: 'Healthcare', href: '/industries/healthcare', description: 'Patient-centric digital care.', icon: <Activity size={16} /> },
-        { label: 'Retail & CPG', href: '/industries/retail', description: 'Omnichannel commerce.', icon: <ShoppingCart size={16} /> },
-        { label: 'Manufacturing', href: '/industries/manufacturing', description: 'Industry 4.0 solutions.', icon: <Factory size={16} /> },
-        { label: 'Energy', href: '/industries/energy', description: 'Sustainable energy mgmt.', icon: <Lightbulb size={16} /> },
-        ] as SubItem[]
-  },
+//   {
+//     id: 'industries',
+//     label: 'Industries',
+//     type: 'dropdown',
+//         children: [
+//         { label: 'Banking & Financial', href: '/industries/bsfi', description: 'Fintech innovation and security.', icon: <BarChart size={16} /> },
+//         { label: 'Healthcare', href: '/industries/healthcare', description: 'Patient-centric digital care.', icon: <Activity size={16} /> },
+//         { label: 'Retail & CPG', href: '/industries/retail', description: 'Omnichannel commerce.', icon: <ShoppingCart size={16} /> },
+//         { label: 'Manufacturing', href: '/industries/manufacturing', description: 'Industry 4.0 solutions.', icon: <Factory size={16} /> },
+//         { label: 'Energy', href: '/industries/energy', description: 'Sustainable energy mgmt.', icon: <Lightbulb size={16} /> },
+//         ] as SubItem[]
+//   },
+  { id: 'indsutrys', label: 'Industry', type: 'link', href: '/industry' },
   { id: 'solutions', label: 'Solutions', type: 'link', href: '/solutions' },
   { id: 'partnerships', label: 'Partnerships', type: 'link', href: '/partners' },
   { id: 'insights', label: 'Insights', type: 'link', href: '/insights' },
