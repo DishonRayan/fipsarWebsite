@@ -30,9 +30,16 @@ const ManagedServices = () => {
           <div className="order-1 lg:order-2">
             <div className="flex items-center gap-2 mb-6">
               {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
-              <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
+              {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
                 Managed Service
-              </span>
+              </span> */}
+                            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
+                <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
+                </span>
+               Managed Service
+                </div>
             </div>
 {/*             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold  mb-6 leading-tight">
@@ -50,8 +57,8 @@ const ManagedServices = () => {
             </h2>
             
             <p className="text-lg font-600 mb-8 leading-relaxed">
-            We deliver 24×5 managed services to ensure your data platforms, analytics systems, and cloud environments remain available, secure, and continuously optimized. Our proactive operations model focuses on performance, stability, and compliance — so your teams can focus on outcomes, not outages.
-              {/* We help organizations embed AI into core business operations through responsible, scalable, and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
+            We deliver 24×5 managed services to ensure your data platforms, analytics systems and cloud environments remain available, secure and continuously optimized. Our proactive operations model focuses on performance, stability and compliance — so your teams can focus on outcomes, not outages.
+              {/* We help organizations embed AI into core business operations through responsible, scalable and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
             </p>
 
             {/* <ul className="space-y-4 mb-8">

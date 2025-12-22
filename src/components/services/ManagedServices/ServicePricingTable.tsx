@@ -9,6 +9,7 @@ import {
   HelpCircle 
 } from 'lucide-react';
 import { MessageCircle, MonitorPlay } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 /**
  * --- TYPES & INTERFACES ---
@@ -182,9 +183,9 @@ export const ServicePricingTable: React.FC = () => {
 
   const getSubTitle = (type: PlanType) => {
     switch (type) {
-      case PlanType.SILVER: return 'Essential Support';
-      case PlanType.GOLD: return 'Advanced Support';
-      case PlanType.PLATINUM: return 'Enterprise Managed Services';
+      case PlanType.SILVER: return 'Essential support for steady operations';
+      case PlanType.GOLD: return ' Advanced support for critical workloads';
+      case PlanType.PLATINUM: return 'Enterprise model with automation and governance';
       default: return '';
     }
   };
@@ -207,14 +208,18 @@ export const ServicePricingTable: React.FC = () => {
            <div className="flex flex-col items-center text-center mb-16">
           <div className="relative inline-block">
             <h2 className="text-4xl md:text-4xl font-extrabold font-black text-slate-900 tracking-tight relative z-10">
-                  Choose the Plan That Fits Your Biz
+                  Service Plans
             </h2>
             {/* Underline */}
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-20 h-1 bg-[#02A5E6] rounded-full"></div>
           </div>
+          <p className="mt-8 text-lg text-slate-600 max-w-2xl font-light leading-relaxed">
+          {/* Select a service level that matches your business needs. From essential coverage to enterprise-grade management. */}
+            Flexible Managed Services Built Around Your Business.
+          </p>
           <p className="mt-6 text-lg text-slate-600 max-w-2xl font-light leading-relaxed">
-          Select a service level that matches your business needs. From essential coverage to enterprise-grade management.
-        
+          {/* Select a service level that matches your business needs. From essential coverage to enterprise-grade management. */}
+            Every organization has different operational needs. That’s why we offer flexible managed services — from essential support to enterprise-grade operations.
           </p>
         </div>
   
@@ -299,11 +304,11 @@ export const ServicePricingTable: React.FC = () => {
                 <th className="w-1/4 bg-[#02A5E6] p-0 align-bottom border-l border-white/10">
                   <div className="p-6">
                     <h3 className="text-white text-2xl font-bold mb-1">Silver</h3>
-                    <p className="text-white/90 text-sm font-medium">Essential Support</p>
+                    <p className="text-white/90 text-sm font-medium">Essential support for steady operations</p>
                   </div>
                 </th>
 
-                {/* Gold Header (#3989FF) */}
+                {/* Gold Hedder (#3989FF) */}
                 <th className="w-1/4 bg-[#3989FF] p-0 relative align-bottom border-l border-white/20">
                   {/* Recommended Badge */}
                   <div className="absolute top-0 left-0 right-0 bg-[#1560CE] text-white text-xs font-bold py-1 uppercase tracking-widest shadow-sm">
@@ -311,7 +316,7 @@ export const ServicePricingTable: React.FC = () => {
                   </div>
                   <div className="p-6 pt-10">
                     <h3 className="text-white text-2xl font-bold mb-1">Gold</h3>
-                    <p className="text-white/90 text-sm font-medium">Advanced Support</p>
+                    <p className="text-white/90 text-sm font-medium">Advanced support for critical workloads</p>
                   </div>
                 </th>
 
@@ -319,7 +324,7 @@ export const ServicePricingTable: React.FC = () => {
                 <th className="w-1/4 bg-[#1560CE] p-0 align-bottom border-l border-white/20">
                   <div className="p-6">
                     <h3 className="text-white text-2xl font-bold mb-1">Platinum</h3>
-                    <p className="text-white/80 text-sm font-medium">Enterprise Managed Services</p>
+                    <p className="text-white/80 text-sm font-medium">Enterprise model with automation</p>
                   </div>
                 </th>
               </tr>

@@ -152,12 +152,12 @@ const FeatureCard = ({ feature, index }: { feature: any, index: number }) => {
         </h3>
         
         {/* Animated Reveal Action */}
-        <div className="h-0 overflow-hidden group-hover:h-5 transition-all duration-500 ease-out">
+        {/* <div className="h-0 overflow-hidden group-hover:h-5 transition-all duration-500 ease-out">
             <div className="flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                 <div className="h-[1.5px] w-4 bg-[#02A5E6]"></div>
                 <span className="text-[10px] font-bold tracking-widest text-[#02A5E6] uppercase">Explore</span>
             </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -125,7 +125,7 @@ const ResultsSection: React.FC = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#02A5E6] transition-colors">Reduce IT Downtime</h3>
                   <p className="text-gray-600 text-md leading-relaxed">
-                    Proactive monitoring eliminates bottlenecks before they happen. Reduce downtime by up to 60% with end-to-end managed services.
+                   Reduce IT downtime by up to  60% with proactive monitoring and end-to-end managed services
                   </p>
                 </div>
                 <div className="mt-6 flex items-center gap-2 text-[#02A5E6] font-bold group/link cursor-pointer uppercase tracking-wider text-sm">
@@ -161,7 +161,7 @@ const ResultsSection: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-[#02A5E6] transition-colors">Lower IT Spend</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Lower IT spend with predictable, fixed monthly pricing models. Stop paying for downtime.
+                Lower IT spend with predictable, fixed monthly pricing.
               </p>
               <div className="mt-auto space-y-4">
                  <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
@@ -189,7 +189,7 @@ const ResultsSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#02A5E6] transition-colors">Protect Revenue</h3>
             <p className="text-gray-600 leading-relaxed text-sm">
-              Rapid SLA-based support for critical systems ensures your revenue streams never dry up due to tech failures.
+             Protect revenue and  productivity with rapid SLAbased support for critical systems.
             </p>
           </SpotlightCard>
 
@@ -200,7 +200,7 @@ const ResultsSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#02A5E6] transition-colors">Improve Security</h3>
             <p className="text-gray-600 leading-relaxed text-sm">
-              Improve your security posture with continuous threat detection and compliance-ready processes.
+              Improve your security posture with continuous threat detection and compliance-ready processes
             </p>
           </SpotlightCard>
 
@@ -211,7 +211,7 @@ const ResultsSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#02A5E6] transition-colors">Boost Productivity</h3>
             <p className="text-gray-600 leading-relaxed text-sm">
-              Boost internal productivity by freeing your team from day-to-day tech issues to focus on growth.
+              Boost internal productivity by freeing your team from day-to-day tech issues.
             </p>
           </SpotlightCard>
         </motion.div>

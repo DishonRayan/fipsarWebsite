@@ -136,7 +136,7 @@ const HeroSection: React.FC = () => {
   const cards = [
     {
       title: "Insights From Complex Data",
-      image: "https://images.unsplash.com/photo-1551288049-bbbda536339a?q=80&w=800&auto=format&fit=crop"
+      image: "https://plat.ai/wp-content/uploads/datanalytics.jpg.webp"
     },
     {
       title: "The Power Of Data & AI",
@@ -148,7 +148,7 @@ const HeroSection: React.FC = () => {
     },
     {
       title: "Scientific Discovery",
-      image: "https://images.unsplash.com/photo-1532187875605-1ef6c237a171?q=80&w=800&auto=format&fit=crop"
+      image: "https://img.freepik.com/free-photo/scientist-analyzes-bacterium-with-high-scale-magnification-generated-by-ai_188544-27928.jpg?semt=ais_hybrid&w=740&q=80"
     },
     {
       title: "Improved Outcomes",

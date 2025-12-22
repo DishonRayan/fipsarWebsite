@@ -128,7 +128,7 @@ const HeroComponent: React.FC = () => {
             </div> */}
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] leading-[1.1] font-extrabold text-slate-900 mb-6 tracking-tight relative">
+            <h1 className="text-4xl sm:text-5xl lg:text-[3rem] leading-[1.1] font-extrabold text-slate-900 mb-6 tracking-tight relative">
               Transforming Life Sciences  <br />
               <span className="text-[#02A5E6]">Through Data</span> <br />
                AI & Compliance Excellence

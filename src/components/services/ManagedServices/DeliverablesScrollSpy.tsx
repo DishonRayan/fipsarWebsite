@@ -101,7 +101,7 @@
   const COVERAGE_SECTION: ServiceSection = {
     id: 'coverage',
     title: 'Service Coverage',
-    subtitle: 'Supported ecosystem layers',
+    subtitle: 'We support all layers of your data ecosystem',
     icon: <Layers className="w-6 h-6" />,
     items: [
       { text: 'BI and analytics platforms' },

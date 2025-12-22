@@ -152,19 +152,19 @@ const getIllustration = (type: DeliverableItem['iconType']) => {
 const DELIVERABLES: DeliverableItem[] = [
   {
     title: "Digital strategy and transformation roadmaps",
-    description: "Clear transformation roadmaps outline the steps needed to modernize operations, elevate customer experiences, and unlock new digital opportunities. Each strategy is shaped to support long-term growth and organizational agility.",
+    description: "Clear transformation roadmaps outline the steps needed to modernize operations, elevate customer experiences and unlock new digital opportunities. Each strategy is shaped to support long-term growth and organizational agility.",
     gradient: "from-blue-500 to-cyan-400",
     iconType: "chart"
   },
   {
     title: "Cloud migration and platform modernization",
-    description: "Cloud migrations are approached with a focus on stability, performance, and future scalability. Modernized platforms deliver faster operations, reduced costs, and greater flexibility across the entire ecosystem.",
+    description: "Cloud migrations are approached with a focus on stability, performance and future scalability. Modernized platforms deliver faster operations, reduced costs and greater flexibility across the entire ecosystem.",
     gradient: "from-indigo-500 to-purple-500",
     iconType: "genai"
   },
   {
     title: "Legacy system transformation",
-    description: "Older systems are upgraded or replaced with modern technologies that support current needs and future innovation. This transition improves reliability, reduces technical debt, and prepares the business for digital evolution.",
+    description: "Older systems are upgraded or replaced with modern technologies that support current needs and future innovation. This transition improves reliability, reduces technical debt and prepares the business for digital evolution.",
     gradient: "from-fuchsia-500 to-pink-500",
     iconType: "users"
   },
@@ -176,25 +176,25 @@ const DELIVERABLES: DeliverableItem[] = [
   },
   {
     title: "Application modernization",
-    description: "Existing applications are redesigned or rebuilt to align with modern standards, architectures, and user expectations. This improves performance, security, and the overall digital experience.",
+    description: "Existing applications are redesigned or rebuilt to align with modern standards, architectures and user expectations. This improves performance, security and the overall digital experience.",
     gradient: "from-emerald-400 to-teal-500",
     iconType: "chat"
   },
   {
     title: "Change management and adoption enablement",
-    description: "Structured change programs help teams adapt smoothly to new tools and processes. Guided adoption builds confidence, reduces resistance, and increases the success of technology initiatives.",
+    description: "Structured change programs help teams adapt smoothly to new tools and processes. Guided adoption builds confidence, reduces resistance and increases the success of technology initiatives.",
     gradient: "from-cyan-500 to-blue-600",
     iconType: "pipeline"
   },
   {
     title: "Business process re-engineering",
-    description: "Core processes are analyzed and redesigned to eliminate inefficiencies and improve operational flow. The result is a more streamlined, scalable, and productive business environment.",
+    description: "Core processes are analyzed and redesigned to eliminate inefficiencies and improve operational flow. The result is a more streamlined, scalable and productive business environment.",
     gradient: "from-violet-500 to-indigo-600",
     iconType: "monitor"
   },
   {
     title: "Technology architecture optimization",
-    description: "Technology architectures are fine-tuned to improve integration, performance, and long-term sustainability. Optimized systems support faster delivery, better reliability, and enhanced digital capabilities.",
+    description: "Technology architectures are fine-tuned to improve integration, performance and long-term sustainability. Optimized systems support faster delivery, better reliability and enhanced digital capabilities.",
     gradient: "from-rose-500 to-red-600",
     iconType: "shield"
   }
@@ -266,9 +266,9 @@ const DeliverableRow: React.FC<{ item: DeliverableItem; index: number }> = ({ it
 
       {/* Content Side */}
       <div className="w-full md:w-1/2 text-center md:text-left">
-        <div className={`inline-block px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wide uppercase bg-slate-100 text-slate-500`}>
+        {/* <div className={`inline-block px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wide uppercase bg-slate-100 text-slate-500`}>
           Feature {index + 1}
-        </div>
+        </div> */}
         <h3 className="text-xl md:text-xl font-bold text-slate-800 mb-4 leading-tight capitalize">
           {item.title}
         </h3>
@@ -466,7 +466,7 @@ const CardItem = ({ item, align, setHoveredId, hoveredId, index }: { item: Value
       transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
       onMouseEnter={() => setHoveredId(item.id)}
       onMouseLeave={() => setHoveredId(null)}
-      // Key Fix: Use border-1 explicitly for both states, and removed scale/translate from container.
+      // Key Fix: Use border-1 explicitly for both states and removed scale/translate from container.
       // The container size and position is now STATIC.
       className={`
         group relative w-72 p-4 rounded-xl cursor-default transition-colors duration-300 ease-out border
@@ -665,9 +665,16 @@ export const DigitalTrans: React.FC<SliderProps> = () => {
           <div className="order-1 lg:order-2">
             <div className="flex items-center gap-2 mb-6">
               {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
-              <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
+              {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
                 Digital Transformation
-              </span>
+              </span> */}
+                            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
+                <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
+                </span>
+                   Digital Transformation
+                </div>
             </div>
 {/*             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold  mb-6 leading-tight">
@@ -684,17 +691,17 @@ export const DigitalTrans: React.FC<SliderProps> = () => {
             </h2>
             
             <p className="text-lg font-600 mb-8 leading-relaxed">
-            {/* We design and implement enterprise-grade data platforms that unify clinical, commercial, and operational data into a single source of truth. Our data engineering solutions ensure your data is cloud-ready, reliable, and optimized for analytics, AI, and reporting. */}
-            We help organizations modernize operations and build future-ready digital ecosystems. Our digital transformation services align strategy, technology, and execution to drive measurable impact across people, processes, and platforms.
+            {/* We design and implement enterprise-grade data platforms that unify clinical, commercial and operational data into a single source of truth. Our data engineering solutions ensure your data is cloud-ready, reliable and optimized for analytics, AI and reporting. */}
+            We help organizations modernize operations and build future-ready digital ecosystems. Our digital transformation services align strategy, technology and execution to drive measurable impact across people, processes and platforms.
 
-              {/* We help organizations embed AI into core business operations through responsible, scalable, and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
+              {/* We help organizations embed AI into core business operations through responsible, scalable and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
             </p>
 
             <ul className="space-y-4 mb-8">
               {[
-                "Data-driven decision making",
-                "Automated operational workflows",
-                "Scalable Generative AI models"
+                "Operational modernization & agility",
+                "Technology-driven business transformation",
+                "Measurable impact across people and processes"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="mt-1 min-w-[20px]">

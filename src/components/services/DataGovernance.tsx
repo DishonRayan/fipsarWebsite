@@ -13,11 +13,18 @@ import { motion } from 'framer-motion';
 
 import { Terminal, Database, Cloud, Sparkles } from 'lucide-react';
 
+import hipaa  from '../../assets/DataGovernacIcons/HIPAA.svg' 
+import gdpr  from '../../assets/DataGovernacIcons/GDPR.svg' 
+import soc2  from '../../assets/DataGovernacIcons/SOC2.svg' 
+import gxp  from '../../assets/DataGovernacIcons/GxP.svg' 
+import phi  from '../../assets/DataGovernacIcons/PHIProtection.svg' 
+
+
 // Define types locally
 export interface TechItem {
   id: string;
   name: string;
-  icon?: LucideIcon;
+  icon?: string;
   description?: string;
 }
 
@@ -170,7 +177,7 @@ const DELIVERABLES: DeliverableItem[] = [
   },
   {
     title: "Compliance implementation and audit readiness",
-    description: "Regulatory requirements are addressed through thorough documentation, strong controls, and structured processes. This approach helps organizations remain audit-ready and reduces potential compliance risks.",
+    description: "Regulatory requirements are addressed through  documentation, strong controls, and structured processes. This approach helps organizations remain audit-ready and reduces potential compliance risks.",
     gradient: "from-orange-400 to-amber-400",
     iconType: "doc"
   },
@@ -559,11 +566,11 @@ const MobileCircuitLayout = () => {
 // --- Main Export ---
 // Default items defined within the component
 const DEFAULT_ITEMS: TechItem[] = [
-  { id: '1', name: 'Snowflake ', icon: Terminal },
-  { id: '2', name: 'Talend ', icon: Cpu },
-  { id: '3', name: 'Databricks ', icon: Database },
-  { id: '4', name: 'AWS', icon: Cloud },
-  { id: '5', name: 'SQL ', icon: Sparkles },
+  { id: '1', name: 'HIPAA  ', icon: hipaa },
+  { id: '2', name: 'GDPR  ', icon: gdpr  },
+  { id: '3', name: 'SOC 2 ', icon: soc2  },
+  { id: '4', name: 'GxP ', icon: gxp   },
+  { id: '5', name: ' PHI Protection ', icon: phi   },
 ];
 
 
@@ -590,7 +597,7 @@ const TechSlider: React.FC<SliderProps> = ({ items = DEFAULT_ITEMS, speed =45 })
 
       <div className="container mx-auto px-4 mb-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
-          Technologies We Support
+          Compliance Standards Supported
         </h2>
         <div className="w-24 h-1 bg-white/30 mx-auto rounded-full"></div>
       </div>
@@ -613,7 +620,17 @@ const TechSlider: React.FC<SliderProps> = ({ items = DEFAULT_ITEMS, speed =45 })
                 <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-xl h-full">
                   <div className="mb-4 p-4 bg-white/20 rounded-full text-white group-hover/card:bg-white group-hover/card:text-[#02A5E6] transition-colors duration-300">
                     {item.icon ? (
-                      <item.icon size={32} strokeWidth={1.5} />
+                     <img
+                        src={item.icon}
+                        alt={item.name}
+                        className="
+                            w-8 h-8
+                            brightness-0 invert
+                            group-hover/card:invert-0
+                            group-hover/card:brightness-100
+                            transition-all duration-300
+                        "
+                    />
                     ) : (
                       <Terminal size={32} />
                     )}
@@ -664,9 +681,16 @@ export const DataGovernance: React.FC<SliderProps> = () => {
           <div className="order-1 lg:order-2">
             <div className="flex items-center gap-2 mb-6">
               {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
-              <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
+              {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
                 Data governance
-              </span>
+              </span> */}
+                            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
+                <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
+                </span>
+                  Data governance
+                </div>
             </div>
 {/*             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold  mb-6 leading-tight">
@@ -689,9 +713,9 @@ export const DataGovernance: React.FC<SliderProps> = () => {
 
             <ul className="space-y-4 mb-8">
               {[
-                "Data-driven decision making",
-                "Automated operational workflows",
-                "Scalable Generative AI models"
+                "Data security & privacy protection",
+                "Regulatory compliance & risk control",
+                "Trusted, transparent enterprise data"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="mt-1 min-w-[20px]">

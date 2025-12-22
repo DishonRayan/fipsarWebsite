@@ -11,13 +11,22 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+
+import snowflake    from '../../assets/dataEngineringIcons/SnowFlack.svg'
+import Talend       from '../../assets/dataEngineringIcons/Talend.svg'
+import Databricks  from '../../assets/dataEngineringIcons/Dataricks.svg'
+import aws          from '../../assets/dataEngineringIcons/AWS.svg'
+import apiint       from '../../assets/dataEngineringIcons/APIIntegrations.svg'
+
+
 import { Terminal, Database, Cloud, Sparkles } from 'lucide-react';
 
 // Define types locally
 export interface TechItem {
   id: string;
   name: string;
-  icon?: LucideIcon;
+//   icon?: LucideIcon;
+  icon: string;
   description?: string;
 }
 
@@ -152,19 +161,19 @@ const getIllustration = (type: DeliverableItem['iconType']) => {
 const DELIVERABLES: DeliverableItem[] = [
   {
     title: "End-to-end data pipeline development (ETL / ELT)",
-    description: "We build complete data pipelines that seamlessly move, transform, and organize your data across systems. Our ETL/ELT solutions ensure efficient processing, reliable performance, and scalable growth.",
+    description: "We build complete data pipelines that seamlessly move, transform and organize your data across systems. Our ETL/ELT solutions ensure efficient processing, reliable performance and scalable growth.",
     gradient: "from-blue-500 to-cyan-400",
     iconType: "chart"
   },
   {
     title: "Real-time and batch data integrations",
-    description: "Whether you need instantaneous data flows or scheduled batch processes, we design integrations that keep your business connected. Our solutions ensure smooth data movement with speed, accuracy, and minimal disruption.",
+    description: "Whether you need instantaneous data flows or scheduled batch processes, we design integrations that keep your business connected. Our solutions ensure smooth data movement with speed, accuracy and minimal disruption.",
     gradient: "from-indigo-500 to-purple-500",
     iconType: "genai"
   },
   {
     title: "Cloud data platform architecture and migration",
-    description: "We help you design modern cloud data architectures that are secure, scalable, and built for the future. Our migration services ensure a smooth transition from legacy systems to cloud platforms without downtime..",
+    description: "We help you design modern cloud data architectures that are secure, scalable and built for the future. Our migration services ensure a smooth transition from legacy systems to cloud platforms without downtime..",
     gradient: "from-fuchsia-500 to-pink-500",
     iconType: "users"
   },
@@ -176,25 +185,25 @@ const DELIVERABLES: DeliverableItem[] = [
   },
   {
     title: "Master data integration",
-    description: "We unify your critical business data into a single, reliable source of truth. Our master data solutions improve decision-making, reduce inconsistencies, and strengthen overall data governance.",
+    description: "We unify your critical business data into a single, reliable source of truth. Our master data solutions improve decision-making, reduce inconsistencies and strengthen overall data governance.",
     gradient: "from-emerald-400 to-teal-500",
     iconType: "chat"
   },
   {
     title: "Automated data ingestion workflows",
-    description: "We create automated ingestion pipelines that bring data into your systems quickly and accurately. This reduces manual workload while improving consistency, speed, and reliability.",
+    description: "We create automated ingestion pipelines that bring data into your systems quickly and accurately. This reduces manual workload while improving consistency, speed and reliability.",
     gradient: "from-cyan-500 to-blue-600",
     iconType: "pipeline"
   },
   {
     title: "Performance tuning and optimization",
-    description: "We fine-tune your data systems to deliver optimal speed, cost efficiency, and overall performance. Our optimization techniques ensure your platform scales smoothly as your data grows.",
+    description: "We fine-tune your data systems to deliver optimal speed, cost efficiency and overall performance. Our optimization techniques ensure your platform scales smoothly as your data grows.",
     gradient: "from-violet-500 to-indigo-600",
     iconType: "monitor"
   },
   {
     title: "Data validation and quality frameworks",
-    description: "We implement strong validation and quality checks to keep your data accurate, complete, and trustworthy. Our frameworks protect your business from errors and ensure confidence in every decision.",
+    description: "We implement strong validation and quality checks to keep your data accurate, complete and trustworthy. Our frameworks protect your business from errors and ensure confidence in every decision.",
     gradient: "from-rose-500 to-red-600",
     iconType: "shield"
   }
@@ -266,9 +275,9 @@ const DeliverableRow: React.FC<{ item: DeliverableItem; index: number }> = ({ it
 
       {/* Content Side */}
       <div className="w-full md:w-1/2 text-center md:text-left">
-        <div className={`inline-block px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wide uppercase bg-slate-100 text-slate-500`}>
+        {/* <div className={`inline-block px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wide uppercase bg-slate-100 text-slate-500`}>
           Feature {index + 1}
-        </div>
+        </div> */}
         <h3 className="text-xl md:text-xl font-bold text-slate-800 mb-4 leading-tight capitalize">
           {item.title}
         </h3>
@@ -466,7 +475,7 @@ const CardItem = ({ item, align, setHoveredId, hoveredId, index }: { item: Value
       transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
       onMouseEnter={() => setHoveredId(item.id)}
       onMouseLeave={() => setHoveredId(null)}
-      // Key Fix: Use border-1 explicitly for both states, and removed scale/translate from container.
+      // Key Fix: Use border-1 explicitly for both states and removed scale/translate from container.
       // The container size and position is now STATIC.
       className={`
         group relative w-72 p-4 rounded-xl cursor-default transition-colors duration-300 ease-out border
@@ -559,11 +568,11 @@ const MobileCircuitLayout = () => {
 // --- Main Export ---
 // Default items defined within the component
 const DEFAULT_ITEMS: TechItem[] = [
-  { id: '1', name: 'Snowflake ', icon: Terminal },
-  { id: '2', name: 'Talend ', icon: Cpu },
-  { id: '3', name: 'Databricks ', icon: Database },
-  { id: '4', name: 'AWS', icon: Cloud },
-  { id: '5', name: 'SQL ', icon: Sparkles },
+  { id: '1', name: 'Snowflake',   icon: snowflake },
+  { id: '2', name: 'Talend',      icon: Talend     },
+  { id: '3', name: 'Databricks',  icon: Databricks },
+  { id: '4', name: 'AWS',         icon: aws },
+  { id: '5', name: 'API',         icon: apiint },
 ];
 
 
@@ -613,7 +622,18 @@ const TechSlider: React.FC<SliderProps> = ({ items = DEFAULT_ITEMS, speed =45 })
                 <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-xl h-full">
                   <div className="mb-4 p-4 bg-white/20 rounded-full text-white group-hover/card:bg-white group-hover/card:text-[#02A5E6] transition-colors duration-300">
                     {item.icon ? (
-                      <item.icon size={32} strokeWidth={1.5} />
+                      <img
+                        src={item.icon}
+                        alt={item.name}
+                         className="
+                                w-8 h-8
+                                brightness-0 invert
+                                group-hover/card:invert-0
+                                group-hover/card:brightness-100
+                                transition-all duration-300
+                            "
+                        // className="w-8 h-8 object-contain"
+                        />
                     ) : (
                       <Terminal size={32} />
                     )}
@@ -664,9 +684,17 @@ export const DataEngineering: React.FC<SliderProps> = () => {
           <div className="order-1 lg:order-2">
             <div className="flex items-center gap-2 mb-6">
               {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
-              <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
+              {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
                 Data Engineering
-              </span>
+              </span> */}
+
+                            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
+                <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
+                </span>
+                   Data Engineering
+                </div>
             </div>
 {/*             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold  mb-6 leading-tight">
@@ -683,16 +711,16 @@ export const DataEngineering: React.FC<SliderProps> = () => {
             </h2>
             
             <p className="text-lg font-600 mb-8 leading-relaxed">
-            We design and implement enterprise-grade data platforms that unify clinical, commercial, and operational data into a single source of truth. Our data engineering solutions ensure your data is cloud-ready, reliable, and optimized for analytics, AI, and reporting.
+            We design and implement enterprise-grade data platforms that unify clinical, commercial and operational data into a single source of truth. Our data engineering solutions ensure your data is cloud-ready, reliable and optimized for analytics, AI and reporting.
             
-              {/* We help organizations embed AI into core business operations through responsible, scalable, and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
+              {/* We help organizations embed AI into core business operations through responsible, scalable and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
             </p>
 
             <ul className="space-y-4 mb-8">
               {[
-                "Data-driven decision making",
-                "Automated operational workflows",
-                "Scalable Generative AI models"
+                "Unified single source of truth",
+                "Cloud-ready, scalable data pipelines",
+                "Analytics, AI and reporting optimization"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="mt-1 min-w-[20px]">

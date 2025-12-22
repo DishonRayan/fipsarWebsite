@@ -1,5 +1,8 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+
 
 const CtaSection: React.FC = () => {
   const primaryColor = '#02A5E6';
@@ -57,7 +60,7 @@ const CtaSection: React.FC = () => {
           </p>
 
           <div className="mt-8 flex items-center justify-center gap-x-6">
-            <button
+            <Link to="/contact"
               className="group relative inline-flex items-center gap-2 px-8 py-4 text-white text-lg font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2"
               style={{ 
                 backgroundColor: primaryColor,
@@ -67,7 +70,7 @@ const CtaSection: React.FC = () => {
               Book a free consultation
               {/* <sup className="text-xs ml-0.5">3</sup> */}
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </button>
+            </Link>
           </div>
 
           <p className="mt-6 text-xs text-gray-400 font-medium">

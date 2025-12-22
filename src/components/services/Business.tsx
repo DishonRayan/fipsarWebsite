@@ -13,11 +13,17 @@ import { motion } from 'framer-motion';
 
 import { Terminal, Database, Cloud, Sparkles } from 'lucide-react';
 
+
+import powerbi  from '../../assets/BIicons/Power BI.svg' 
+import Qliksense from '../../assets/BIicons/Sense.svg' 
+import tableai      from '../../assets/BIicons/Tableau.svg' 
+
+
 // Define types locally
 export interface TechItem {
   id: string;
   name: string;
-  icon?: LucideIcon;
+  icon?: string;
   description?: string;
 }
 
@@ -158,13 +164,13 @@ const DELIVERABLES: DeliverableItem[] = [
   },
   {
     title: "Executive reports and board-level analytics",
-    description: "High-impact executive reports present the big picture in a clean, strategic format. Key trends, risks, and opportunities are highlighted to guide leadership decisions with confidence.",
+    description: "High-impact executive reports present the big picture in a clean, strategic format. Key trends, risks and opportunities are highlighted to guide leadership decisions with confidence.",
     gradient: "from-indigo-500 to-purple-500",
     iconType: "genai"
   },
   {
     title: "KPI frameworks and performance tracking models",
-    description: "Structured KPI models align metrics directly with business objectives for precise performance tracking. These frameworks make it easy to monitor progress, identify improvement areas, and drive continuous growth.",
+    description: "Structured KPI models align metrics directly with business objectives for precise performance tracking. These frameworks make it easy to monitor progress, identify improvement areas and drive continuous growth.",
     gradient: "from-fuchsia-500 to-pink-500",
     iconType: "users"
   },
@@ -176,19 +182,19 @@ const DELIVERABLES: DeliverableItem[] = [
   },
   {
     title: "Automated reporting pipelines",
-    description: "Automated reporting workflows deliver timely, accurate insights with minimal manual effort. These pipelines ensure consistency, reduce errors, and maintain a reliable flow of information.",
+    description: "Automated reporting workflows deliver timely, accurate insights with minimal manual effort. These pipelines ensure consistency, reduce errors and maintain a reliable flow of information.",
     gradient: "from-emerald-400 to-teal-500",
     iconType: "chat"
   },
   {
     title: "Data storytelling and visualization optimization",
-    description: "Raw data is converted into compelling visual stories that communicate insights with clarity and impact. Each visualization is crafted to improve understanding, engagement, and decision-making.",
+    description: "Raw data is converted into compelling visual stories that communicate insights with clarity and impact. Each visualization is crafted to improve understanding, engagement and decision-making.",
     gradient: "from-cyan-500 to-blue-600",
     iconType: "pipeline"
   },
   {
     title: "Performance monitoring systems",
-    description: "Continuous monitoring provides visibility into system health, data freshness, and usage trends. This approach keeps the analytics environment stable, efficient, and optimized for ongoing performance",
+    description: "Continuous monitoring provides visibility into system health, data freshness and usage trends. This approach keeps the analytics environment stable, efficient and optimized for ongoing performance",
     gradient: "from-violet-500 to-indigo-600",
     iconType: "monitor"
   },
@@ -266,9 +272,9 @@ const DeliverableRow: React.FC<{ item: DeliverableItem; index: number }> = ({ it
 
       {/* Content Side */}
       <div className="w-full md:w-1/2 text-center md:text-left">
-        <div className={`inline-block px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wide uppercase bg-slate-100 text-slate-500`}>
+        {/* <div className={`inline-block px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wide uppercase bg-slate-100 text-slate-500`}>
           Feature {index + 1}
-        </div>
+        </div> */}
         <h3 className="text-xl md:text-xl font-bold text-slate-800 mb-4 leading-tight capitalize">
           {item.title}
         </h3>
@@ -466,7 +472,7 @@ const CardItem = ({ item, align, setHoveredId, hoveredId, index }: { item: Value
       transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
       onMouseEnter={() => setHoveredId(item.id)}
       onMouseLeave={() => setHoveredId(null)}
-      // Key Fix: Use border-1 explicitly for both states, and removed scale/translate from container.
+      // Key Fix: Use border-1 explicitly for both states and removed scale/translate from container.
       // The container size and position is now STATIC.
       className={`
         group relative w-72 p-4 rounded-xl cursor-default transition-colors duration-300 ease-out border
@@ -559,9 +565,9 @@ const MobileCircuitLayout = () => {
 // --- Main Export ---
 // Default items defined within the component
 const DEFAULT_ITEMS: TechItem[] = [
-  { id: '1', name: 'Power BI', icon: Terminal },
-  { id: '2', name: ' Qlik Sense', icon: Cpu },
-  { id: '3', name: 'Tableau', icon: Database },
+  { id: '1', name: 'Power BI', icon: powerbi   },
+  { id: '2', name: ' Qlik Sense', icon: Qliksense },
+  { id: '3', name: 'Tableau', icon: tableai   },
 //   { id: '4', name: 'AWS Bedrock', icon: Cloud },
 //   { id: '5', name: 'Vertex AI', icon: Sparkles },
 ];
@@ -613,7 +619,17 @@ const TechSlider: React.FC<SliderProps> = ({ items = DEFAULT_ITEMS, speed =45 })
                 <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-xl h-full">
                   <div className="mb-4 p-4 bg-white/20 rounded-full text-white group-hover/card:bg-white group-hover/card:text-[#02A5E6] transition-colors duration-300">
                     {item.icon ? (
-                      <item.icon size={32} strokeWidth={1.5} />
+                      <img
+                        src={item.icon}
+                        alt={item.name}
+                        className="
+                            w-8 h-8
+                            brightness-0 invert
+                            group-hover/card:invert-0
+                            group-hover/card:brightness-100
+                            transition-all duration-300
+                        "
+                        />
                     ) : (
                       <Terminal size={32} />
                     )}
@@ -664,9 +680,16 @@ export const Business: React.FC<SliderProps> = () => {
           <div className="order-1 lg:order-2">
             <div className="flex items-center gap-2 mb-6">
               {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
-              <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
+              {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
                 Business Analytics
-              </span>
+              </span> */}
+                            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
+                <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
+                </span>
+               Business Analytics
+                </div>
             </div>
 {/*             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold  mb-6 leading-tight">
@@ -683,15 +706,15 @@ export const Business: React.FC<SliderProps> = () => {
             </h2>
             
             <p className="text-lg font-600 mb-8 leading-relaxed">
-             We help organizations turn raw data into actionable intelligence through modern dashboards, automated reporting, and analytics platforms. Our BI solutions provide real-time visibility into performance, improve decision-making, and drive business alignment across teams.
-              {/* We help organizations embed AI into core business operations through responsible, scalable, and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
+             We help organizations turn raw data into actionable intelligence through modern dashboards, automated reporting and analytics platforms. Our BI solutions provide real-time visibility into performance, improve decision-making and drive business alignment across teams.
+              {/* We help organizations embed AI into core business operations through responsible, scalable and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
             </p>
 
             <ul className="space-y-4 mb-8">
               {[
-                "Data-driven decision making",
-                "Automated operational workflows",
-                "Scalable Generative AI models"
+                "Real-time dashboards & KPI tracking",
+                "Automated and self-service reporting",
+                "Actionable insights for faster decisions"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="mt-1 min-w-[20px]">

@@ -13,11 +13,18 @@ import { motion } from 'framer-motion';
 
 import { Terminal, Database, Cloud, Sparkles } from 'lucide-react';
 
+
+import python   from '../../assets/AiIcons/Python.svg'
+import mlplatfrom from '../../assets/AiIcons/MLPlatforms.svg'
+import llm          from '../../assets/AiIcons/LLMFrameworks.svg'
+import awsbed       from '../../assets/AiIcons/AWSBedrock.svg'
+import vertex       from '../../assets/AiIcons/VertexAI.svg'
+
 // Define types locally
 export interface TechItem {
   id: string;
   name: string;
-  icon?: LucideIcon;
+  icon?: string;
   description?: string;
 }
 
@@ -152,25 +159,25 @@ const getIllustration = (type: DeliverableItem['iconType']) => {
 const DELIVERABLES: DeliverableItem[] = [
   {
     title: "Predictive analytics & forecasting models",
-    description: "Advanced predictive models are developed to reveal future trends, customer behavior, and business outcomes before they occur. These forecasting insights support smarter planning, proactive strategy, and confident decision-making.",
+    description: "Advanced predictive models are developed to reveal future trends, customer behavior and business outcomes before they occur. These forecasting insights support smarter planning, proactive strategy and confident decision-making.",
     gradient: "from-blue-500 to-cyan-400",
     iconType: "chart"
   },
   {
     title: "Generative AI solutions for business automation",
-    description: "GenAI solutions are introduced to automate content generation, streamline workflows, and support faster decision cycles. This level of automation increases productivity while reducing manual effort and operational costs.",
+    description: "GenAI solutions are introduced to automate content generation, streamline workflows and support faster decision cycles. This level of automation increases productivity while reducing manual effort and operational costs.",
     gradient: "from-indigo-500 to-purple-500",
     iconType: "genai"
   },
   {
     title: "Recommendation & personalization engines",
-    description: "Intelligent recommendation engines are created to deliver tailored experiences to every user. These personalization capabilities boost engagement, improve satisfaction, and drive stronger conversions across digital platforms.",
+    description: "Intelligent recommendation engines are created to deliver tailored experiences to every user. These personalization capabilities boost engagement, improve satisfaction and drive stronger conversions across digital platforms.",
     gradient: "from-fuchsia-500 to-pink-500",
     iconType: "users"
   },
   {
     title: "Intelligent document processing (IDP)",
-    description: "AI-powered document processing handles extraction, classification, and validation with high accuracy. This approach cuts down manual processing time and enhances reliability in large-volume document operations.",
+    description: "AI-powered document processing handles extraction, classification and validation with high accuracy. This approach cuts down manual processing time and enhances reliability in large-volume document operations.",
     gradient: "from-orange-400 to-amber-400",
     iconType: "doc"
   },
@@ -182,19 +189,19 @@ const DELIVERABLES: DeliverableItem[] = [
   },
   {
     title: "AI pipeline orchestration (MLOps)",
-    description: "Automated MLOps pipelines are deployed to manage model training, deployment, versioning, and continuous updates. This orchestration guarantees scalable, dependable, and efficiently maintained AI systems.",
+    description: "Automated MLOps pipelines are deployed to manage model training, deployment, versioning and continuous updates. This orchestration guarantees scalable, dependable and efficiently maintained AI systems.",
     gradient: "from-cyan-500 to-blue-600",
     iconType: "pipeline"
   },
   {
     title: "Model monitoring & performance optimization",
-    description: "Ongoing monitoring tracks accuracy, drift, and real-world performance to keep models operating at peak quality. Continuous optimization ensures stable, trustworthy results throughout the model lifecycle.",
+    description: "Ongoing monitoring tracks accuracy, drift and real-world performance to keep models operating at peak quality. Continuous optimization ensures stable, trustworthy results throughout the model lifecycle.",
     gradient: "from-violet-500 to-indigo-600",
     iconType: "monitor"
   },
   {
     title: "AI governance, ethics, & risk control",
-    description: "Responsible AI frameworks are established to mitigate bias, safeguard data, and maintain regulatory alignment. These governance practices promote ethical use of AI while reducing security and compliance risks.",
+    description: "Responsible AI frameworks are established to mitigate bias, safeguard data and maintain regulatory alignment. These governance practices promote ethical use of AI while reducing security and compliance risks.",
     gradient: "from-rose-500 to-red-600",
     iconType: "shield"
   }
@@ -466,7 +473,7 @@ const CardItem = ({ item, align, setHoveredId, hoveredId, index }: { item: Value
       transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
       onMouseEnter={() => setHoveredId(item.id)}
       onMouseLeave={() => setHoveredId(null)}
-      // Key Fix: Use border-1 explicitly for both states, and removed scale/translate from container.
+      // Key Fix: Use border-1 explicitly for both states and removed scale/translate from container.
       // The container size and position is now STATIC.
       className={`
         group relative w-72 p-4 rounded-xl cursor-default transition-colors duration-300 ease-out border
@@ -559,11 +566,12 @@ const MobileCircuitLayout = () => {
 // --- Main Export ---
 // Default items defined within the component
 const DEFAULT_ITEMS: TechItem[] = [
-  { id: '1', name: 'Python', icon: Terminal },
-  { id: '2', name: 'ML Platforms', icon: Cpu },
-  { id: '3', name: 'LLM Frameworks', icon: Database },
-  { id: '4', name: 'AWS Bedrock', icon: Cloud },
-  { id: '5', name: 'Vertex AI', icon: Sparkles },
+  { id: '1', name: 'Python', icon: python    },
+    { id: '2', name: 'LLM Frameworks', icon: llm        },
+  { id: '3', name: 'ML Platforms', icon: mlplatfrom },
+
+  { id: '4', name: 'AWS Bedrock', icon: awsbed     },
+  { id: '5', name: 'Vertex AI', icon: vertex     },
 ];
 
 
@@ -613,7 +621,17 @@ const TechSlider: React.FC<SliderProps> = ({ items = DEFAULT_ITEMS, speed =45 })
                 <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-xl h-full">
                   <div className="mb-4 p-4 bg-white/20 rounded-full text-white group-hover/card:bg-white group-hover/card:text-[#02A5E6] transition-colors duration-300">
                     {item.icon ? (
-                      <item.icon size={32} strokeWidth={1.5} />
+                     <img
+                        src={item.icon}
+                        alt={item.name}
+                        className="
+                            w-8 h-8
+                            brightness-0 invert
+                            group-hover/card:invert-0
+                            group-hover/card:brightness-100
+                            transition-all duration-300
+                        "
+                        />
                     ) : (
                       <Terminal size={32} />
                     )}
@@ -664,9 +682,16 @@ export const AiMachine: React.FC<SliderProps> = () => {
           <div className="order-1 lg:order-2">
             <div className="flex items-center gap-2 mb-6">
               {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
-              <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
+              {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
                 AI & Machine Learning
-              </span>
+              </span> */}
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
+                <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
+                </span>
+                  AI & Machine Learning
+                </div>
             </div>
 {/*             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold  mb-6 leading-tight">
@@ -683,7 +708,7 @@ export const AiMachine: React.FC<SliderProps> = () => {
             </h2>
             
             <p className="text-lg font-600 mb-8 leading-relaxed">
-              We help organizations embed AI into core business operations through responsible, scalable, and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact.
+              We help organizations embed AI into core business operations through responsible, scalable and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact.
             </p>
 
             <ul className="space-y-4 mb-8">

@@ -405,7 +405,7 @@ export default function Header() {
                           className="block p-3 text-sm text-slate-600 hover:text-[#02A5E6] hover:bg-white rounded-md transition-colors"
                         >
                           <div className="font-medium">{sub.label}</div>
-                          {sub.description && <div className="text-xs text-slate-400 mt-0.5">{sub.description}</div>}
+                          {/* {sub.description && <div className="text-xs text-slate-400 mt-0.5">{sub.description}</div>} */}
                         </a>
                       ) : (
                         <Link
@@ -415,7 +415,7 @@ export default function Header() {
                           className="block p-3 text-sm text-slate-600 hover:text-[#02A5E6] hover:bg-white rounded-md transition-colors"
                         >
                           <div className="font-medium">{sub.label}</div>
-                          {sub.description && <div className="text-xs text-slate-400 mt-0.5">{sub.description}</div>}
+                          {/* {sub.description && <div className="text-xs text-slate-400 mt-0.5">{sub.description}</div>} */}
                         </Link>
                       );
                     })}

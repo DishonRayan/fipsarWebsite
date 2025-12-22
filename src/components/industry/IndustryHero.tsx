@@ -6,7 +6,7 @@ import heroImage from "../../assets/Industry_hero_bg.png"; // adjust path
 const IndustryHero = () => {
   return (
     <>
-       <section className="hero-section container mx-auto mt-24  py-16 px-32">
+       <section className="hero-section  mt-24  py-16 px-32">
       {/* Background Image */}
       <div
         className="hero-bg "
