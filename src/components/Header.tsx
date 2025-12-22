@@ -83,7 +83,7 @@ export default function Header() {
     <>
       <header
         className={`
-          fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b
+          fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b shadow-sm
           ${isScrolled
             ? 'bg-white backdrop-blur-md shadow-sm py-3 border-gray-200'
             : 'bg-white backdrop-blur-sm py-4 border-transparent'
@@ -279,16 +279,24 @@ export default function Header() {
 
             {/* Right Actions */}
             <div className="hidden lg:flex items-center gap-4">
-              <button className="p-2 text-slate-500 hover:text-[#02A5E6] hover:[#02A5E6] rounded-full transition-colors">
+              {/* <button className="p-2 text-slate-500 hover:text-[#02A5E6] hover:[#02A5E6] rounded-full transition-colors">
                 <Search size={20} />
-              </button>
+              </button> */}
               <div className="h-6 w-px bg-slate-200"></div>
-              <a
+              {/* <a
                 href="#contact"
                 className="px-6 py-2.5 bg-slate-900 hover:bg-[#02A5E6] text-white text-sm font-medium rounded-full transition-colors shadow-lg shadow-slate-200"
               >
-                Get Started
-              </a>
+                Contact us
+              </a> */}
+
+
+              <Link
+                    to="/contact"
+                    className="px-6 py-2.5 bg-slate-900 hover:bg-[#02A5E6] text-white text-sm font-medium rounded-full transition-colors shadow-lg shadow-slate-200"
+                >
+                    Contact us
+                </Link>
             </div>
 
             {/* Mobile Toggle */}

@@ -16,6 +16,8 @@ import {
   ChevronRight
 } from 'lucide-react';
 
+import bgimg from '../../assets/Backgroundsol.png';
+
 // --- Data Definitions ---
 
 interface UseCaseData {
@@ -167,6 +169,7 @@ const Card: React.FC<{ data: UseCaseData; index: number }> = ({ data, index }) =
   return (
     <div 
       className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl border border-white/50 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] flex flex-col h-full group relative"
+    //   className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl border border-white/50 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] flex flex-col h-full group relative"
       style={{ 
         borderColor: isHovered ? PRIMARY_COLOR : 'rgba(255, 255, 255, 0.5)',
       }}
@@ -180,14 +183,14 @@ const Card: React.FC<{ data: UseCaseData; index: number }> = ({ data, index }) =
       />
 
       {/* Image Section */}
-      <div className="h-44 overflow-hidden relative">
+      {/* <div className="h-44 overflow-hidden relative">
         <img 
           src={data.imageUrl} 
           alt={data.title} 
           className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-60" />
-      </div>
+      </div> */}
 
       {/* Header */}
       <div className="p-6 pb-2 relative">
@@ -226,12 +229,12 @@ const Card: React.FC<{ data: UseCaseData; index: number }> = ({ data, index }) =
           <DetailSection title="Business Benefits" content={data.benefits} delay={200} />
         </div>
         
-        <div 
+        {/* <div 
           className="mt-6 flex items-center text-sm font-bold transition-all duration-300 transform translate-x-[-5px] group-hover:translate-x-0" 
           style={{ color: PRIMARY_COLOR }}
         >
           Learn more <ArrowRight size={16} className="ml-1" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -302,21 +305,21 @@ const LifeSciencesAI: React.FC = () => {
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen flex flex-col font-sans text-slate-900">
+    <div className=" min-h-screen flex flex-col font-sans text-slate-900">
       {/* 1. Header Section - Clean White Background */}
-      <header className="pt-16 pb-12 px-4 md:px-8 bg-white shadow-sm z-20">
+      <header className="pt-16 pb-12 px-4 md:px-8 bg-white  z-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* <h2 className="text-xs font-bold tracking-[0.2em] uppercase mb-4" style={{ color: PRIMARY_COLOR }}>
             AI Use Cases for Life Sciences
           </h2> */}
-                 <div className="flex justify-center mb-4">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
-              </span>
-              AI Use Cases for Life Sciences
-            </div>
+            <div className="flex justify-center mb-4">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
+                <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
+                </span>
+                AI Use Cases for Life Sciences
+                </div>
           </div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
             Transforming Pharmaceutical Operations with <span className="text-transparent bg-clip-text bg-gradient-to-r" style={{ backgroundImage: `linear-gradient(to right, ${PRIMARY_COLOR}, #2563EB)` }}>Intelligent Automation</span>
@@ -334,12 +337,11 @@ const LifeSciencesAI: React.FC = () => {
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
             <img 
-              src="https://cdn.quantiphi.com/2025/04/Bg-css.webp" 
+              src={bgimg}
               alt="Background" 
               className="w-full h-full object-cover"
             />
-            {/* Optional Overlay to ensure text readability if BG changes */}
-            <div className="absolute inset-0 bg-slate-900/10 mix-blend-multiply" /> 
+            {/* <div className="absolute inset-0 bg-slate-900/10 mix-blend-multiply" />  */}
         </div>
 
         <div className="max-w-7xl mx-auto w-full relative z-10">
@@ -395,7 +397,8 @@ const LifeSciencesAI: React.FC = () => {
       </div>
 
       {/* 3. Footer Section - White Background | Indicators & CTA */}
-      <div className="bg-white py-12 px-4 md:px-8 z-20 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)]">
+      {/* <div className="bg-white py-12 px-4 md:px-8 z-20 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)]"> */}
+      <div className="bg-white py-12 px-4 md:px-8 z-20 ">
         <div className="max-w-7xl mx-auto flex flex-col items-center">
           
           {/* Pagination Indicators */}

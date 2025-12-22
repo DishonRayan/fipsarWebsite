@@ -20,8 +20,11 @@ import ManagedServices from './components/services/ManagedServices/ManagedServic
 import Solutions from './components/Solutions/Solutions'
 import InsightsSection from './components/insights/InsightsSection'
 import GoestoTop from './components/GoestoTop'
-import Industry from './components/industry/industry'
 import { DigitalTrans } from './components/services/DigitalTrans'
+import Industry from './components/industry/Industry'
+import Careers from './components/Careers/Careers'
+import Partnership from './components/Partnership/Partnership'
+import Contact from './components/Contact/Contact'
 
 function App() {
  
@@ -45,8 +48,12 @@ function App() {
         <Route path='/service/managedservice' element ={<ManagedServices/>}/>
         <Route path='/solutions' element ={<Solutions/>}/>
         <Route path='/insights' element ={<InsightsSection/>}/>
+        {/* <Route path='/industry' element ={<Industry/>}/> */}
         <Route path='/industry' element ={<Industry/>}/>
         <Route path='/service/digitaltransformation' element ={<DigitalTrans/>}/>
+        <Route path='/career' element ={<Careers/>}/>
+        <Route path='/partners' element ={<Partnership/>}/>
+        <Route path='/contact' element ={<Contact/>}/>
       </Routes>
       <ScrollToTop position="right"/>
     <Footer/>

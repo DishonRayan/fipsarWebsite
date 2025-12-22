@@ -1,7 +1,18 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Send, Mail, MapPin, Phone } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
+
+    const FOOTER_LINKS = [
+  { label: "About Us", path: "/aboutus" },
+  { label: "Solutions", path: "/solutions" },
+  { label: "Partnerships", path: "/partners" },
+  { label: "Insights", path: "/insights" },
+  { label: "Contact", path: "/contact" },
+  { label: "Careers", path: "/career" },
+];
+
   const currentYear = new Date().getFullYear();
 
   return (
@@ -122,81 +133,72 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Column 2: Navigation Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6 border-b-2 border-[#0197F6] inline-block pb-1">Links</h3>
-            <ul className="space-y-3">
-              {['About Us', 'Solutions ', 'Partnerships ','Insights ', 'Contact', 'Careers '].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-slate-400 hover:text-[#0197F6] hover:translate-x-1 transition-all duration-300 flex items-center gap-2 group">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#0197F6] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+<div>
+  <h3 className="text-lg font-semibold mb-6 border-b-2 border-[#0197F6] inline-block pb-1">
+    Links
+  </h3>
+
+  <ul className="space-y-3">
+    {FOOTER_LINKS.map((item) => (
+      <li key={item.label}>
+        <Link
+          to={item.path}
+          className="text-slate-400 hover:text-[#0197F6] hover:translate-x-1 transition-all duration-300 flex items-center gap-2 group"
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-[#0197F6] opacity-0 group-hover:opacity-100 transition-opacity"></span>
+          {item.label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
           {/* Column 3: Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6 border-b-2 border-[#0197F6] inline-block pb-1">Services</h3>
+    <div>
+  <h3 className="text-lg font-semibold mb-6 border-b-2 border-[#0197F6] inline-block pb-1">
+    Services
+  </h3>
+
+  <ul className="space-y-3">
+    {[
+      { label: 'Data Engineering & Integration', path: '/service/dataengineering' },
+      { label: 'Business Intelligence', path: '/service/businessIntelligence' },
+      { label: 'AI & Machine Learning', path: '/service/aimachine' },
+      { label: 'Data Governance & Compliance', path: '/service/governance' },
+      { label: 'Digital Transformation', path: '/service/digitaltransformation' },
+      { label: 'Managed Services', path: '/service/managedservice' },
+    ].map((item) => (
+      <li key={item.label}>
+        <Link
+          to={item.path}
+          className="text-slate-400 hover:text-[#0197F6] hover:translate-x-1 transition-all duration-300 flex items-center gap-2 group"
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-[#0197F6] opacity-0 group-hover:opacity-100 transition-opacity"></span>
+          {item.label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
+
+          {/* Column 4: Industries & Contact Info */}
+         <div>
+            <h3 className="text-lg font-semibold mb-6 border-b-2 border-[#0197F6] inline-block pb-1">Location</h3>
             <ul className="space-y-3">
-              {['Data Engineeering & Integration', 'Business Intelligence', 'Ai & Machine Learning', 'Data Governance & compliance', 'Managed Services'].map((item) => (
+              {['170 Township line Road, Suite B2A Hillsborough, NJ - 08844', 'Shankaran Avenue65/8, Radhakrishnan Street Velachery Chennai - 600042'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-slate-400 hover:text-[#0197F6] hover:translate-x-1 transition-all duration-300 flex items-center gap-2 group">
+                  <p className="text-slate-400 hover:text-[#0197F6] hover:translate-x-1 transition-all duration-300 flex items-center gap-2 group">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#0197F6] opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {item}
-                  </a>
+                  </p>
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Column 4: Industries & Contact Info */}
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-semibold mb-6 border-b-2 border-[#0197F6] inline-block pb-1">Industries</h3>
-              <div className="flex flex-wrap gap-2">
-                {['Life Science', 'Healthcare'].map((tag) => (
-                  <span key={tag} className="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700 hover:border-[#0197F6] hover:text-[#0197F6] transition-colors cursor-pointer">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-            
-            {/* <div className="space-y-3 pt-4">
-               <div className="flex items-start gap-3 text-slate-400">
-                  <MapPin size={18} className="text-[#0197F6] mt-1 shrink-0" />
-                  <span className="text-sm">123 Innovation Blvd, Tech City, TC 90210</span>
-               </div>
-               <div className="flex items-center gap-3 text-slate-400">
-                  <Mail size={18} className="text-[#0197F6] shrink-0" />
-                  <span className="text-sm">hello@wavetech.com</span>
-               </div>
-            </div> */}
           </div>
 
         </div>
 
-        {/* Newsletter Section (Bonus for "Modern/Impressive") */}
-        {/* <div className="mt-16 pt-8 border-t border-slate-800">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-center md:text-left">
-              <h4 className="text-xl font-bold text-white">Subscribe to our newsletter</h4>
-              <p className="text-slate-400 text-sm mt-1">Get the latest news and updates right in your inbox.</p>
-            </div>
-            <div className="flex w-full md:w-auto bg-slate-800 rounded-full p-1 border border-slate-700 focus-within:border-[#0197F6] transition-colors">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="bg-transparent text-white px-4 py-2 w-full md:w-64 focus:outline-none placeholder-slate-500 text-sm"
-              />
-              <button className="bg-[#0197F6] hover:bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors">
-                <Send size={16} className="-ml-0.5 mt-0.5" />
-              </button>
-            </div>
-          </div>
-        </div> */}
+       
       </div>
 
       {/* Copyright Footer */}

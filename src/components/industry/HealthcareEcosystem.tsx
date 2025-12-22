@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const HealthcareEcosystem: React.FC = () => {
   return (
@@ -46,7 +47,7 @@ const HealthcareEcosystem: React.FC = () => {
 
             {/* Premium Button Redesign */}
             <div className="pt-4">
-               <button className="group relative inline-flex items-center justify-between gap-8 pl-8 pr-2 py-2 bg-[#02A5E6] text-white rounded-full overflow-hidden transition-all duration-500 hover:bg-[#0293cd] shadow-[0_20px_40px_-15px_rgba(2,165,230,0.4)] hover:shadow-[0_25px_50px_-12px_rgba(2,165,230,0.6)] transform hover:-translate-y-1">
+               <Link to='/service/managedservice' className="group relative inline-flex items-center justify-between gap-8 pl-8 pr-2 py-2 bg-[#02A5E6] text-white rounded-full overflow-hidden transition-all duration-500 hover:bg-[#0293cd] shadow-[0_20px_40px_-15px_rgba(2,165,230,0.4)] hover:shadow-[0_25px_50px_-12px_rgba(2,165,230,0.6)] transform hover:-translate-y-1">
                 {/* Background Gradient Hover Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#0293cd] to-[#006080] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out"></div>
                 
@@ -57,7 +58,7 @@ const HealthcareEcosystem: React.FC = () => {
                 <div className="relative z-10 flex items-center justify-center w-12 h-12 bg-white/20 rounded-full group-hover:bg-white group-hover:text-[#02A5E6] transition-all duration-300">
                     <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5" />
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
 

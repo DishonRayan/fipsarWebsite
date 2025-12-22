@@ -451,7 +451,7 @@ const InsightsSection: React.FC = () => {
 
                 {/* Content Area */}
                 <div className="p-5 md:p-6 flex flex-col flex-1">
-                  <h3 className="text-base md:text-lg font-bold text-slate-800 leading-snug mb-3 group-hover:text-[#02A5E6] transition-colors line-clamp-3">
+                  <h3 className="text-base md:text-md font-bold text-slate-800 leading-snug mb-3 group-hover:text-[#02A5E6] transition-colors line-clamp-3">
                     {item.title}
                   </h3>
                   

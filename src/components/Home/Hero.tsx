@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldCheck, ArrowRight } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const HeroComponent: React.FC = () => {
   return (
@@ -121,16 +122,16 @@ const HeroComponent: React.FC = () => {
             </div>
             
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#02A5E6]/30 bg-white/60 backdrop-blur-sm text-[#02A5E6] text-xs font-bold uppercase tracking-wider mb-2 shadow-sm">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#02A5E6]/30 bg-white/60 backdrop-blur-sm text-[#02A5E6] text-xs font-bold uppercase tracking-wider mb-2 shadow-sm">
               <ShieldCheck className="w-4 h-4" />
               <span>Enterprise Grade Security</span>
-            </div>
+            </div> */}
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] leading-[1.1] font-extrabold text-slate-900 mb-6 tracking-tight relative">
-              Smarter Data <br />
-              <span className="text-[#02A5E6]">Faster Insights</span> <br />
-              Better Outcomes
+              Transforming Life Sciences  <br />
+              <span className="text-[#02A5E6]">Through Data</span> <br />
+               AI & Compliance Excellence
             </h1>
 
             {/* Description */}
@@ -141,10 +142,14 @@ const HeroComponent: React.FC = () => {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <button className="inline-flex justify-center items-center gap-2 px-8 py-3.5 bg-[#02A5E6] hover:bg-[#0288be] text-white font-semibold rounded-lg shadow-lg shadow-blue-500/20 transition-all duration-200 group">
+              {/* <button className="inline-flex justify-center items-center gap-2 px-8 py-3.5 bg-[#02A5E6] hover:bg-[#0288be] text-white font-semibold rounded-lg shadow-lg shadow-blue-500/20 transition-all duration-200 group">
                 Explore our Solutions
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </button> */}
+              <Link to='/solutions' className="inline-flex justify-center items-center gap-2 px-8 py-3.5 bg-[#02A5E6] hover:bg-[#0288be] text-white font-semibold rounded-lg shadow-lg shadow-blue-500/20 transition-all duration-200 group">
+                Explore our Solutions
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
               
               <button className="inline-flex justify-center items-center px-8 py-3.5 bg-white hover:bg-gray-50 text-slate-700 font-semibold rounded-lg border border-slate-200 shadow-sm transition-all duration-200">
                 Talk to an Expert
