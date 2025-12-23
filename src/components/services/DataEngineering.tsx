@@ -658,13 +658,11 @@ export const DataEngineering: React.FC<SliderProps> = () => {
 
     <>
         <div className="w-full">
-      
-      {/* Section 1: What We Deliver (Zigzag) */}
-      <section className="py-24 mt-8 relative overflow-hidden">
 
 
 
-      <div className="container mx-auto px-6 relative z-10">
+
+      <div className="pt-24 mt-6 container mx-auto px-6 relative z-10 ">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           <div className="relative group order-2 lg:order-1">
@@ -744,6 +742,10 @@ export const DataEngineering: React.FC<SliderProps> = () => {
 
 
 
+
+      {/* Section 1: What We Deliver (Zigzag) */}
+      <section className=" mt-8 relative overflow-hidden">
+
         <div className="container mx-auto px-4 mt-20 relative z-10">
           <div className="text-center mb-24">
             {/* <span className="text-indigo-600 font-semibold tracking-wider text-sm uppercase mb-2 block">Our Capabilities</span> */}
@@ -756,7 +758,7 @@ export const DataEngineering: React.FC<SliderProps> = () => {
 
             
        <div className="relative inline-block">
-            <h2 className="text-4xl md:text-4xl font-serif font-black text-slate-900 tracking-tight relative z-10">
+            <h2 className="text-4xl md:text-4xl  font-black text-slate-900 tracking-tight relative z-10">
              What we Deliver
             </h2>
             {/* Underline */}
@@ -797,7 +799,7 @@ export const DataEngineering: React.FC<SliderProps> = () => {
             className="inline-block"
           >
                    <div className="relative inline-block">
-            <h2 className="text-4xl md:text-4xl font-serif font-black text-slate-900 tracking-tight relative z-10">
+            <h2 className="text-4xl md:text-4xl  font-black text-slate-900 tracking-tight relative z-10">
            Business Value
             </h2>
             {/* Underline */}

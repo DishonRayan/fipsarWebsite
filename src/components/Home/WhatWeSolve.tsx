@@ -143,7 +143,7 @@ const WhatWeSolve: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative w-full bg-white py-12 px-4 sm:px-6 lg:px-8 overflow-hidden font-sans">
+    <section className="relative w-full bg-white py-12 px-4 sm:px-6 lg:px-8 overflow-hidden ">
       <style>{`
         /* Elastic Entrance Animation */
         @keyframes elasticPop {

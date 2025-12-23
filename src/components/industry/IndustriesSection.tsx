@@ -40,7 +40,7 @@ const IndustryCard: React.FC<CardProps> = ({ icon, label, rotation, className = 
 
 const IndustriesSection: React.FC = () => {
   return (
-    <section className="relative w-full max-w-7xl mx-auto py-8 md:py-12 px-4 overflow-visible font-sans">
+    <section className="relative w-full max-w-7xl mx-auto py-8 md:py-12 px-4 overflow-visible">
       <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0); }
@@ -109,7 +109,7 @@ const IndustriesSection: React.FC = () => {
             </div> */}
 
             {/* Main Heading */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#02A5E6] mb-4 leading-tight drop-shadow-sm tracking-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl  text-[#02A5E6] mb-4 leading-tight drop-shadow-sm tracking-tight">
               At The Heart Of Every <br />
               Breakthrough In Healthcare
             </h2>

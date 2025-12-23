@@ -750,7 +750,7 @@ export const Business: React.FC<SliderProps> = () => {
 
             
        <div className="relative inline-block">
-            <h2 className="text-4xl md:text-4xl font-serif font-black text-slate-900 tracking-tight relative z-10">
+            <h2 className="text-4xl md:text-4xl  font-black text-slate-900 tracking-tight relative z-10">
              What we Deliver
             </h2>
             {/* Underline */}
@@ -791,7 +791,7 @@ export const Business: React.FC<SliderProps> = () => {
             className="inline-block"
           >
                    <div className="relative inline-block">
-            <h2 className="text-4xl md:text-4xl font-serif font-black text-slate-900 tracking-tight relative z-10">
+            <h2 className="text-4xl md:text-4xl  font-black text-slate-900 tracking-tight relative z-10">
            Business Value
             </h2>
             {/* Underline */}

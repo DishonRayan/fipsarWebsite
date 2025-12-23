@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HeroComponent: React.FC = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-[#F2F9FD] pt-32 pb-20 lg:pt-32 lg:pb-16 isolate font-sans">
+    <section className="relative w-full overflow-hidden bg-[#F2F9FD] pt-32 pb-20 lg:pt-32 lg:pb-16 isolate ">
       {/* Local Styles for Animation */}
       <style>
         {`

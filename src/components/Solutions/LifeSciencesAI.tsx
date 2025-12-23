@@ -305,7 +305,7 @@ const LifeSciencesAI: React.FC = () => {
   };
 
   return (
-    <div className=" min-h-screen flex flex-col font-sans text-slate-900">
+    <div className=" min-h-screen flex flex-col  text-slate-900">
       {/* 1. Header Section - Clean White Background */}
       <header className="pt-16 pb-12 px-4 md:px-8 bg-white  z-20">
         <div className="max-w-4xl mx-auto text-center">
@@ -321,12 +321,12 @@ const LifeSciencesAI: React.FC = () => {
                 AI Use Cases for Life Sciences
                 </div>
           </div>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+          <h5 className="text-3xl md:text-3xl font-medium text-slate-900 mt-6 ">
             Transforming Pharmaceutical Operations with <span className="text-transparent bg-clip-text bg-gradient-to-r" style={{ backgroundImage: `linear-gradient(to right, ${PRIMARY_COLOR}, #2563EB)` }}>Intelligent Automation</span>
-          </h1>
-          <p className="text-lg text-slate-600 leading-relaxed font-medium max-w-2xl mx-auto">
+          </h5>
+          {/* <p className="text-lg text-slate-600 leading-relaxed font-medium max-w-2xl mx-auto">
             Leveraging cutting-edge artificial intelligence to streamline workflows, enhance compliance, and accelerate innovation across the life sciences value chain.
-          </p>
+          </p> */}
         </div>
 
     

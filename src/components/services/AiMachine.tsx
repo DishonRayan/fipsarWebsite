@@ -273,9 +273,9 @@ const DeliverableRow: React.FC<{ item: DeliverableItem; index: number }> = ({ it
 
       {/* Content Side */}
       <div className="w-full md:w-1/2 text-center md:text-left">
-        <div className={`inline-block px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wide uppercase bg-slate-100 text-slate-500`}>
+        {/* <div className={`inline-block px-3 py-1 mb-4 rounded-full text-xs font-semibold tracking-wide uppercase bg-slate-100 text-slate-500`}>
           Feature {index + 1}
-        </div>
+        </div> */}
         <h3 className="text-xl md:text-xl font-bold text-slate-800 mb-4 leading-tight capitalize">
           {item.title}
         </h3>
@@ -751,7 +751,7 @@ export const AiMachine: React.FC<SliderProps> = () => {
 
             
        <div className="relative inline-block">
-            <h2 className="text-4xl md:text-4xl font-serif font-black text-slate-900 tracking-tight relative z-10">
+            <h2 className="text-4xl md:text-4xl font-black text-slate-900 tracking-tight relative z-10">
              What we Deliver
             </h2>
             {/* Underline */}
@@ -792,7 +792,7 @@ export const AiMachine: React.FC<SliderProps> = () => {
             className="inline-block"
           >
                    <div className="relative inline-block">
-            <h2 className="text-4xl md:text-4xl font-serif font-black text-slate-900 tracking-tight relative z-10">
+            <h2 className="text-4xl md:text-4xl  font-black text-slate-900 tracking-tight relative z-10">
            Business Value
             </h2>
             {/* Underline */}

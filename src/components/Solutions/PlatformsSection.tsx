@@ -91,7 +91,7 @@ const platformsData: Platform[] = [
         icon: <FileText className="w-6 h-6" />,
       },
       {
-        title: 'CAMI: Conversational AI',
+        title: 'CAMI: Conversational AI for Medical & Insights',
         description: 'An intelligent assistant that answers scientific, clinical, and operational questions instantly.',
         icon: <MessageCircleHeart className="w-6 h-6" />,
       },
@@ -275,7 +275,7 @@ const PlatformsSection: React.FC = () => {
              ))}
              
              {/* CTA Box */}
-             <div className="bg-gradient-to-r from-blue-50/50 to-white rounded-xl p-6 flex items-center gap-4 border border-blue-100/80 shadow-sm">
+             {/* <div className="bg-gradient-to-r from-blue-50/50 to-white rounded-xl p-6 flex items-center gap-4 border border-blue-100/80 shadow-sm">
                 <div className="p-2 bg-[#02A5E6] text-white rounded-full shrink-0 shadow-lg shadow-blue-200">
                   <ChevronRight size={16} />
                 </div>
@@ -285,7 +285,7 @@ const PlatformsSection: React.FC = () => {
                     Fipsar {activeTab === 'datasphere' ? 'DataSphere' : 'AI Hub'} works seamlessly with our other platforms to create a continuous loop of intelligence.
                   </p>
                 </div>
-             </div>
+             </div> */}
           </div>
 
         </div>

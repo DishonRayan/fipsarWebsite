@@ -137,7 +137,7 @@ const BioPharmaCard: React.FC = () => {
         <div className="relative z-10 pt-12 pb-10 md:pt-14 md:pb-12 px-4 md:px-12 flex flex-col items-center text-center">
           
           {/* Headline */}
-          <h1 className="text-3xl md:text-4xl font-serif font-bold text-white leading-tight mb-4 drop-shadow-sm tracking-wide">
+          <h1 className="text-3xl md:text-4xl  font-bold text-white leading-tight mb-4 drop-shadow-sm tracking-wide">
             How We Solve Bio - Pharma<br />
             Business Problems
           </h1>

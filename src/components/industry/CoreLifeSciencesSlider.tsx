@@ -146,7 +146,7 @@ const CoreLifeSciencesSlider: React.FC = () => {
     <div className="w-full max-w-6xl mx-auto relative select-none px-4 sm:px-6 lg:px-8 my-16">
            <div className="flex flex-col items-center text-center mb-16">
           <div className="relative inline-block">
-            <h2 className="text-4xl md:text-4xl font-serif font-black text-slate-900 tracking-tight relative z-10">
+            <h2 className="text-4xl md:text-4xl  font-black text-slate-900 tracking-tight relative z-10">
               Core Life Science
             </h2>
             {/* Underline */}
@@ -180,7 +180,7 @@ const CoreLifeSciencesSlider: React.FC = () => {
           {/* Transition wrapper for text content */}
           <div key={`text-${currentIndex}`} className="animate-fadeIn flex flex-col h-full z-10 relative">
             <div className="flex justify-between items-start mb-6">
-              <h2 className="text-3xl lg:text-4xl font-['Playfair_Display'] font-bold text-[#02A5E6] tracking-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#02A5E6] tracking-tight">
                 {currentSlide.displayTitle}
               </h2>
               {/* Standard Icon Display */}
