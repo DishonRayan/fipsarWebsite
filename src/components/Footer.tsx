@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-[#0197F6] hover:text-white transition-all duration-300 shadow-lg hover:shadow-[#0197F6]/50">
-                <Facebook size={18} />
+                <Linkedin size={18} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-[#0197F6] hover:text-white transition-all duration-300 shadow-lg hover:shadow-[#0197F6]/50">
                 <Twitter size={18} />
@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
                 <Instagram size={18} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-[#0197F6] hover:text-white transition-all duration-300 shadow-lg hover:shadow-[#0197F6]/50">
-                <Linkedin size={18} />
+                <Facebook size={18} />
               </a>
             </div>
           </div>
@@ -185,7 +185,7 @@ const Footer: React.FC = () => {
          <div>
             <h3 className="text-lg font-semibold mb-6 border-b-2 border-[#0197F6] inline-block pb-1">Location</h3>
             <ul className="space-y-3">
-              {['170 Township line Road, Suite B2A Hillsborough, NJ - 08844', 'Shankaran Avenue65/8, Radhakrishnan Street Velachery Chennai - 600042'].map((item) => (
+              {['170 Township line Road, Suite B2A Hillsborough, New Jersey - 08844', 'Shankaran Avenue 65/8, Radhakrishnan Street, Velachery Chennai - 600042'].map((item) => (
                 <li key={item}>
                   <p className="text-slate-400 hover:text-[#0197F6] hover:translate-x-1 transition-all duration-300 flex items-center gap-2 group">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#0197F6] opacity-0 group-hover:opacity-100 transition-opacity"></span>

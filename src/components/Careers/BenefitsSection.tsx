@@ -108,36 +108,36 @@ const BenefitsSection: React.FC = () => {
         <BenefitItem 
           icon={<MousePointer2 size={32} strokeWidth={1.5} />} 
           bgIcon={<Wifi size={192} strokeWidth={0.5} />}
-          title="Remote Lifestyle"
-          description="Design your perfect workday with our flexible, results-oriented remote-first model." 
+          title="Flexible Work Model"
+          description="Flexible remote/hybrid work options." 
         />
         
         <BenefitItem 
           icon={<HandHeart size={32} strokeWidth={1.5} />} 
           bgIcon={<HeartPulse size={192} strokeWidth={0.5} />}
-          title="Holistic Wellness"
-          description="Comprehensive care including premium medical, dental, and tailored mental health support." 
+          title="Health & Wellness"
+          description="Comprehensive health and wellness coverage." 
         />
 
         <BenefitItem 
           icon={<Focus size={32} strokeWidth={1.5} />} 
           bgIcon={<BatteryCharging size={192} strokeWidth={0.5} />}
-          title="Renew & Recharge"
-          description="Prioritize balance with unlimited time off and frequent company-wide recharge days." 
+          title="Learning & Growth"
+          description="Professional development and learning support." 
         />
         
         <BenefitItem 
           icon={<LayoutGrid size={32} strokeWidth={1.5} />} 
           bgIcon={<Users2 size={192} strokeWidth={0.5} />}
-          title="Supportive Unity"
-          description="Thrive in an inclusive culture where every unique perspective fuels our collective success." 
+          title="Work–Life Balanc"
+          description="Generous time off and work–life balance." 
         />
         
         <BenefitItem 
           icon={<ThumbsUp size={32} strokeWidth={1.5} />} 
           bgIcon={<Rocket size={192} strokeWidth={0.5} />}
-          title="Future Focused"
-          description="Accelerate your path with dedicated learning budgets and personalized mentorship." 
+          title="Inclusive Culture"
+          description="Inclusive, supportive team environment." 
         />
       </div>
 

@@ -18,6 +18,17 @@ import powerbi  from '../../assets/BIicons/Power BI.svg'
 import Qliksense from '../../assets/BIicons/Sense.svg' 
 import tableai      from '../../assets/BIicons/Tableau.svg' 
 
+import bi1 from '../../assets/Services[whatwedelive]/bi/on.png'
+import bi2 from '../../assets/Services[whatwedelive]/bi/two.png'
+import bi3 from '../../assets/Services[whatwedelive]/bi/three.png'
+import bi4 from '../../assets/Services[whatwedelive]/bi/four.png'
+import bi5 from '../../assets/Services[whatwedelive]/bi/five.png'
+import bi6 from '../../assets/Services[whatwedelive]/bi/six.png'
+import bi7 from '../../assets/Services[whatwedelive]/bi/seven.png'
+import bi8 from '../../assets/Services[whatwedelive]/bi/eight.png'
+
+
+
 
 // Define types locally
 export interface TechItem {
@@ -213,15 +224,25 @@ const DELIVERABLES: DeliverableItem[] = [
  */
 
 const imges = [
-  'https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595847.jpg',
-  'https://cdnwebsite.databox.com/wp-content/uploads/2021/11/10211045/image-19.png',
-  'https://bernardmarr.com/img/How%20to%20Use%20KPIs.jpg',
-  'https://www.outerboxdesign.com/frontend/web-analytics-services.jpg',
-  'https://www.datylon.com/hs-fs/hubfs/Datylon%20Website2020/Blogs/Automated%20report.%20Defining%20data%20resources,%20data%20extraction%20and%20transformation/datylon-blog-Automated-reports-Defining-data-resources-data-extraction-and-transformation-options-data-extraction.webp?width=2474&height=1652&name=datylon-blog-Automated-reports-Defining-data-resources-data-extraction-and-transformation-options-data-extraction.webp',
-  'https://lform.com/cms/resources/media/2021/03/the-crucial-role-of-data-visualization-in-optimizing-b2b-website-strategies_1405194650.jpg',
-  'https://cdn.prod.website-files.com/6603f4e90d5af57f5cd72adc/69305bdfc75d333d0bc1ee2d_performance-management-system.webp',
-  'https://www.textmagic.com/wp-content/uploads/2023/08/Best-sales-enablement-tools.png'
+  bi1,
+  bi2,
+  bi3,
+  bi4,
+  bi5,
+  bi6,
+  bi7,
+  bi8
 ]
+// const imges = [
+//   'https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595847.jpg',
+//   'https://cdnwebsite.databox.com/wp-content/uploads/2021/11/10211045/image-19.png',
+//   'https://bernardmarr.com/img/How%20to%20Use%20KPIs.jpg',
+//   'https://www.outerboxdesign.com/frontend/web-analytics-services.jpg',
+//   'https://www.datylon.com/hs-fs/hubfs/Datylon%20Website2020/Blogs/Automated%20report.%20Defining%20data%20resources,%20data%20extraction%20and%20transformation/datylon-blog-Automated-reports-Defining-data-resources-data-extraction-and-transformation-options-data-extraction.webp?width=2474&height=1652&name=datylon-blog-Automated-reports-Defining-data-resources-data-extraction-and-transformation-options-data-extraction.webp',
+//   'https://lform.com/cms/resources/media/2021/03/the-crucial-role-of-data-visualization-in-optimizing-b2b-website-strategies_1405194650.jpg',
+//   'https://cdn.prod.website-files.com/6603f4e90d5af57f5cd72adc/69305bdfc75d333d0bc1ee2d_performance-management-system.webp',
+//   'https://www.textmagic.com/wp-content/uploads/2023/08/Best-sales-enablement-tools.png'
+// ]
 
 
 const headingStyles = 
@@ -663,7 +684,7 @@ export const Business: React.FC<SliderProps> = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
-          <div className="relative group order-2 lg:order-1">
+          <div className="relative group order-2 lg:order-2">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl transform rotate-3 group-hover:rotate-2 transition-transform duration-300 opacity-20 group-hover:opacity-30"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-white">
               <img 
@@ -677,7 +698,7 @@ export const Business: React.FC<SliderProps> = () => {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-1">
             <div className="flex items-center gap-2 mb-6">
               {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
               {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
@@ -710,7 +731,7 @@ export const Business: React.FC<SliderProps> = () => {
               {/* We help organizations embed AI into core business operations through responsible, scalable and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
             </p>
 
-            <ul className="space-y-4 mb-8">
+            {/* <ul className="space-y-4 mb-8">
               {[
                 "Real-time dashboards & KPI tracking",
                 "Automated and self-service reporting",
@@ -725,7 +746,7 @@ export const Business: React.FC<SliderProps> = () => {
                   <span className="font-600">{item}</span>
                 </li>
               ))}
-            </ul>
+            </ul> */}
 
             {/* <div className="flex flex-wrap gap-4">
               <Button variant="primary">Explore Solutions</Button>

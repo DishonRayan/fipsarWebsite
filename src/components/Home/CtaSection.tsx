@@ -73,9 +73,9 @@ const CtaSection: React.FC = () => {
             </Link>
           </div>
 
-          <p className="mt-6 text-xs text-gray-400 font-medium">
+          {/* <p className="mt-6 text-xs text-gray-400 font-medium">
             ³ Consultation availability is limited for this quarter.
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

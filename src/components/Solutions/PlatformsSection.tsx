@@ -124,17 +124,14 @@ const PlatformsSection: React.FC = () => {
                 </div>
             </div>
           <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
-            Intelligent platforms and AI solutions built for the 
+            Intelligent platforms and AI solutions built for 
              <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#02A5E6] to-blue-600">
-              Life Sciences ecosystem.
+              the  Life Sciences ecosystem.
             </span>
           </h3>
           <p className="text-slate-600 text-lg leading-relaxed">
-            Our solutions improve speed, accuracy, and decision-making across the entire drug development and healthcare lifecycle.
-
-            
-            {/* Accelerate your clinical trials and regulatory workflows with our integrated data and AI solutions. */}
+            Our solutions improve speed, accuracy, and decision-making across the entire drug development and healthcare lifecycle.   
           </p>
         </div>
 

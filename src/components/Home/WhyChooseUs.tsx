@@ -80,7 +80,7 @@ const WhyChooseUs: React.FC = () => {
           <div className="absolute bottom-[-20%] left-[-10%] w-[60%] h-[60%] bg-blue-900/10 rounded-full blur-[100px]" />
           
           {/* Grid Pattern Overlay to match reference */}
-          <div className="absolute inset-0 opacity-[0.1]" 
+          {/* <div className="absolute inset-0 opacity-[0.1]" 
              style={{ 
                backgroundImage: `
                  linear-gradient(to right, #ffffff 1px, transparent 1px),
@@ -88,7 +88,7 @@ const WhyChooseUs: React.FC = () => {
                `,
                backgroundSize: '50px 50px' 
              }} 
-          />
+          /> */}
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">

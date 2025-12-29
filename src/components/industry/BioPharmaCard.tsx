@@ -98,7 +98,7 @@ const BioPharmaCard: React.FC = () => {
     { id: 1, text: " Introduce AI safely", icon: CheckCircle2 },
     { id: 2, text: "Eliminate data silos", icon: Scissors },
     { id: 3, text: " Scale globally", icon: BarChart3 },
-    { id: 4, text: "uce operational cost", icon: LayoutGrid },
+    { id: 4, text: "Reduce operational cost", icon: LayoutGrid },
   ], []);
 
   // Use 2 sets for seamless -50% scrolling loop

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from "react-router-dom";
+import  ecosys  from '../../assets/HealthcareProviders.png'
 
 const HealthcareEcosystem: React.FC = () => {
   return (
@@ -75,7 +76,8 @@ const HealthcareEcosystem: React.FC = () => {
                     <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden">
                         {/* Image */}
                         <img 
-                            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070" 
+                            // src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070" 
+                            src={ecosys}
                             alt="Healthcare Provider Ecosystem" 
                             className="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-[1.5s] ease-out"
                         />

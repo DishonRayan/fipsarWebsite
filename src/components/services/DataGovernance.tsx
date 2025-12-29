@@ -20,6 +20,15 @@ import gxp  from '../../assets/DataGovernacIcons/GxP.svg'
 import phi  from '../../assets/DataGovernacIcons/PHIProtection.svg' 
 
 
+import dg1 from '../../assets/Services[whatwedelive]/datagov/one.png'
+import dg2 from '../../assets/Services[whatwedelive]/datagov/two.png'
+import dg3 from '../../assets/Services[whatwedelive]/datagov/three.png'
+import dg4 from '../../assets/Services[whatwedelive]/datagov/four.png'
+import dg5 from '../../assets/Services[whatwedelive]/datagov/five.png'
+import dg6 from '../../assets/Services[whatwedelive]/datagov/six.png'
+import dg7 from '../../assets/Services[whatwedelive]/datagov/seven.png'
+import dg8 from '../../assets/Services[whatwedelive]/datagov/eight.png'
+
 // Define types locally
 export interface TechItem {
   id: string;
@@ -214,14 +223,15 @@ const DELIVERABLES: DeliverableItem[] = [
  */
 
 const imges = [
-  'https://profisee.com/wp-content/uploads/2025/04/Profisee_FeaturedImage-DataGovFramework.jpg',
-  'https://www.globalids.com/wp-content/uploads/2022/02/GID_Blog_02_Data-Lineage-The-First-Step-Towards-Understanding-Enterprise-Data.jpg',
-  'https://images.ctfassets.net/aoyx73g9h2pg/RhLPpTCos91e9zDAZOLdy/93881372ce9c58f5ca602aea7ecbc23e/What_is_Role-Based_Access_Control_RBAC-Blog.jpg?w=3840&q=100',
-  'https://www.ineteng.com/hs-fs/hubfs/Audit%20Readiness_Website%201.png?width=2000&height=1294&name=Audit%20Readiness_Website%201.png',
-  'https://www.makersnow.com/wp-content/uploads/2022/02/Data-Privacy-Management-is-the-Need-of-the-Hour-for-Both-Businesses-and-Customers.jpg',
-  'https://media.istockphoto.com/id/584210406/photo/businessman-pointing-at-risk-management-concept-on-screen.jpg?s=612x612&w=0&k=20&c=ZE5G5MHPqUxl83D3TQqJochJf1A2Uk_qkToRDU81dBw=',
-  'https://thumbs.dreamstime.com/z/compliance-rules-law-regulation-policy-business-technology-concept-compliance-rules-law-regulation-policy-business-technology-119357872.jpg',
-  'https://drata.com/_next/image?url=https%3A%2F%2Fimages.drata.com%2Fx3hoqyjm3c27%2F6fLiYwN6KtvXk5oALOoPTA%2F2e7c4f46e42426cf06ac9a64a075d10b%2FHow_to_Conduct_an_Internal_Audit__A_Comprehensive_Guide.png&w=3840&q=75'
+dg1,
+dg2,
+dg3,
+dg4,
+dg5,
+dg6,
+dg7,
+dg8
+
 ]
 
 
@@ -664,7 +674,7 @@ export const DataGovernance: React.FC<SliderProps> = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
-          <div className="relative group order-2 lg:order-1">
+          <div className="relative group order-2 lg:order-2">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl transform rotate-3 group-hover:rotate-2 transition-transform duration-300 opacity-20 group-hover:opacity-30"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-white">
               <img 
@@ -678,7 +688,7 @@ export const DataGovernance: React.FC<SliderProps> = () => {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-1">
             <div className="flex items-center gap-2 mb-6">
               {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
               {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
@@ -711,7 +721,7 @@ export const DataGovernance: React.FC<SliderProps> = () => {
               {/* We help organizations embed AI into core business operations through responsible, scalable, and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
             </p>
 
-            <ul className="space-y-4 mb-8">
+            {/* <ul className="space-y-4 mb-8">
               {[
                 "Data security & privacy protection",
                 "Regulatory compliance & risk control",
@@ -726,7 +736,7 @@ export const DataGovernance: React.FC<SliderProps> = () => {
                   <span className="font-600">{item}</span>
                 </li>
               ))}
-            </ul>
+            </ul> */}
 
             {/* <div className="flex flex-wrap gap-4">
               <Button variant="primary">Explore Solutions</Button>

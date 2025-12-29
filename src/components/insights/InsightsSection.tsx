@@ -10,6 +10,7 @@ import {
   ArrowUpRight,
   Sparkles
 } from 'lucide-react';
+import ThoughtLeadership from './ThoughtLeadership';
 
 // --- Types & Interfaces ---
 interface InsightItem {
@@ -27,6 +28,34 @@ interface CategoryData {
   icon: React.ReactElement;
   items: InsightItem[];
 }
+
+import cs1 from '../../assets/InsightsLibrary/Casestudy/Cs1.jpeg'
+import cs2 from '../../assets/InsightsLibrary/Casestudy/CsTwo.webp'
+import cs3 from '../../assets/InsightsLibrary/Casestudy/CsThree.webp'
+import cs4 from '../../assets/InsightsLibrary/Casestudy/csFour.png'
+import w1 from '../../assets/InsightsLibrary/Webinars/web5.png'
+import w2 from '../../assets/InsightsLibrary/Webinars/TwoW.jpg'
+import w3 from '../../assets/InsightsLibrary/Webinars/threeW.webp'
+import w4 from '../../assets/InsightsLibrary/Webinars/FourW.webp'
+
+
+import b1 from '../../assets/InsightsLibrary/Blogs/b1.png'
+import b2 from '../../assets/InsightsLibrary/Blogs/b2.png'
+import b3 from '../../assets/InsightsLibrary/Blogs/b3.png'
+import b4 from '../../assets/InsightsLibrary/Blogs/b4.png'
+import wp1 from '../../assets/InsightsLibrary/Whitepapers/wp1.png'
+import wp2 from '../../assets/InsightsLibrary/Whitepapers/wp2.png'
+import wp3 from '../../assets/InsightsLibrary/Whitepapers/Wp3.png'
+import wp4 from '../../assets/InsightsLibrary/Whitepapers/Wp4.png'
+import ip1 from '../../assets/InsightsLibrary/IndustryTrends/IndustryTrends/In1.png'
+import ip2 from '../../assets/InsightsLibrary/IndustryTrends/IndustryTrends/In2.png'
+import ip3 from '../../assets/InsightsLibrary/IndustryTrends/IndustryTrends/In3.png'
+import ip4 from '../../assets/InsightsLibrary/IndustryTrends/IndustryTrends/In4.png'
+
+
+
+
+
 
 // --- Data Configuration ---
 
@@ -72,25 +101,25 @@ const RESOURCE_CATEGORIES: CategoryData[] = [
         id: 'blog-1',
         title: '5 Quick Wins to Improve Operational Efficiency',
         category: 'Blog',
-        image: 'https://picsum.photos/800/600?random=5'
+        image: b1
       },
       {
         id: 'blog-2',
         title: 'How to Leverage Data Analytics Even If You’re Just Getting Started',
         category: 'Blog',
-        image: 'https://picsum.photos/800/600?random=6'
+        image: b2
       },
       {
         id: 'blog-3',
         title: 'A Beginner’s Guide to Implementing Automation in Your Team',
         category: 'Blog',
-        image: 'https://picsum.photos/800/600?random=7'
+        image: b3
       },
       {
         id: 'blog-4',
         title: 'What We Learned from This Year’s Major Industry Conference',
         category: 'Blog',
-        image: 'https://picsum.photos/800/600?random=8'
+        image:b4
       }
     ]
   },
@@ -104,25 +133,25 @@ const RESOURCE_CATEGORIES: CategoryData[] = [
         id: 'wp-1',
         title: 'AI Adoption Roadmap: Strategies, Barriers, and Best Practices',
         category: 'Whitepaper',
-        image: 'https://picsum.photos/800/600?random=9'
+        image: wp1
       },
       {
         id: 'wp-2',
         title: 'The 2025 Market Outlook Report: Key Trends Shaping the Next Decade',
         category: 'Whitepaper',
-        image: 'https://picsum.photos/800/600?random=10'
+        image:wp2
       },
       {
         id: 'wp-3',
         title: 'Cybersecurity in a Hyperconnected World: Risk & Resilience Models',
         category: 'Whitepaper',
-        image: 'https://picsum.photos/800/600?random=11'
+        image:wp3
       },
       {
         id: 'wp-4',
         title: 'Building a Future-Ready Enterprise: Transformational Frameworks',
         category: 'Whitepaper',
-        image: 'https://picsum.photos/800/600?random=12'
+        image: wp4
       }
     ]
   },
@@ -136,25 +165,25 @@ const RESOURCE_CATEGORIES: CategoryData[] = [
         id: 'web-1',
         title: 'Masterclass: Navigating Digital Transformation in Complex Organizations',
         category: 'Webinar',
-        image: 'https://picsum.photos/800/600?random=13'
+        image: w1
       },
       {
         id: 'web-2',
         title: 'Live Panel: Industry Leaders Discuss the State of Innovation',
         category: 'Webinar',
-        image: 'https://picsum.photos/800/600?random=14'
+        image: w2
       },
       {
         id: 'web-3',
         title: 'Workshop: How to Build High-Performance Teams in a Hybrid Work Era',
         category: 'Webinar',
-        image: 'https://picsum.photos/800/600?random=15'
+        image: w3
       },
       {
         id: 'web-4',
         title: 'Tech Demo: Using Automation Tools to Cut Costs & Boost Productivity',
         category: 'Webinar',
-        image: 'https://picsum.photos/800/600?random=16'
+        image: w4
       }
     ]
   },
@@ -168,25 +197,25 @@ const RESOURCE_CATEGORIES: CategoryData[] = [
         id: 'cs-1',
         title: 'How a Global Retailer Reduced Costs by 30% Through Automation',
         category: 'Case Study',
-        image: 'https://picsum.photos/800/600?random=17'
+        image: cs1
       },
       {
         id: 'cs-2',
         title: 'Transforming Customer Support Using AI Chatbots for a Telecom Leader',
         category: 'Case Study',
-        image: 'https://picsum.photos/800/600?random=18'
+        image: cs2
       },
       {
         id: 'cs-3',
         title: 'A Manufacturing Firm’s Journey to a Connected, Data-Driven Operation',
         category: 'Case Study',
-        image: 'https://picsum.photos/800/600?random=19'
+        image: cs3
       },
       {
         id: 'cs-4',
         title: 'Scaling a Start-Up to Enterprise-Level Infrastructure in Under 6 Months',
         category: 'Case Study',
-        image: 'https://picsum.photos/800/600?random=20'
+        image: cs4
       }
     ]
   },
@@ -200,25 +229,25 @@ const RESOURCE_CATEGORIES: CategoryData[] = [
         id: 'it-1',
         title: 'Top 7 Trends Reshaping the Industry in 2025',
         category: 'Trend Report',
-        image: 'https://picsum.photos/800/600?random=21'
+        image: ip1
       },
       {
         id: 'it-2',
         title: 'How GenAI Is Influencing Business Models Across Sectors',
         category: 'Trend Report',
-        image: 'https://picsum.photos/800/600?random=22'
+        image: ip2
       },
       {
         id: 'it-3',
         title: 'Market Disruptors to Watch: New Players Changing the Competitive Landscape',
         category: 'Trend Report',
-        image: 'https://picsum.photos/800/600?random=23'
+        image:ip3
       },
       {
         id: 'it-4',
         title: 'Regulatory Changes You Need to Prepare for in the Coming Year',
         category: 'Trend Report',
-        image: 'https://picsum.photos/800/600?random=24'
+        image: ip4
       }
     ]
   }
@@ -237,7 +266,11 @@ const InsightsSection: React.FC = () => {
 
   return (
     // Updated padding to pt-24 (mobile) and pt-36 (desktop) to clear fixed headers
-    <section className="pt-24 pb-8 md:pt-36 md:pb-16 bg-[#F8FAFC] relative overflow-hidden font-sans">
+        
+        <>
+                        <ThoughtLeadership/>
+
+                        <section className="pt-16 pb-8 md:pt-16 md:pb-16 bg-[#F8FAFC] relative overflow-hidden font-sans">
       
       {/* Custom Styles for Scrollbar - Updated for Blue Background */}
       <style>{`
@@ -269,102 +302,11 @@ const InsightsSection: React.FC = () => {
         }
       `}</style>
 
-      {/* Refined Background Decor */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden opacity-40">
-        <div className="absolute top-[-5%] right-[-10%] w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-sky-100/60 rounded-full blur-[80px] md:blur-[120px]" />
-        <div className="absolute bottom-[-10%] left-[-10%] w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-indigo-50/50 rounded-full blur-[60px] md:blur-[100px]" />
-      </div>
+
+
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         
-        {/* === HEADER === */}
-        <div className="flex flex-col items-center justify-center mb-8 md:mb-12 text-center">
-            <div className="max-w-4xl">
-                {/* <div className="flex items-center justify-center gap-3 mb-3 md:mb-5">
-                    <span className="h-[2px] w-8 bg-[#02A5E6]"></span>
-                    <span className="text-xs font-bold tracking-[0.2em] text-[#02A5E6] uppercase">Insights</span>
-                    <span className="h-[2px] w-8 bg-[#02A5E6]"></span>
-                </div> */}
-
-
-                     <div className="flex justify-center mb-4">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
-                <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
-                </span>
-                Insights
-                </div>
-          </div>
-                <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
-                    Strategic Insights & <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#02A5E6] to-[#0077b6]">Future Perspectives</span>
-                </h1>
-            </div>
-        </div>
-
-        {/* === SECTION 1: THOUGHT LEADERSHIP (Clean Editorial Style) === */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 mb-12 md:mb-20">
-            
-            {/* Featured Article (Left) */}
-            <div className="lg:col-span-7 group cursor-pointer h-full">
-              <div className="relative h-full min-h-[250px] md:min-h-[500px] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl shadow-slate-900/10">
-                <img 
-                  src={featuredTL.image} 
-                  alt={featuredTL.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/50 to-transparent" />
-                
-                <div className="absolute bottom-0 left-0 p-6 md:p-10 w-full">
-                  <div className="flex items-center gap-4 mb-3 md:mb-5">
-                     <span className="px-4 py-1.5 bg-[#02A5E6] text-white text-[10px] md:text-[11px] font-bold uppercase tracking-widest rounded-full shadow-lg shadow-blue-500/20">Featured Insight</span>
-                     <span className="text-slate-300 text-xs md:text-sm font-semibold">{featuredTL.readTime}</span>
-                  </div>
-                  <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-6 md:mb-8 leading-[1.2] group-hover:text-blue-50 transition-colors">
-                    {featuredTL.title}
-                  </h2>
-                  <div className="flex items-center gap-3 text-white font-bold group-hover:translate-x-2 transition-transform text-sm md:text-base">
-                    Read Full Story <ArrowRight className="w-4 h-4 md:w-5 md:h-5 text-[#02A5E6]" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Sidebar Articles (Right - Clean List) */}
-            <div className="lg:col-span-5 flex flex-col justify-center">
-               <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 md:mb-8 flex items-center gap-3">
-                   Trending Stories
-                   <div className="h-px bg-slate-200 flex-1 ml-4"></div>
-               </h3>
-               
-               <div className="flex flex-col">
-                   {sidebarTL.map((item, idx) => (
-                     <div 
-                        key={item.id} 
-                        className="group py-4 md:py-5 border-b border-slate-200 hover:border-[#02A5E6]/50 transition-colors cursor-pointer"
-                     >
-                        <div className="flex items-start gap-4">
-                            <span className="text-lg md:text-xl font-bold text-slate-300 group-hover:text-[#02A5E6] transition-colors mt-1 font-mono">
-                                0{idx + 1}
-                            </span>
-                            <div>
-                                <div className="flex items-center gap-2 mb-1.5">
-                                    <span className="text-[10px] font-bold text-[#02A5E6] uppercase tracking-widest">{item.category}</span>
-                                </div>
-                                <h4 className="text-lg md:text-xl font-bold text-slate-800 leading-snug group-hover:text-[#02A5E6] transition-colors mb-1.5">
-                                    {item.title}
-                                </h4>
-                                <div className="flex items-center gap-1 text-xs font-semibold text-slate-400 group-hover:text-slate-500 transition-colors">
-                                    Read Article <ArrowUpRight className="w-3 h-3" />
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                   ))}
-               </div>
-            </div>
-        </div>
 
 
         {/* === SECTION 2: RESOURCE HUB (Enhanced Tabs & Cards) === */}
@@ -383,7 +325,7 @@ const InsightsSection: React.FC = () => {
           <div className="flex flex-col xl:flex-row xl:items-end justify-between gap-6 md:gap-8 mb-6 md:mb-10 relative z-10">
             <div className="max-w-xl">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">Resource Library</h3>
-              <p className="text-blue-100 text-sm md:text-lg">Curated collections for every stage of your journey.</p>
+              <p className="text-blue-100 text-sm md:text-lg">Curated collections for every stage of  journey.</p>
             </div>
 
             {/* Tabs Pill Container - Enhanced Design */}
@@ -451,19 +393,19 @@ const InsightsSection: React.FC = () => {
 
                 {/* Content Area */}
                 <div className="p-5 md:p-6 flex flex-col flex-1">
-                  <h3 className="text-base md:text-md font-bold text-slate-800 leading-snug mb-3 group-hover:text-[#02A5E6] transition-colors line-clamp-3">
+                  <h3 className="text-base md:text-md font-medium text-slate-800 leading-snug mb-3 group-hover:text-[#02A5E6] transition-colors line-clamp-3">
                     {item.title}
                   </h3>
                   
-                  <div className="mt-auto pt-4 border-t border-slate-50 flex items-center justify-between">
+                  {/* <div className="mt-auto pt-4 border-t border-slate-50 flex items-center justify-between">
                       <span className="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest group-hover:text-slate-600 transition-colors">
                         Read
                       </span>
-                      {/* Interactive Button */}
+                      
                       <div className="w-8 h-8 md:w-8 md:h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 group-hover:border-[#02A5E6] group-hover:bg-[#02A5E6] group-hover:text-white transition-all duration-300">
                           <ArrowUpRight className="w-3 h-3 md:w-3.5 md:h-3.5 transform group-hover:rotate-45 transition-transform duration-300" />
                       </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}
@@ -473,6 +415,10 @@ const InsightsSection: React.FC = () => {
 
       </div>
     </section>
+
+        </>
+
+
   );
 };
 

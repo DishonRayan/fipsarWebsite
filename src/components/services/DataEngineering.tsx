@@ -11,6 +11,17 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+import De2 from '../../assets/Services[whatwedelive]/dataengg/two.png'
+import De3 from '../../assets/Services[whatwedelive]/dataengg/three.png'
+import De4 from '../../assets/Services[whatwedelive]/dataengg/four.png'
+import De5 from '../../assets/Services[whatwedelive]/dataengg/five.png'
+import De6 from '../../assets/Services[whatwedelive]/dataengg/six.png'
+import De7 from '../../assets/Services[whatwedelive]/dataengg/seven.png'
+import De8 from '../../assets/Services[whatwedelive]/dataengg/eight.png'
+
+// import dehero from '../../assets/ServviceHero/deHero.jpg'
+import dehero from '../../assets/ServviceHero/DataEngineeringHero.png'
+
 
 import snowflake    from '../../assets/dataEngineringIcons/SnowFlack.svg'
 import Talend       from '../../assets/dataEngineringIcons/Talend.svg'
@@ -217,13 +228,13 @@ const DELIVERABLES: DeliverableItem[] = [
 
 const imges = [
   'https://eep.iimb.ac.in/storage/2023/08/Predictive-Analytics-Business-Forecasting-Jan-2024_v3.png',
-  'https://www.mindinventory.com/blog/wp-content/uploads/2023/12/creating-generative-ai-solution.webp',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaQotd4ChfewaB_B6x2cLivycYAAFzekd5Vg&s',
-  'https://valenta.io/wp-content/uploads/2023/08/IDP-Services-1.jpg',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOL8PuGfkrGZ-fDplHUcN_V4CDcfA8RFi4Rg&s',
-  'https://www.shutterstock.com/image-photo/ai-platform-generating-art-images-600nw-2672551269.jpg',
-  'https://img.freepik.com/free-photo/student-home-taking-notes-while-watching-presentation-closeup_482257-118737.jpg?semt=ais_hybrid&w=740&q=80',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvpPh9JqlKITZzCHzWAyBZEITvvKYnEroWPQ&s'
+    De2,
+    De3,
+    De4,
+    De5,
+    De6,
+    De7,
+    De8
 ]
 
 
@@ -662,89 +673,96 @@ export const DataEngineering: React.FC<SliderProps> = () => {
 
 
 
-      <div className="pt-24 mt-6 container mx-auto px-6 relative z-10 ">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          
-          <div className="relative group order-2 lg:order-1">
-            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl transform rotate-3 group-hover:rotate-2 transition-transform duration-300 opacity-20 group-hover:opacity-30"></div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-white">
-              <img 
-                src="https://cdn.prod.website-files.com/64fef88ee8b22d3d21b715a2/657c2bfd9d07f76a47c70ce8_64c0dfda42c1ee625bb4640c_Blog%2520image%2520(1).webp"
-                // src='https://caddcentre.com/blog/wp-content/uploads/2024/06/automation-data-analytic-with-robot-digital-visualization-big-data-scientist1.jpg'
-                // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTab7Wep8BP4amVVsYi6qo0ZzPHGvsGl0BPqQ&s" 
-                alt="AI and Automation Technology" 
-                className="w-full h-auto object-cover transform group-hover:scale-150 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <div className="order-1 lg:order-2">
-            <div className="flex items-center gap-2 mb-6">
-              {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
-              {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
-                Data Engineering
-              </span> */}
-
-                            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
-                <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
-                </span>
-                   Data Engineering
-                </div>
-            </div>
-{/*             
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold  mb-6 leading-tight">
-              Unlock Predictive <br className="hidden md:block"/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                Intelligence
-              </span>
-            </h2> */}
-            <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold  mb-6 leading-tight">
-              Build a Strong,  <br className="hidden md:block"/>
-              {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> */}
-                Scalable Data Foundation
-              {/* </span> */}
-            </h2>
-            
-            <p className="text-lg font-600 mb-8 leading-relaxed">
-            We design and implement enterprise-grade data platforms that unify clinical, commercial and operational data into a single source of truth. Our data engineering solutions ensure your data is cloud-ready, reliable and optimized for analytics, AI and reporting.
-            
-              {/* We help organizations embed AI into core business operations through responsible, scalable and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
-            </p>
-
-            <ul className="space-y-4 mb-8">
-              {[
-                "Unified single source of truth",
-                "Cloud-ready, scalable data pipelines",
-                "Analytics, AI and reporting optimization"
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <div className="mt-1 min-w-[20px]">
-                    <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="font-600">{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            {/* <div className="flex flex-wrap gap-4">
-              <Button variant="primary">Explore Solutions</Button>
-              <Button variant="outline">View Case Studies</Button>
-            </div> */}
-          </div>
-
-        </div>
-      </div>
+ 
 
 
 
 
       {/* Section 1: What We Deliver (Zigzag) */}
-      <section className=" mt-8 relative overflow-hidden">
+      <section className="py-24 mt-8 relative overflow-hidden">
+
+
+
+
+        <div className=" container mx-auto px-6 relative z-10 ">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+            
+            <div className="relative group order-2 lg:order-2">
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl transform rotate-3 group-hover:rotate-2 transition-transform duration-300 opacity-20 group-hover:opacity-30"></div>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-white">
+                <img 
+                    
+                    src = {dehero}
+                    // src="https://cdn.prod.website-files.com/64fef88ee8b22d3d21b715a2/657c2bfd9d07f76a47c70ce8_64c0dfda42c1ee625bb4640c_Blog%2520image%2520(1).webp"
+                    // src='https://caddcentre.com/blog/wp-content/uploads/2024/06/automation-data-analytic-with-robot-digital-visualization-big-data-scientist1.jpg'
+                    // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTab7Wep8BP4amVVsYi6qo0ZzPHGvsGl0BPqQ&s" 
+                    alt="AI and Automation Technology" 
+                    className="w-full h-auto object-cover transform group-hover:scale-150 transition-transform duration-700 ease-out"
+                    loading="lazy"
+                />
+                </div>
+            </div>
+
+            <div className="order-1 lg:order-1">
+                <div className="flex items-center gap-2 mb-6">
+                {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
+                {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
+                    Data Engineering
+                </span> */}
+
+                                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
+                    <span className="relative flex h-2 w-2">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
+                    </span>
+                    Data Engineering
+                    </div>
+                </div>
+    {/*             
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold  mb-6 leading-tight">
+                Unlock Predictive <br className="hidden md:block"/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                    Intelligence
+                </span>
+                </h2> */}
+                <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold  mb-6 leading-tight">
+                Build a Strong,  <br className="hidden md:block"/>
+                {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> */}
+                    Scalable Data Foundation
+                {/* </span> */}
+                </h2>
+                
+                <p className="text-lg font-600 mb-8 leading-relaxed">
+                We design and implement enterprise-grade data platforms that unify clinical, commercial and operational data into a single source of truth. Our data engineering solutions ensure your data is cloud-ready, reliable and optimized for analytics, AI and reporting.
+                
+                {/* We help organizations embed AI into core business operations through responsible, scalable and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
+                </p>
+
+                {/* <ul className="space-y-4 mb-8">
+                {[
+                    "Unified single source of truth",
+                    "Cloud-ready, scalable data pipelines",
+                    "Analytics, AI and reporting optimization"
+                ].map((item, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                    <div className="mt-1 min-w-[20px]">
+                        <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <span className="font-600">{item}</span>
+                    </li>
+                ))}
+                </ul> */}
+
+                {/* <div className="flex flex-wrap gap-4">
+                <Button variant="primary">Explore Solutions</Button>
+                <Button variant="outline">View Case Studies</Button>
+                </div> */}
+            </div>
+
+            </div>
+      </div>
 
         <div className="container mx-auto px-4 mt-20 relative z-10">
           <div className="text-center mb-24">

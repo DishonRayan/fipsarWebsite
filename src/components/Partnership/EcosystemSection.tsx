@@ -42,7 +42,7 @@ const EcosystemSection: React.FC = () => {
   const scrollingItems = [...techItems, ...techItems, ...techItems];
 
   return (
-    <section className=" relative w-full overflow-hidden bg-[#02A5E6] flex items-center justify-center py-16 px-4 md:px-10 lg:px-24">
+    <section className=" relative w-full overflow-hidden bg-[#02A5E6] flex items-center justify-center py-16 px-4 md:px-10 lg:px-24 mt-14">
       
       {/* --- BACKGROUND ELEMENTS --- */}
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -111,7 +111,7 @@ const EcosystemSection: React.FC = () => {
               <div className="flex items-start justify-between mb-6">
                 <h2 className="serif-title text-2xl md:text-3xl lg:text-4xl text-[#02A5E6] font-bold leading-tight">
                   Our Technology <br />
-                  <span className="text-blue-900/80 font-semibold italic">Ecosystem</span>
+                  <span className="text-[#1560CE] font-semibold">Ecosystem</span>
                 </h2>
                 <div className="bg-[#02A5E6]/10 p-4 rounded-2xl shadow-sm border border-[#02A5E6]/5">
                   <RefreshCw className="w-8 h-8 text-[#02A5E6] animate-spin-slow" style={{ animationDuration: '10s' }} />

@@ -13,6 +13,15 @@ import { motion } from 'framer-motion';
 
 import { Terminal, Database, Cloud, Sparkles } from 'lucide-react';
 
+import dt1 from '../../assets/Services[whatwedelive]/digital/one.png'
+import dt2 from '../../assets/Services[whatwedelive]/digital/two.png'
+import dt3 from '../../assets/Services[whatwedelive]/digital/three.png'
+import dt4 from '../../assets/Services[whatwedelive]/digital/four.png'
+import dt5 from '../../assets/Services[whatwedelive]/digital/five.png'
+import dt6 from '../../assets/Services[whatwedelive]/digital/six.png'
+import dt7 from '../../assets/Services[whatwedelive]/digital/sevem.png'
+import dt8 from '../../assets/Services[whatwedelive]/digital/eight.png'
+
 // Define types locally
 export interface TechItem {
   id: string;
@@ -207,14 +216,14 @@ const DELIVERABLES: DeliverableItem[] = [
  */
 
 const imges = [
-  'https://eep.iimb.ac.in/storage/2023/08/Predictive-Analytics-Business-Forecasting-Jan-2024_v3.png',
-  'https://www.mindinventory.com/blog/wp-content/uploads/2023/12/creating-generative-ai-solution.webp',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaQotd4ChfewaB_B6x2cLivycYAAFzekd5Vg&s',
-  'https://valenta.io/wp-content/uploads/2023/08/IDP-Services-1.jpg',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOL8PuGfkrGZ-fDplHUcN_V4CDcfA8RFi4Rg&s',
-  'https://www.shutterstock.com/image-photo/ai-platform-generating-art-images-600nw-2672551269.jpg',
-  'https://img.freepik.com/free-photo/student-home-taking-notes-while-watching-presentation-closeup_482257-118737.jpg?semt=ais_hybrid&w=740&q=80',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvpPh9JqlKITZzCHzWAyBZEITvvKYnEroWPQ&s'
+    dt1,
+    dt2,
+    dt3,
+    dt4,
+    dt5,
+    dt6,
+    dt7,
+    dt8
 ]
 
 
@@ -647,7 +656,7 @@ export const DigitalTrans: React.FC<SliderProps> = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
-          <div className="relative group order-2 lg:order-1">
+          <div className="relative group order-2 lg:order-2">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl transform rotate-3 group-hover:rotate-2 transition-transform duration-300 opacity-20 group-hover:opacity-30"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-white">
               <img 
@@ -662,7 +671,7 @@ export const DigitalTrans: React.FC<SliderProps> = () => {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-1">
             <div className="flex items-center gap-2 mb-6">
               {/* <span className="w-8 h-[2px] bg-blue-600"></span> */}
               {/* <span className="text-sm font-bold tracking-widest text-[#02A5E6] uppercase">
@@ -697,7 +706,7 @@ export const DigitalTrans: React.FC<SliderProps> = () => {
               {/* We help organizations embed AI into core business operations through responsible, scalable and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
             </p>
 
-            <ul className="space-y-4 mb-8">
+            {/* <ul className="space-y-4 mb-8">
               {[
                 "Operational modernization & agility",
                 "Technology-driven business transformation",
@@ -712,7 +721,7 @@ export const DigitalTrans: React.FC<SliderProps> = () => {
                   <span className="font-600">{item}</span>
                 </li>
               ))}
-            </ul>
+            </ul> */}
 
             {/* <div className="flex flex-wrap gap-4">
               <Button variant="primary">Explore Solutions</Button>

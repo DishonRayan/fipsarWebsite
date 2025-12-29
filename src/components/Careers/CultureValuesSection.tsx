@@ -145,7 +145,7 @@ const CultureValuesSection: React.FC = () => {
             <div className="space-y-1">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[0.9] tracking-tighter drop-shadow-xl">
                 Culture <br /> 
-                <span className="text-blue-50 italic opacity-95">& Values</span>
+                <span className="text-blue-50  opacity-95">& Values</span>
               </h2>
             </div>
             

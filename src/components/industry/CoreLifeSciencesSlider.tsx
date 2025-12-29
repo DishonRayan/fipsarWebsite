@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, ArrowRight, Leaf, ShieldCheck, Activity, Users } from 'lucide-react';
 
+import corelife1 from "../../assets/CoreLifeSciences/BioPharma.png";
+import corelife2 from "../../assets/CoreLifeSciences/ContractResearchOrganizations(CROs).png";
+import corelife3 from "../../assets/CoreLifeSciences/Regulatory&SafetyTeams.png";
+import corelife4 from "../../assets/CoreLifeSciences/MedicalAffairsTeams.png";
+
 // --- Types ---
 interface SlideData {
   id: string;
@@ -12,6 +17,9 @@ interface SlideData {
   Icon: React.ElementType;
 }
 
+
+
+
 // --- Data ---
 const SLIDES: SlideData[] = [
   {
@@ -20,7 +28,7 @@ const SLIDES: SlideData[] = [
     displayTitle: 'Bio - Pharma',
     subtitle: 'Driving innovation in pharmaceuticals and biotech therapies',
     description: 'From pioneering new therapies to advancing biotech innovations, we support biopharma companies in their mission to transform patient care. Our work helps them navigate complex challenges, accelerate development timelines, and bring life-changing medicines to market.',
-    image: 'https://picsum.photos/id/403/800/800', // Lab/Chemistry
+    image: corelife1, // Lab/Chemistry
     Icon: Leaf,
   },
   {
@@ -29,7 +37,7 @@ const SLIDES: SlideData[] = [
     displayTitle: 'CROs',
     subtitle: 'Supporting clinical trials and research programs',
     description: 'Clinical trials are the backbone of drug development, and we collaborate closely with CROs to streamline research programs, ensure quality data, and optimize trial execution. By fostering efficiency and scientific rigor, we help our clients achieve their goals faster.',
-    image: 'https://picsum.photos/id/4/800/800', // Notebook/Research
+    image: corelife2, // Notebook/Research
     Icon: Activity,
   },
   {
@@ -38,7 +46,7 @@ const SLIDES: SlideData[] = [
     displayTitle: 'Regulatory & Safety',
     subtitle: 'Ensuring compliance, approvals, and patient safety',
     description: 'Compliance and patient safety are non-negotiable in Life Sciences. We assist regulatory and safety teams in managing submissions, navigating global regulations, and maintaining the highest standards of pharmacovigilance, so that innovative therapies reach patients safely and efficiently.',
-    image: 'https://picsum.photos/id/201/800/800', // Technical/Code/Data
+    image: corelife3, // Technical/Code/Data
     Icon: ShieldCheck,
   },
   {
@@ -47,7 +55,7 @@ const SLIDES: SlideData[] = [
     displayTitle: 'Medical Affairs',
     subtitle: 'Translating clinical evidence into actionable insights',
     description: 'Bridging science and healthcare, medical affairs teams turn clinical insights into meaningful action. We empower these teams to communicate complex data effectively, engage with healthcare professionals, and ensure that scientific evidence drives better outcomes in the real world.',
-    image: 'https://picsum.photos/id/1059/800/800', // People/Meeting
+    image: corelife4, // People/Meeting
     Icon: Users,
   }
 ];
@@ -141,9 +149,9 @@ const CoreLifeSciencesSlider: React.FC = () => {
 
   return (
     // Updated Layout Wrapper:
-    // - Changed max-w-7xl to max-w-6xl to allow more margin for arrows on standard laptop screens.
-    // - Removed pt-28 (App.tsx handles this) to fix alignment/double-padding.
-    <div className="w-full max-w-6xl mx-auto relative select-none px-4 sm:px-6 lg:px-8 my-16">
+
+    <section className='bg-[#F2F9FD] py-12'>
+                    <div className="w-full max-w-6xl mx-auto relative select-none px-4 sm:px-6 lg:px-8 my-16">
            <div className="flex flex-col items-center text-center mb-16">
           <div className="relative inline-block">
             <h2 className="text-4xl md:text-4xl  font-black text-slate-900 tracking-tight relative z-10">
@@ -222,7 +230,7 @@ const CoreLifeSciencesSlider: React.FC = () => {
               className="w-full h-full object-cover animate-scaleIn"
             />
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#02A5E6]/90 via-[#02A5E6]/40 to-transparent mix-blend-multiply opacity-80" />
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-[#02A5E6]/90 via-[#02A5E6]/40 to-transparent mix-blend-multiply opacity-80" /> */}
             <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-[#02A5E6]/30" />
           </div>
 
@@ -291,6 +299,8 @@ const CoreLifeSciencesSlider: React.FC = () => {
         }
       `}</style>
     </div>
+    </section>
+
   );
 };
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { ShieldCheck, ArrowRight } from 'lucide-react';
 import { Link } from "react-router-dom";
+import Hhero from '../../assets/HomeHero.png'
+
 
 const HeroComponent: React.FC = () => {
   return (
@@ -128,9 +130,9 @@ const HeroComponent: React.FC = () => {
             </div> */}
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[3rem] leading-[1.1] font-extrabold text-slate-900 mb-6 tracking-tight relative">
+            <h1 className="text-4xl sm:text-5xl lg:text-[2.5rem] leading-[1.1] font-extrabold text-slate-900 mb-6 tracking-tight relative">
               Transforming Life Sciences  <br />
-              <span className="text-[#02A5E6]">Through Data</span> <br />
+              <span className="text-[#02A5E6]">Through Data </span> <br />
                AI & Compliance Excellence
             </h1>
 
@@ -207,7 +209,8 @@ const HeroComponent: React.FC = () => {
 
                       {/* Dashboard Image */}
                       <img 
-                        src="https://www.contractpharma.com/wp-content/uploads/sites/6/2024/08/280_main-1.jpg"
+                        src={Hhero}
+                        // src="https://www.contractpharma.com/wp-content/uploads/sites/6/2024/08/280_main-1.jpg"
                         // src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" 
                         alt="Analytics Dashboard Interface" 
                         className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"

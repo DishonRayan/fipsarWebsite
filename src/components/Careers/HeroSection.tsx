@@ -10,6 +10,12 @@ interface FeatureCardProps {
   className?: string;
 }
 
+import careerhero1 from '../../assets/Careers-Hero-Sec/ImproveOutcomes.png';
+import careerhero2 from '../../assets/Careers-Hero-Sec/InsightsFromComplexData.png';
+import careerhero3 from '../../assets/Careers-Hero-Sec/PurposefulInnovation.png';
+import careerhero4 from '../../assets/Careers-Hero-Sec/ScientificDiscovery.png';
+import careerhero5 from '../../assets/Careers-Hero-Sec/ThePowerOfData&AI.png';
+
 /**
  * Individual Feature Card component
  */
@@ -136,23 +142,23 @@ const HeroSection: React.FC = () => {
   const cards = [
     {
       title: "Insights From Complex Data",
-      image: "https://plat.ai/wp-content/uploads/datanalytics.jpg.webp"
+      image: careerhero2,
     },
     {
       title: "The Power Of Data & AI",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop"
+      image: careerhero5,
     },
     {
       title: "Purposeful Innovation",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop"
+      image: careerhero3,
     },
     {
       title: "Scientific Discovery",
-      image: "https://img.freepik.com/free-photo/scientist-analyzes-bacterium-with-high-scale-magnification-generated-by-ai_188544-27928.jpg?semt=ais_hybrid&w=740&q=80"
+      image: careerhero4
     },
     {
       title: "Improved Outcomes",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop"
+      image: careerhero1
     }
   ];
 
