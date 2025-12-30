@@ -384,11 +384,11 @@ const InsightsSection: React.FC = () => {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   {/* Floating Category Badge */}
-                  <div className="absolute top-3 left-3 md:top-4 md:left-4">
+                  {/* <div className="absolute top-3 left-3 md:top-4 md:left-4">
                       <span className="px-2.5 py-1 md:px-3 md:py-1.5 bg-white/95 backdrop-blur-md text-[9px] md:text-[10px] font-bold tracking-wider uppercase text-[#02A5E6] rounded-full shadow-sm ring-1 ring-black/5">
                         {item.category}
                       </span>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Content Area */}

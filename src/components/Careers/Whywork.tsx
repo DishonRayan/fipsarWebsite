@@ -1,5 +1,6 @@
 
-import React from 'react';
+import React,  { useState }from 'react';
+import ApplyFormModal from './ApplyFormModal';
 
 /**
  * CareerSection Component
@@ -10,9 +11,11 @@ import React from 'react';
  */
 const Whywork: React.FC = () => {
   const BRAND_BLUE = "#02A5E6";
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div className=" relative w-full max-w-7xl mx-auto rounded-[2rem] overflow-hidden shadow-2xl isolate flex items-center">
+
+    <>
+                <div className=" relative w-full max-w-7xl mx-auto rounded-[2rem] overflow-hidden shadow-2xl isolate flex items-center">
     {/* <div className="mt-24 relative w-full max-w-7xl mx-auto rounded-[2rem] overflow-hidden shadow-2xl isolate flex items-center"> */}
       {/* --- BACKGROUND GRADIENT --- */}
       <div 
@@ -78,7 +81,9 @@ const Whywork: React.FC = () => {
             
             <button 
               className="group flex items-center gap-2 bg-white text-[#02A5E6] px-8 py-3 rounded-full font-bold text-sm md:text-base transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95"
-              onClick={() => window.open('https://fipsar.com/careers', '_blank')}
+            //   onClick={() => window.open('https://fipsar.com/careers', '_blank')}
+            //   onClick={() =>}
+                          onClick={() => setIsModalOpen(true)}            
             >
               Apply Now
               <svg 
@@ -119,6 +124,14 @@ const Whywork: React.FC = () => {
         `}
       </style>
     </div>
+
+    <ApplyFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
+    </>
+
+
+    
+    //   <ApplyFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
   );
 };
 

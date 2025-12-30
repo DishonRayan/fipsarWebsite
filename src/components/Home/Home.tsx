@@ -5,15 +5,23 @@ import WhatWeSolve from './WhatWeSolve'
 import WhyChooseUs from './WhyChooseUs'
 import ResultsSection from './ResultsSection'
 import CtaSection from './CtaSection'
+import NewwhyChoose from './NewwhyChoose'
+import Newwhoweare from './Newwhoweare'
+import NewHeroSection from './NewHeroSection'
+import { NewResultyou } from './NewResultyou'
 
 const Home = () => {
   return (
     <>
-      <Hero/>
-      <WhoWeAre/>
+      {/* <Hero/> */}
+      <NewHeroSection/>
+      {/* <WhoWeAre/> */}
+      <Newwhoweare/>
       <WhatWeSolve/>
-      <WhyChooseUs/>
-      <ResultsSection/>
+      {/* <WhyChooseUs/> */}
+      <NewwhyChoose/>
+      {/* <ResultsSection/> */}
+      <NewResultyou/>
       <CtaSection/>
     </>
   )
