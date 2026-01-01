@@ -4,7 +4,9 @@ import CoreLifeSciencesSlider from './CoreLifeSciencesSlider'
 // import IndustryHero from './IndustryHero'
 import BioPharmaCard from './BioPharmaCard'
 import HealthcareEcosystem from './HealthcareEcosystem'
-import { IndustrySection } from './IndustrySection'
+import IndustriesSection from './IndustriesSection'
+import IndustrySection from './IndustrySection'
+// import { IndustrySection } from './IndustrySection'
 
 const Industry = () => {
   return (
@@ -12,7 +14,8 @@ const Industry = () => {
     {/* <StorySection/> */}
     {/* <IndustriesSection/> */}
 
-        <IndustrySection/>
+        {/* <IndustrySection/> */}
+      <IndustrySection/>
       <CoreLifeSciencesSlider/>
       <HealthcareEcosystem/>
       <BioPharmaCard/>

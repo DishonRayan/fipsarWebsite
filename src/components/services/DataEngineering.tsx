@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+import De1 from '../../assets/Services[whatwedelive]/dataengg/one.png'
 import De2 from '../../assets/Services[whatwedelive]/dataengg/two.png'
 import De3 from '../../assets/Services[whatwedelive]/dataengg/three.png'
 import De4 from '../../assets/Services[whatwedelive]/dataengg/four.png'
@@ -227,7 +228,7 @@ const DELIVERABLES: DeliverableItem[] = [
  */
 
 const imges = [
-  'https://eep.iimb.ac.in/storage/2023/08/Predictive-Analytics-Business-Forecasting-Jan-2024_v3.png',
+  De1,
     De2,
     De3,
     De4,

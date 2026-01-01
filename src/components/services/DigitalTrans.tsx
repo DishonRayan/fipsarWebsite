@@ -19,7 +19,7 @@ import dt3 from '../../assets/Services[whatwedelive]/digital/three.png'
 import dt4 from '../../assets/Services[whatwedelive]/digital/four.png'
 import dt5 from '../../assets/Services[whatwedelive]/digital/five.png'
 import dt6 from '../../assets/Services[whatwedelive]/digital/six.png'
-import dt7 from '../../assets/Services[whatwedelive]/digital/sevem.png'
+import dt7 from '../../assets/Services[whatwedelive]/digital/seven.png'
 import dt8 from '../../assets/Services[whatwedelive]/digital/eight.png'
 
 // Define types locally
