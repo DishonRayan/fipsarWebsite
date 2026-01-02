@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Database, 
   Activity, 
@@ -32,7 +32,7 @@ interface Platform {
   themeColor: string;
   image: string;
 }
-
+const BRAND_COLOR = '#02A5E6';
 // --- Data Definition ---
 const platformsData: Platform[] = [
   {
@@ -100,10 +100,15 @@ const platformsData: Platform[] = [
 ];
 
 const PlatformsSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>('datasphere');
 
+  const [activeTab, setActiveTab] = useState<string>('datasphere');
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   return (
-    <section className="py-20  bg-gradient-to-b from-white to-blue-50/30 overflow-hidden relative">
+    <section className=" bg-gradient-to-b from-white to-blue-50/30 overflow-hidden relative">
       {/* Background Decor Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
         <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] bg-[#02A5E6] opacity-[0.03] rounded-full blur-3xl"></div>
@@ -114,16 +119,27 @@ const PlatformsSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="flex justify-center mb-4">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
-                <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
-                </span>
-                Our Solution
-                </div>
-            </div>
-          <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
+      
+
+
+                  <div className={`text-center mb-10 animate-elastic`} style={{ animationDelay: '0ms' }}>
+          <h2 className="text-4xl md:text-4xl lg:text-4xl font-extrabold tracking-tight text-gray-900 mb-6">
+            Our Platforms
+          </h2>
+          {/* Animated underline that grows from center */}
+          <div className="relative h-1.5 w-24 mx-auto bg-gray-100 rounded-full overflow-hidden">
+             <div 
+               className="absolute top-0 left-0 h-full w-full bg-current rounded-full"
+               style={{ 
+                 backgroundColor: BRAND_COLOR,
+                 transform: mounted ? 'scaleX(1)' : 'scaleX(0)',
+                 transformOrigin: 'center',
+                 transition: 'transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.5s'
+               }}
+             />
+          </div>
+        </div>
+          {/* <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
             Intelligent platforms and AI solutions built for 
              <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#02A5E6] to-blue-600">
@@ -132,11 +148,11 @@ const PlatformsSection: React.FC = () => {
           </h3>
           <p className="text-slate-600 text-lg leading-relaxed">
             Our solutions improve speed, accuracy, and decision-making across the entire drug development and healthcare lifecycle.   
-          </p>
+          </p> */}
         </div>
 
         {/* Tab/Toggle */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-start mb-12">
           <div className="bg-slate-100 p-1 rounded-full inline-flex relative">
             {platformsData.map((platform) => (
               <button

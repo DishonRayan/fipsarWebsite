@@ -29,6 +29,8 @@ import dg6 from '../../assets/Services[whatwedelive]/datagov/six.png'
 import dg7 from '../../assets/Services[whatwedelive]/datagov/seven.png'
 import dg8 from '../../assets/Services[whatwedelive]/datagov/eight.png'
 
+import heroserv from '../../assets/ServicesHero/DATAGOVERNANCE&COMPLIANCE.png'
+
 // Define types locally
 export interface TechItem {
   id: string;
@@ -678,7 +680,8 @@ export const DataGovernance: React.FC<SliderProps> = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl transform rotate-3 group-hover:rotate-2 transition-transform duration-300 opacity-20 group-hover:opacity-30"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-white">
               <img 
-                src="https://cdn.prod.website-files.com/645b9abe6a218233e4ac7428/6491af1e3939ec70562bb22d_What_is_Data_Governance_and_Why_Does_it_Matter_What_is_Data_Governance_Section_Image.webp"
+               src={heroserv}
+            //    src="https://cdn.prod.website-files.com/645b9abe6a218233e4ac7428/6491af1e3939ec70562bb22d_What_is_Data_Governance_and_Why_Does_it_Matter_What_is_Data_Governance_Section_Image.webp"
                 // src='https://caddcentre.com/blog/wp-content/uploads/2024/06/automation-data-analytic-with-robot-digital-visualization-big-data-scientist1.jpg'
                 // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTab7Wep8BP4amVVsYi6qo0ZzPHGvsGl0BPqQ&s" 
                 alt="AI and Automation Technology" 

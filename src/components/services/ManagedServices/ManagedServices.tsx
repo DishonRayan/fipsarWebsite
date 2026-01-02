@@ -2,6 +2,7 @@ import React from 'react'
 import { DeliverablesScrollSpy } from './DeliverablesScrollSpy'
 import Ourmanaged from './Ourmanaged'
 import { ServicePricingTable } from './ServicePricingTable'
+import heroSec from '../../../assets/ServicesHero/MANAGEDSERVICES.png'
 
 const ManagedServices = () => {
   return (
@@ -17,7 +18,8 @@ const ManagedServices = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl transform rotate-3 group-hover:rotate-2 transition-transform duration-300 opacity-20 group-hover:opacity-30"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-white">
               <img 
-                src="https://media.licdn.com/dms/image/v2/D4D12AQHmFSpSsNNwjw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1700739535268?e=2147483647&v=beta&t=B2ncwR50vK6yjuF-IU6amLgaRke3J7U44uv_RtxkNCI"
+                src={heroSec}
+                // src="https://media.licdn.com/dms/image/v2/D4D12AQHmFSpSsNNwjw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1700739535268?e=2147483647&v=beta&t=B2ncwR50vK6yjuF-IU6amLgaRke3J7U44uv_RtxkNCI"
                 // src='https://caddcentre.com/blog/wp-content/uploads/2024/06/automation-data-analytic-with-robot-digital-visualization-big-data-scientist1.jpg'
                 // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTab7Wep8BP4amVVsYi6qo0ZzPHGvsGl0BPqQ&s" 
                 alt="AI and Automation Technology" 

@@ -13,7 +13,7 @@ import { motion } from 'framer-motion';
 
 import { Terminal, Database, Cloud, Sparkles } from 'lucide-react';
 
-
+import herobgServie from '../../assets/ServicesHero/BUSINESSINTELLIGENCE&VISUALIZATION.png'
 import powerbi  from '../../assets/BIicons/Power BI.svg' 
 import Qliksense from '../../assets/BIicons/Sense.svg' 
 import tableai      from '../../assets/BIicons/Tableau.svg' 
@@ -688,7 +688,8 @@ export const Business: React.FC<SliderProps> = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl transform rotate-3 group-hover:rotate-2 transition-transform duration-300 opacity-20 group-hover:opacity-30"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-white">
               <img 
-                src="https://t4.ftcdn.net/jpg/05/89/42/79/360_F_589427987_DHuYZn4ZIhPQVSA5aoQYiWw5inuKCWig.jpg"
+               src={herobgServie}
+            //    src="https://t4.ftcdn.net/jpg/05/89/42/79/360_F_589427987_DHuYZn4ZIhPQVSA5aoQYiWw5inuKCWig.jpg"
                 // src='https://caddcentre.com/blog/wp-content/uploads/2024/06/automation-data-analytic-with-robot-digital-visualization-big-data-scientist1.jpg'
                 // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTab7Wep8BP4amVVsYi6qo0ZzPHGvsGl0BPqQ&s" 
                 alt="AI and Automation Technology" 
@@ -709,7 +710,7 @@ export const Business: React.FC<SliderProps> = () => {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
                 </span>
-               Business Analytics
+               Business Intelligence
                 </div>
             </div>
 {/*             

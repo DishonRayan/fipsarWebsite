@@ -10,7 +10,7 @@ import {
 import leftbd from '../../assets/BackgroundPattern&Mask.png'
 
 import herotop from '../../assets/IndustriesHeroElement.png';
-const IndustrySection: React.FC = () => {
+const SolHero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const sectionRef = useRef<HTMLElement>(null);
@@ -156,15 +156,14 @@ const IndustrySection: React.FC = () => {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
                 </span>
-                 Industry
+                  Our Solutions
                 </div>
             </div>
         {/* Main Headline - Compact and strictly 3 lines */}
         <div className={`max-w-4xl mx-auto text-center mb-10 entrance-anim ${isVisible ? 'visible' : ''}`}>
-          <h1 className="text-[20px] md:text-[34px] font-bold text-[#0056B3] leading-[1.3] md:leading-[1.25] tracking-tight">
-            At the heart of every breakthrough in<br className="hidden md:block" />
-            healthcare lies a network of <span className="text-[#02A5E6] cursor-default">innovators,</span><br className="hidden md:block" />
-            <span className="text-[#02A5E6] cursor-default">researchers, & providers.</span>
+          <h1 className="text-[20px] md:text-[34px] font-bold text-[#02A5E6] leading-[1.3] md:leading-[1.25] tracking-tight">
+            Intelligent platforms  <span className="text-[#0056B3] cursor-default">& </span> AI solutions  <span className="text-[#0056B3] cursor-default">built for</span>  <br className="hidden md:block" />
+             <span className="text-[#0056B3] cursor-default"> the Life Sciences ecosystem.</span>
           </h1>
         </div>
 
@@ -180,7 +179,9 @@ const IndustrySection: React.FC = () => {
               Life Sciences Ecosystem
             </h3> */}
             <p className="text-slate-500 text-sm md:text-base leading-relaxed relative z-10">
-              We partner with organizations across the entire spectrum, from pioneering drug development to real-world healthcare delivery.
+               Our solutions improve speed, accuracy, and decision-making across the entire drug development and healthcare lifecycle.
+
+              {/* We partner with organizations across the entire spectrum, from pioneering drug development to real-world healthcare delivery. */}
             </p>
           </div>
 
@@ -193,35 +194,15 @@ const IndustrySection: React.FC = () => {
               Impactful Solutions
             </h3> */}
             <p className="text-slate-500 text-sm md:text-base leading-relaxed relative z-10">
-              Helping global leaders translate complex ideas into tangible solutions that fundamentally improve patient health outcomes.
+We help biopharma, clinical, regulatory, and medical teams solve real business challenges through data-driven platforms and AI-powered automation.
+              {/* Helping global leaders translate complex ideas into tangible solutions that fundamentally improve patient health outcomes. */}
             </p>
           </div>
 
         </div>
       </div>
 
-      {/* Interactive Marquee Bar - Compact and refined */}
-      <div className={`w-full bg-[#02A5E6] py-8 relative overflow-hidden entrance-anim delay-400 z-20 ${isVisible ? 'visible' : ''}`}>
-        <div className="animate-marquee whitespace-nowrap">
-          {displayItems.map((item, idx) => (
-            <div 
-              key={`${item.id}-${idx}`}
-              className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-4 rounded-[1.2rem] mx-3 transition-all hover:bg-white hover:shadow-xl hover:scale-105 cursor-pointer group/item"
-            >
-              <div className="text-white group-hover/item:text-[#02A5E6] transition-colors duration-300 transform group-hover/item:scale-110">
-                {item.icon}
-              </div>
-              <span className="text-white group-hover/item:text-[#02A5E6] font-bold text-base md:text-lg tracking-wide whitespace-nowrap">
-                {item.label}
-              </span>
-            </div>
-          ))}
-        </div>
-        
-        {/* Soft Edge Gradients */}
-        <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[#02A5E6] to-transparent z-10 pointer-events-none" />
-        <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-[#02A5E6] to-transparent z-10 pointer-events-none" />
-      </div>
+ 
 
       {/* Dynamic Bottom Decoration */}
       <div 
@@ -237,4 +218,4 @@ const IndustrySection: React.FC = () => {
   );
 };
 
-export  default IndustrySection;
+export  default SolHero;

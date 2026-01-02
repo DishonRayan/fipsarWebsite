@@ -21,7 +21,7 @@ import De7 from '../../assets/Services[whatwedelive]/dataengg/seven.png'
 import De8 from '../../assets/Services[whatwedelive]/dataengg/eight.png'
 
 // import dehero from '../../assets/ServviceHero/deHero.jpg'
-import dehero from '../../assets/ServviceHero/DataEngineeringHero.png'
+import dehero from '../../assets/ServicesHero/DATAENGINEERING&INTEGRATION.png'
 
 
 import snowflake    from '../../assets/dataEngineringIcons/SnowFlack.svg'

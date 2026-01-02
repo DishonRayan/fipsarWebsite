@@ -5,7 +5,7 @@ import  ecosys  from '../../assets/HealthcareProviders.png'
 
 const HealthcareEcosystem: React.FC = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50/50 relative overflow-hidden selection:bg-[#02A5E6]/20 selection:text-[#0077a8]">
+    <section className=" container mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-slate-50/50 relative overflow-hidden selection:bg-[#02A5E6]/20 selection:text-[#0077a8]">
       {/* Decorative background elements - Refined for a cleaner, high-end look */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(#02A5E6_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.03]"></div>
@@ -15,7 +15,7 @@ const HealthcareEcosystem: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center">
           
           {/* Left Column: Content */}
           <div className="flex flex-col justify-center space-y-10">
@@ -64,7 +64,7 @@ const HealthcareEcosystem: React.FC = () => {
           </div>
 
           {/* Right Column: Image */}
-          <div className="relative w-full flex justify-center lg:justify-end group perspective-1000">
+          <div className="relative w-full flex justify-center lg:justify-center group perspective-1000">
             {/* Image Container with sophisticated backdrop */}
             <div className="relative z-10 transition-transform duration-700 ease-out transform group-hover:rotate-1 group-hover:scale-[1.02]">
                 
