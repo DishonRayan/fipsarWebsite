@@ -230,7 +230,7 @@ const MoleculeIcon = () => (
             <p className="text-[#333] text-lg leading-relaxed font-medium transition-colors duration-300 group-hover:text-black">
               
               
-Our solutions improve speed, accuracy, and decision-making across the entire drug development and healthcare lifecycle.
+Our solutions improve speed, accuracy and decision-making across the entire drug development and healthcare lifecycle.
               {/* We partner with organizations across the Life Sciences ecosystem, from drug development to healthcare delivery. */}
             </p>
           </div>
@@ -252,7 +252,7 @@ Our solutions improve speed, accuracy, and decision-making across the entire dru
           <div className="h-full min-h-[160px] bg-white border border-[#02A5E633] rounded-2xl p-8 flex items-center shadow-sm transition-all duration-500 ease-out group-hover:shadow-[0_20px_50px_-12px_rgba(2,165,230,0.2)] group-hover:border-[#02A5E6] group-hover:-translate-y-2">
             <p className="text-[#333] text-lg leading-relaxed font-medium transition-colors duration-300 group-hover:text-black">
 
-We help biopharma, clinical, regulatory, and medical teams solve real business challenges through data-driven platforms and AI-powered automation.
+We help biopharma, clinical, regulatory and medical teams solve real business challenges through data-driven platforms and AI-powered automation.
               {/* Helping them translate ideas into impactful solutions that improve patient outcomes. */}
             </p>
           </div>

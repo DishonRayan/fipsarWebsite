@@ -65,7 +65,7 @@ const Ourmanaged: React.FC = () => {
               </h2>
               
               <p className="text-base text-slate-600 leading-relaxed font-light max-w-md mb-8">
-                We follow a structured, SLA-driven delivery model to ensure continuous operations, rapid support, and continuous improvement across your data ecosystem.
+                We follow a structured, SLA-driven delivery model to ensure continuous operations, rapid support  and continuous improvement across your data ecosystem.
               </p>
 
               <button 

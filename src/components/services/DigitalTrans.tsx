@@ -161,13 +161,13 @@ const getIllustration = (type: DeliverableItem['iconType']) => {
 
 const DELIVERABLES: DeliverableItem[] = [
   {
-    title: "Digital strategy and transformation roadmaps",
+    title: "Digital strategy & transformation roadmaps",
     description: "Clear transformation roadmaps outline the steps needed to modernize operations, elevate customer experiences and unlock new digital opportunities. Each strategy is shaped to support long-term growth and organizational agility.",
     gradient: "from-blue-500 to-cyan-400",
     iconType: "chart"
   },
   {
-    title: "Cloud migration and platform modernization",
+    title: "Cloud migration & platform modernization",
     description: "Cloud migrations are approached with a focus on stability, performance and future scalability. Modernized platforms deliver faster operations, reduced costs and greater flexibility across the entire ecosystem.",
     gradient: "from-indigo-500 to-purple-500",
     iconType: "genai"
@@ -191,7 +191,7 @@ const DELIVERABLES: DeliverableItem[] = [
     iconType: "chat"
   },
   {
-    title: "Change management and adoption enablement",
+    title: "Change management & adoption enablement",
     description: "Structured change programs help teams adapt smoothly to new tools and processes. Guided adoption builds confidence, reduces resistance and increases the success of technology initiatives.",
     gradient: "from-cyan-500 to-blue-600",
     iconType: "pipeline"
@@ -301,7 +301,7 @@ const valueProps: ValueProp[] = [
   { id: 5, text: " Reduced technical debt", icon: BarChart3 },
   { id: 6, text: " Sustainable transformation outcomes", icon: Cpu },
 ];
-
+    
 const leftProps = valueProps.slice(0, 3);
 const rightProps = valueProps.slice(3, 6);
 

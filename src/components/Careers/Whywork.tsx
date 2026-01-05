@@ -67,9 +67,9 @@ const Whywork: React.FC = () => {
 
         {/* Description */}
         <p className="text-white/95 text-base md:text-lg lg:text-lg leading-relaxed max-w-4xl font-medium mb-8 drop-shadow-sm">
-          Work with talented people, use cutting-edge technologies, and shape solutions that 
+          Work with talented people, use cutting-edge technologies and shape solutions that 
           advance global healthcare and scientific progress. At Fipsar, you'll grow your skills, 
-          amplify your strengths, and contribute to projects that create real-world change.
+          amplify your strengths and contribute to projects that create real-world change.
         </p>
 
         {/* Action Button Bar */}

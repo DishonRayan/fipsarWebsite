@@ -214,7 +214,7 @@ const HeroSection: React.FC = () => {
         {/* Subtitle */}
         <div className="max-w-3xl mx-auto">
           <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-1">
-            through the power of data, AI, and purposeful innovation.
+            through the power of data, AI and purposeful innovation.
           </p>
           <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
             At Fipsar, we empower organizations to accelerate

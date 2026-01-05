@@ -74,7 +74,7 @@ const values: ValueItem[] = [
   {
     id: 'learning',
     title: "Continuous Learning",
-    description: "We grow by experimenting, exploring, and leveling up.",
+    description: "We grow by experimenting, exploring and leveling up.",
     icon: BookOpen,
     className: "md:col-span-1 md:row-span-1",
     bgSvg: (
@@ -193,8 +193,8 @@ const CultureAndValues: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.3 }} 
             className="text-white text-lg md:text-xl font-normal max-w-5xl leading-relaxed mx-auto tracking-normal"
           >
-          We believe that innovation thrives where people feel supported, trusted, and inspired. Our culture is built on:
-            {/* Work with talented people, use cutting-edge technologies, and shape solutions that advance global healthcare and scientific progress. At Fipsar, you'll grow your skills, amplify your strengths, and contribute to projects that create real-world change. */}
+          We believe that innovation thrives where people feel supported, trusted and inspired. Our culture is built on:
+            {/* Work with talented people, use cutting-edge technologies and shape solutions that advance global healthcare and scientific progress. At Fipsar, you'll grow your skills, amplify your strengths and contribute to projects that create real-world change. */}
           </motion.p>
         </header>
 

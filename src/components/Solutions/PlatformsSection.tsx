@@ -39,29 +39,29 @@ const platformsData: Platform[] = [
     id: 'datasphere',
     name: 'Fipsar DataSphere',
     tagline: 'Unified Data Platform',
-    description: 'A unified data platform for clinical, regulatory, and enterprise intelligence.',
+    description: 'A unified data platform for clinical, regulatory and enterprise intelligence.',
     themeColor: '#02A5E6',
     mainIcon: <Database className="w-8 h-8 md:w-10 md:h-10" />,
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop", // Data dashboard/analytics
     features: [
       {
         title: 'Clinical Data Intelligence',
-        description: 'Standardize, validate, and analyze clinical data to improve trial performance.',
+        description: 'Standardize, validate and analyze clinical data to improve trial performance.',
         icon: <Activity className="w-6 h-6" />,
       },
       {
         title: 'Enterprise Data Governance',
-        description: 'Build trust, consistency, and control across your organization’s data landscape.',
+        description: 'Build trust, consistency and control across your organization’s data landscape.',
         icon: <ShieldCheck className="w-6 h-6" />,
       },
       {
         title: 'Knowledge Intelligence',
-        description: 'Turn documents, research, and unstructured content into searchable insights.',
+        description: 'Turn documents, research and unstructured content into searchable insights.',
         icon: <Search className="w-6 h-6" />,
       },
       {
         title: 'Trial Insights Dashboard',
-        description: 'Monitor operational, clinical, and safety metrics with real-time analytics.',
+        description: 'Monitor operational, clinical and safety metrics with real-time analytics.',
         icon: <BarChart3 className="w-6 h-6" />,
       },
     ],
@@ -77,12 +77,12 @@ const platformsData: Platform[] = [
     features: [
       {
         title: 'AI-Powered Trial Optimization',
-        description: 'Improve patient selection, reduce trial timelines, and optimize study design.',
+        description: 'Improve patient selection, reduce trial timelines and optimize study design.',
         icon: <TrendingUp className="w-6 h-6" />,
       },
       {
         title: 'Regulatory Compliance Automation',
-        description: 'Automate validation, auditing, and regulatory reporting workflows.',
+        description: 'Automate validation, auditing and regulatory reporting workflows.',
         icon: <FileCheck className="w-6 h-6" />,
       },
       {
@@ -92,7 +92,7 @@ const platformsData: Platform[] = [
       },
       {
         title: 'CAMI: Conversational AI for Medical & Insights',
-        description: 'An intelligent assistant that answers scientific, clinical, and operational questions instantly.',
+        description: 'An intelligent assistant that answers scientific, clinical and operational questions instantly.',
         icon: <MessageCircleHeart className="w-6 h-6" />,
       },
     ],
@@ -147,7 +147,7 @@ const PlatformsSection: React.FC = () => {
             </span>
           </h3>
           <p className="text-slate-600 text-lg leading-relaxed">
-            Our solutions improve speed, accuracy, and decision-making across the entire drug development and healthcare lifecycle.   
+            Our solutions improve speed, accuracy and decision-making across the entire drug development and healthcare lifecycle.   
           </p> */}
         </div>
 

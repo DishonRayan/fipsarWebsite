@@ -168,19 +168,19 @@ const getIllustration = (type: DeliverableItem['iconType']) => {
 
 const DELIVERABLES: DeliverableItem[] = [
   {
-    title: "Interactive dashboards for business and operations teams",
+    title: "Interactive dashboards for business & operations teams",
     description: "Intuitive, real-time dashboards give teams a clear view of daily performance and key activities. Complex data is turned into simple, actionable insights that support faster and smarter decision-making.",
     gradient: "from-blue-500 to-cyan-400",
     iconType: "chart"
   },
   {
-    title: "Executive reports and board-level analytics",
+    title: "Executive reports & board-level analytics",
     description: "High-impact executive reports present the big picture in a clean, strategic format. Key trends, risks and opportunities are highlighted to guide leadership decisions with confidence.",
     gradient: "from-indigo-500 to-purple-500",
     iconType: "genai"
   },
   {
-    title: "KPI frameworks and performance tracking models",
+    title: "KPI frameworks & performance tracking models",
     description: "Structured KPI models align metrics directly with business objectives for precise performance tracking. These frameworks make it easy to monitor progress, identify improvement areas and drive continuous growth.",
     gradient: "from-fuchsia-500 to-pink-500",
     iconType: "users"
@@ -198,7 +198,7 @@ const DELIVERABLES: DeliverableItem[] = [
     iconType: "chat"
   },
   {
-    title: "Data storytelling and visualization optimization",
+    title: "Data storytelling & visualization optimization",
     description: "Raw data is converted into compelling visual stories that communicate insights with clarity and impact. Each visualization is crafted to improve understanding, engagement and decision-making.",
     gradient: "from-cyan-500 to-blue-600",
     iconType: "pipeline"
@@ -210,7 +210,7 @@ const DELIVERABLES: DeliverableItem[] = [
     iconType: "monitor"
   },
   {
-    title: "BI user training and enablement",
+    title: "BI user training & enablement",
     description: "Hands-on training sessions help teams build confidence in using BI tools and interpreting insights effectively. These programs strengthen long-term analytics skills and promote self-sufficiency across the organization.",
     gradient: "from-rose-500 to-red-600",
     iconType: "shield"
@@ -312,11 +312,11 @@ const DeliverableRow: React.FC<{ item: DeliverableItem; index: number }> = ({ it
 
 const valueProps: ValueProp[] = [
   { id: 1, text: "Faster, data-driven decisions", icon: Zap },
-  { id: 2, text: " Reliable and automated reporting", icon: Layers },
+  { id: 2, text: " Reliable & automated reporting", icon: Layers },
   { id: 3, text: "Improved performance monitoring", icon: ShieldCheck },
   { id: 4, text: "Increased transparency across teams", icon: TrendingDown },
   { id: 5, text: " Reduced manual reporting effort", icon: BarChart3 },
-  { id: 6, text: " Stronger alignment between business and leadership", icon: Cpu },
+  { id: 6, text: " Stronger alignment between business & leadership", icon: Cpu },
 ];
 
 const leftProps = valueProps.slice(0, 3);

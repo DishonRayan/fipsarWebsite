@@ -35,13 +35,13 @@ const HealthcareEcosystem: React.FC = () => {
               <h3 className="text-4xl sm:text-5xl lg:text-5xl font-extrabold text-slate-900 leading-[1.1] tracking-tight mb-8">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#02A5E6] to-[#0077a8]">Healthcare Providers</span>
                 <span className="block text-slate-800 mt-3 text-2xl sm:text-3xl lg:text-2xl font-bold tracking-normal">
-                  Hospitals, clinics, and clinicians participating in trials and therapy adoption
+                  Hospitals, clinics and clinicians participating in trials and therapy adoption
                 </span>
               </h3>
               
               <div className="relative pl-6 border-l-[3px] border-[#02A5E6]/30">
                 <p className="text-lg sm:text-xl text-slate-600 leading-relaxed font-light">
-                  Collaborating with hospitals, clinics, and clinicians to support therapy adoption, clinical engagement, and improved patient outcomes.
+                  Collaborating with hospitals, clinics and clinicians to support therapy adoption, clinical engagement and improved patient outcomes.
                 </p>
               </div>
             </div>

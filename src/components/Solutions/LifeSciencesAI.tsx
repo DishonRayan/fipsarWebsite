@@ -109,7 +109,7 @@ const useCases: UseCaseData[] = [
   {
     id: 'case-manager',
     title: 'Case Manager Monitoring',
-    subtitle: 'Analyze support calls for sentiment, quality, and effectiveness.',
+    subtitle: 'Analyze support calls for sentiment, quality and effectiveness.',
     problem: 'It\'s difficult to consistently monitor and evaluate how case managers communicate with patients effectively.',
     solution: 'The application analyzes phone calls between case managers and patients to provide feedback on communication quality and effectiveness',
     benefits: 'Previously relied on a third-party software, which was very costly. Built an in-house monitoring application with customized features and utilized AI to a great extent.',
@@ -129,9 +129,9 @@ const useCases: UseCaseData[] = [
   {
     id: 'hcp-network',
     title: 'HCP Network Platform',
-    subtitle: 'Discover and connect HCPs by specialty, publications, and geography.',
+    subtitle: 'Discover and connect HCPs by specialty, publications and geography.',
     problem: 'Difficult for HCPs to identify and connect with others who share similar specialties or research interest.',
-    solution: 'Created application where HCPs expand their network based on location, specialties, and publications.',
+    solution: 'Created application where HCPs expand their network based on location, specialties and publications.',
     benefits: 'Discovering new HCPs for Collaborations.',
     icon: Globe,
     imageUrl: 'https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=800'
@@ -325,7 +325,7 @@ const LifeSciencesAI: React.FC = () => {
             Transforming Pharmaceutical Operations with <span className="text-transparent bg-clip-text bg-gradient-to-r" style={{ backgroundImage: `linear-gradient(to right, ${PRIMARY_COLOR}, #2563EB)` }}>Intelligent Automation</span>
           </h5>
           {/* <p className="text-lg text-slate-600 leading-relaxed font-medium max-w-2xl mx-auto">
-            Leveraging cutting-edge artificial intelligence to streamline workflows, enhance compliance, and accelerate innovation across the life sciences value chain.
+            Leveraging cutting-edge artificial intelligence to streamline workflows, enhance compliance and accelerate innovation across the life sciences value chain.
           </p> */}
         </div>
 

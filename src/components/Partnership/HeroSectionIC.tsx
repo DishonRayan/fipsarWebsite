@@ -22,7 +22,7 @@ const HeroSectionIC = () => {
                     </div>
                     <div className='mt-6'>
                         <p className="max-w-2xl mx-auto  text-lg  leading-relaxed font-normal opacity-90">
-                            We collaborate with platform leaders and cloud providers to deliver innovation at scale. Our ecosystem integrates best-in-class technologies across data, cloud, analytics, and AI to build high-impact solutions tailored to Life Sciences.
+                            We collaborate with platform leaders and cloud providers to deliver innovation at scale. Our ecosystem integrates best-in-class technologies across data, cloud, analytics  and AI to build high-impact solutions tailored to Life Sciences.
                         </p>
                     </div>
                 </div>

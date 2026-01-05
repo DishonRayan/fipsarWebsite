@@ -3,6 +3,7 @@ import { DeliverablesScrollSpy } from './DeliverablesScrollSpy'
 import Ourmanaged from './Ourmanaged'
 import { ServicePricingTable } from './ServicePricingTable'
 import heroSec from '../../../assets/ServicesHero/MANAGEDSERVICES.png'
+import ManagedServicesModel from './ManagedServicesModel'
 
 const ManagedServices = () => {
   return (
@@ -95,6 +96,7 @@ const ManagedServices = () => {
 
     <DeliverablesScrollSpy/>
     <Ourmanaged/>
+    <ManagedServicesModel/>
     <ServicePricingTable/>
 
     </>

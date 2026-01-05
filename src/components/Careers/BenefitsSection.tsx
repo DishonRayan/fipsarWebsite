@@ -77,7 +77,7 @@ const BenefitsSection: React.FC = () => {
         
         {/* <div className="max-w-2xl px-4">
           <p className="text-gray-500 text-lg md:text-2xl leading-relaxed font-light">
-            We empower our global team with a robust foundation for <span className="text-[#1a4188] font-medium">personal excellence</span>, creative innovation, and sustained well-being.
+            We empower our global team with a robust foundation for <span className="text-[#1a4188] font-medium">personal excellence</span>, creative innovation and sustained well-being.
           </p>
         </div> */}
 

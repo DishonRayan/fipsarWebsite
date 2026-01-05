@@ -44,7 +44,7 @@ export const StoryContent: React.FC = () => {
         <p>
           <span className="font-bold text-slate-900">FIPSAR</span> is an industry-focused consulting firm specializing in 
           <span className="text-[#02A5E6] font-semibold"> data management</span>, 
-          <span className="text-[#02A5E6] font-semibold"> analytics</span>, and 
+          <span className="text-[#02A5E6] font-semibold"> analytics</span> and 
           <span className="text-[#02A5E6] font-semibold"> AI/ML solutions</span> specially crafted for the life sciences and healthcare sectors.
         </p>
         

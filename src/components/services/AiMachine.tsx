@@ -302,10 +302,10 @@ const DeliverableRow: React.FC<{ item: DeliverableItem; index: number }> = ({ it
 
 
 const valueProps: ValueProp[] = [
-  { id: 1, text: " Faster insights and foresight", icon: Zap },
+  { id: 1, text: " Faster insights & foresight", icon: Zap },
   { id: 2, text: "Improved prediction accuracy", icon: Layers },
   { id: 3, text: "Scalable automation", icon: ShieldCheck },
-  { id: 4, text: " Reduced manual work and cost", icon: TrendingDown },
+  { id: 4, text: " Reduced manual work & cost", icon: TrendingDown },
   { id: 5, text: " Continuous model reliability", icon: BarChart3 },
   { id: 6, text: " Enterprise-ready AI deployment", icon: Cpu },
 ];

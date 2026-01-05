@@ -178,13 +178,13 @@ const DELIVERABLES: DeliverableItem[] = [
     iconType: "chart"
   },
   {
-    title: "Real-time and batch data integrations",
+    title: "Real-time & batch data integrations",
     description: "Whether you need instantaneous data flows or scheduled batch processes, we design integrations that keep your business connected. Our solutions ensure smooth data movement with speed, accuracy and minimal disruption.",
     gradient: "from-indigo-500 to-purple-500",
     iconType: "genai"
   },
   {
-    title: "Cloud data platform architecture and migration",
+    title: "Cloud data platform architecture & migration",
     description: "We help you design modern cloud data architectures that are secure, scalable and built for the future. Our migration services ensure a smooth transition from legacy systems to cloud platforms without downtime..",
     gradient: "from-fuchsia-500 to-pink-500",
     iconType: "users"
@@ -208,13 +208,13 @@ const DELIVERABLES: DeliverableItem[] = [
     iconType: "pipeline"
   },
   {
-    title: "Performance tuning and optimization",
+    title: "Performance tuning & optimization",
     description: "We fine-tune your data systems to deliver optimal speed, cost efficiency and overall performance. Our optimization techniques ensure your platform scales smoothly as your data grows.",
     gradient: "from-violet-500 to-indigo-600",
     iconType: "monitor"
   },
   {
-    title: "Data validation and quality frameworks",
+    title: "Data validation & quality frameworks",
     description: "We implement strong validation and quality checks to keep your data accurate, complete and trustworthy. Our frameworks protect your business from errors and ensure confidence in every decision.",
     gradient: "from-rose-500 to-red-600",
     iconType: "shield"
@@ -305,11 +305,11 @@ const DeliverableRow: React.FC<{ item: DeliverableItem; index: number }> = ({ it
 
 
 const valueProps: ValueProp[] = [
-  { id: 1, text: "Faster and reliable data access", icon: Zap },
+  { id: 1, text: "Faster & reliable data access", icon: Zap },
   { id: 2, text: "Reduced system complexity", icon: Layers },
-  { id: 3, text: "Scalable and resilient architecture", icon: ShieldCheck },
+  { id: 3, text: "Scalable & resilient architecture", icon: ShieldCheck },
   { id: 4, text: "Lower operational costs", icon: TrendingDown },
-  { id: 5, text: "Improved reporting and analytics performance", icon: BarChart3 },
+  { id: 5, text: "Improved reporting & analytics performance", icon: BarChart3 },
   { id: 6, text: "AI-ready data foundation", icon: Cpu },
 ];
 

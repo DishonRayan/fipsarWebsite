@@ -27,7 +27,7 @@ const JobSection: React.FC = () => {
 
         {/* Description */}
         <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto mb-8">
-          Explore opportunities across data science, engineering, product, research, client success, and more. 
+          Explore opportunities across data science, engineering, product, research, client success and more. 
           We’re always looking for curious, driven problem-solvers to join our mission.
         </p>
 

@@ -76,7 +76,7 @@ const MissionVision: React.FC = () => {
               </div>
               
               <p className="text-lg text-gray-600 leading-relaxed mb-8 border-l-4 border-[#02A5E6] pl-4">
-                To deliver quality, cost-effective, and customized data management and analytics solutions that empower clients to:
+                To deliver quality, cost-effective and customized data management and analytics solutions that empower clients to:
               </p>
 
               <div className="space-y-4">
@@ -126,7 +126,7 @@ const MissionVision: React.FC = () => {
               </div>
 
               <p className="text-lg text-gray-600 leading-relaxed mb-8 border-l-4 border-[#02A5E6] pl-4">
-                To build a trusted global brand known for excellence in data management, analytics, and AI/ML, expanding through:
+                To build a trusted global brand known for excellence in data management, analytics and AI/ML, expanding through:
               </p>
 
               <div className="space-y-4">

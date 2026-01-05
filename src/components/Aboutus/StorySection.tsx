@@ -27,7 +27,7 @@ const milestones: Milestone[] = [
     year: '2012',
     icon: <Database />,
     title: 'Data Mastery',
-    content: 'Expanded service portfolio into robust data management, analytics, and Business Intelligence.'
+    content: 'Expanded service portfolio into robust data management, analytics and Business Intelligence.'
   },
   {
     year: '2015',
@@ -220,12 +220,12 @@ const StorySection: React.FC = () => {
                 <span className="text-[#02A5E6] font-extrabold text-[10px] tracking-[0.4em] uppercase">About Fipsar</span>
               </div> */}
 
-                          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
-                <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
-                </span>
-                About us
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#02A5E6]/5 border border-[#02A5E6]/20 text-[#02A5E6] text-xs font-bold tracking-widest uppercase shadow-sm shadow-blue-100 backdrop-blur-sm">
+                    <span className="relative flex h-2 w-2">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
+                    </span>
+                    About us
                 </div>
               
               <h2 className="text-4xl md:text-5xl lg:text-4xl font-black text-[#1e293b] tracking-tighter leading-[1.05]">

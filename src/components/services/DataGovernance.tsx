@@ -169,50 +169,50 @@ const getIllustration = (type: DeliverableItem['iconType']) => {
 
 const DELIVERABLES: DeliverableItem[] = [
   {
-    title: "Data governance strategy and framework design",
+    title: "Data governance strategy & framework design",
     description: "Clear, business-aligned data governance strategies are crafted to create structure and accountability across the organization. Each framework supports long-term reliability and sustainable data management practices.",
     gradient: "from-blue-500 to-cyan-400",
     iconType: "chart"
   },
   {
-    title: "Metadata management and data lineage",
-    description: "Robust metadata and lineage capabilities are implemented to reveal how data moves, evolves, and connects across systems. This transparency builds trust and improves the overall understanding of the data landscape.",
+    title: "Metadata management & data lineage",
+    description: "Robust metadata and lineage capabilities are implemented to reveal how data moves, evolves  and connects across systems. This transparency builds trust and improves the overall understanding of the data landscape.",
     gradient: "from-indigo-500 to-purple-500",
     iconType: "genai"
   },
   {
-    title: "Role-based access control and security models",
+    title: "Role-based access control & security models",
     description: "Secure, role-based access models are developed to ensure that the right users access the right data at the right time. These controls enhance protection while maintaining smooth operational workflows.",
     gradient: "from-fuchsia-500 to-pink-500",
     iconType: "users"
   },
   {
-    title: "Compliance implementation and audit readiness",
-    description: "Regulatory requirements are addressed through  documentation, strong controls, and structured processes. This approach helps organizations remain audit-ready and reduces potential compliance risks.",
+    title: "Compliance implementation & audit readiness",
+    description: "Regulatory requirements are addressed through  documentation, strong controls  and structured processes. This approach helps organizations remain audit-ready and reduces potential compliance risks.",
     gradient: "from-orange-400 to-amber-400",
     iconType: "doc"
   },
   {
-    title: "Privacy management and data protection controls",
+    title: "Privacy management & data protection controls",
     description: "Advanced privacy and protection measures are deployed to safeguard sensitive information throughout its lifecycle. These controls promote responsible data use and support ongoing regulatory adherence.",
     gradient: "from-emerald-400 to-teal-500",
     iconType: "chat"
   },
   {
-    title: "Risk assessment and mitigation frameworks",
+    title: "Risk assessment & mitigation frameworks",
     description: "Comprehensive risk assessments identify vulnerabilities across data systems and processes. Tailored mitigation frameworks are then applied to reduce exposure and strengthen overall resilience.",
     gradient: "from-cyan-500 to-blue-600",
     iconType: "pipeline"
   },
   {
-    title: "Policy development and controls enforcement",
+    title: "Policy development & controls enforcement",
     description: "Clear, actionable data policies are created to guide consistent and compliant behavior across teams. Enforced controls ensure that governance standards are upheld over time",
     gradient: "from-violet-500 to-indigo-600",
     iconType: "monitor"
   },
   {
-    title: "Continuous monitoring and governance automation",
-    description: "Automated monitoring solutions track data quality, compliance, and usage in real time. This ongoing oversight enables proactive governance and significantly reduces manual intervention.",
+    title: "Continuous monitoring & governance automation",
+    description: "Automated monitoring solutions track data quality, compliance  and usage in real time. This ongoing oversight enables proactive governance and significantly reduces manual intervention.",
     gradient: "from-rose-500 to-red-600",
     iconType: "shield"
   }
@@ -306,8 +306,8 @@ const valueProps: ValueProp[] = [
   { id: 1, text: "Reduced regulatory risks", icon: Zap },
   { id: 2, text: "Increased confidence in data accuracy", icon: Layers },
   { id: 3, text: "Improved security posture", icon: ShieldCheck },
-  { id: 4, text: "Faster audits and approvals", icon: TrendingDown },
-  { id: 5, text: "Enterprise control and visibility", icon: BarChart3 },
+  { id: 4, text: "Faster audits & approvals", icon: TrendingDown },
+  { id: 5, text: "Enterprise control & visibility", icon: BarChart3 },
   { id: 6, text: "Trust across business teams", icon: Cpu },
 ];
 
@@ -485,7 +485,7 @@ const CardItem = ({ item, align, setHoveredId, hoveredId, index }: { item: Value
       transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
       onMouseEnter={() => setHoveredId(item.id)}
       onMouseLeave={() => setHoveredId(null)}
-      // Key Fix: Use border-1 explicitly for both states, and removed scale/translate from container.
+      // Key Fix: Use border-1 explicitly for both states  and removed scale/translate from container.
       // The container size and position is now STATIC.
       className={`
         group relative w-72 p-4 rounded-xl cursor-default transition-colors duration-300 ease-out border
@@ -720,8 +720,8 @@ export const DataGovernance: React.FC<SliderProps> = () => {
             </h2>
             
             <p className="text-lg font-600 mb-8 leading-relaxed">
-                We help organizations establish strong data governance frameworks that protect sensitive information, ensure regulatory compliance, and increase confidence in enterprise data. Our approach combines governance, security, and transparency to deliver trusted data across your organization.
-              {/* We help organizations embed AI into core business operations through responsible, scalable, and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
+                We help organizations establish strong data governance frameworks that protect sensitive information, ensure regulatory compliance  and increase confidence in enterprise data. Our approach combines governance, security  and transparency to deliver trusted data across your organization.
+              {/* We help organizations embed AI into core business operations through responsible, scalable  and performance-driven solutions. From predictive analytics to generative AI, we deliver practical intelligence with measurable business impact. */}
             </p>
 
             {/* <ul className="space-y-4 mb-8">

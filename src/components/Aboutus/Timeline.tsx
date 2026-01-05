@@ -23,7 +23,7 @@ const milestones: Milestone[] = [
     id: '2',
     year: '2012',
     title: 'Data Mastery',
-    description: 'Expanded service portfolio into robust data management, analytics, and Business Intelligence.',
+    description: 'Expanded service portfolio into robust data management, analytics and Business Intelligence.',
     icon: Database,
   },
   {

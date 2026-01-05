@@ -3,7 +3,8 @@ import {
   Menu, X, ChevronDown, Search, Globe, ArrowRight,
   Cloud, Code, Shield, Database, Zap,
   BarChart, Cpu, Server, Layers, Smartphone,
-  Activity, ShoppingCart, Factory, Lightbulb, Users
+  Activity, ShoppingCart, Factory, Lightbulb, Users, 
+  BarChart3,Brain ,ShieldCheck, ServerCog, RefreshCcw    
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -34,11 +35,11 @@ const NAV_ITEMS: NavItem[] = [
     type: 'dropdown',
     children: [
       { label: 'Data Engineering & Integration', href: '/service/dataengineering', description: '...', icon: <Layers size={16} /> },
-      { label: 'Business Intelligence & Visualization', href: '/service/businessIntelligence', description: '...', icon: <Users size={16} /> },
-      { label: 'AI & Machine Learning', href: 'service/aimachine', description: '...', icon: <Factory size={16} /> },
-      { label: 'Data Governance', href: '/service/governance', description: '...', icon: <Users size={16} /> },
-      { label: 'Managed Services', href: '/service/managedservice', description: '...', icon: <Users size={16} /> },
-      { label: 'Digital Transformation', href: '/service/digitaltransformation', description: '...', icon: <Users size={16} /> },
+      { label: 'Business Intelligence & Visualization', href: '/service/businessIntelligence', description: '...', icon: <BarChart3  size={16} /> },
+      { label: 'AI & Machine Learning', href: 'service/aimachine', description: '...', icon: <Brain  size={16} /> },
+      { label: 'Data Governance', href: '/service/governance', description: '...', icon: <ShieldCheck  size={16} /> },
+      { label: 'Managed Services', href: '/service/managedservice', description: '...', icon: <ServerCog  size={16} /> },
+      { label: 'Digital Transformation', href: '/service/digitaltransformation', description: '...', icon: <RefreshCcw  size={16} /> },
     ] as SubItem[]
   },
 //   {

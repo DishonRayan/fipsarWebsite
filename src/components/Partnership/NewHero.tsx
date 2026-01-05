@@ -242,7 +242,7 @@ const NewHero: React.FC = () => {
             <p className="text-[#333] text-lg leading-relaxed font-medium transition-colors duration-300 group-hover:text-black">
               
               We collaborate with platform leaders and cloud  providers to deliver innovation at scale.
-{/* Our solutions improve speed, accuracy, and decision-making across the entire drug development and healthcare lifecycle. */}
+{/* Our solutions improve speed, accuracy  and decision-making across the entire drug development and healthcare lifecycle. */}
               {/* We partner with organizations across the Life Sciences ecosystem, from drug development to healthcare delivery. */}
             </p>
           </div>
@@ -267,7 +267,7 @@ const NewHero: React.FC = () => {
 ecosystem integrates best-in-class technologies across data, cloud, analytics and AI to build         
  high-impact solutions tailored to Life Sciences.
 
-{/* We help biopharma, clinical, regulatory, and medical teams solve real business challenges through data-driven platforms and AI-powered automation. */}
+{/* We help biopharma, clinical, regulatory  and medical teams solve real business challenges through data-driven platforms and AI-powered automation. */}
               {/* Helping them translate ideas into impactful solutions that improve patient outcomes. */}
             </p>
           </div>

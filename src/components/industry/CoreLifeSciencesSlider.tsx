@@ -27,7 +27,7 @@ const SLIDES: SlideData[] = [
     title: 'Biopharma',
     displayTitle: 'Bio - Pharma',
     subtitle: 'Driving innovation in pharmaceuticals and biotech therapies',
-    description: 'From pioneering new therapies to advancing biotech innovations, we support biopharma companies in their mission to transform patient care. Our work helps them navigate complex challenges, accelerate development timelines, and bring life-changing medicines to market.',
+    description: 'From pioneering new therapies to advancing biotech innovations, we support biopharma companies in their mission to transform patient care. Our work helps them navigate complex challenges, accelerate development timelines and bring life-changing medicines to market.',
     image: corelife1, // Lab/Chemistry
     Icon: Leaf,
   },
@@ -36,7 +36,7 @@ const SLIDES: SlideData[] = [
     title: 'CROs',
     displayTitle: 'CROs',
     subtitle: 'Supporting clinical trials and research programs',
-    description: 'Clinical trials are the backbone of drug development, and we collaborate closely with CROs to streamline research programs, ensure quality data, and optimize trial execution. By fostering efficiency and scientific rigor, we help our clients achieve their goals faster.',
+    description: 'Clinical trials are the backbone of drug development and we collaborate closely with CROs to streamline research programs, ensure quality data and optimize trial execution. By fostering efficiency and scientific rigor, we help our clients achieve their goals faster.',
     image: corelife2, // Notebook/Research
     Icon: Activity,
   },
@@ -44,8 +44,8 @@ const SLIDES: SlideData[] = [
     id: 'regulatory',
     title: 'Regulatory & Safety',
     displayTitle: 'Regulatory & Safety',
-    subtitle: 'Ensuring compliance, approvals, and patient safety',
-    description: 'Compliance and patient safety are non-negotiable in Life Sciences. We assist regulatory and safety teams in managing submissions, navigating global regulations, and maintaining the highest standards of pharmacovigilance, so that innovative therapies reach patients safely and efficiently.',
+    subtitle: 'Ensuring compliance, approvals and patient safety',
+    description: 'Compliance and patient safety are non-negotiable in Life Sciences. We assist regulatory and safety teams in managing submissions, navigating global regulations and maintaining the highest standards of pharmacovigilance, so that innovative therapies reach patients safely and efficiently.',
     image: corelife3, // Technical/Code/Data
     Icon: ShieldCheck,
   },
@@ -54,7 +54,7 @@ const SLIDES: SlideData[] = [
     title: 'Medical Affairs',
     displayTitle: 'Medical Affairs',
     subtitle: 'Translating clinical evidence into actionable insights',
-    description: 'Bridging science and healthcare, medical affairs teams turn clinical insights into meaningful action. We empower these teams to communicate complex data effectively, engage with healthcare professionals, and ensure that scientific evidence drives better outcomes in the real world.',
+    description: 'Bridging science and healthcare, medical affairs teams turn clinical insights into meaningful action. We empower these teams to communicate complex data effectively, engage with healthcare professionals and ensure that scientific evidence drives better outcomes in the real world.',
     image: corelife4, // People/Meeting
     Icon: Users,
   }

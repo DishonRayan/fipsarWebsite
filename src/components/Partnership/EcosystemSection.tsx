@@ -122,7 +122,7 @@ const EcosystemSection: React.FC = () => {
 
               <p className="text-gray-500 text-sm md:text-base leading-relaxed font-medium">
                 Our partnerships span <span className="text-[#02A5E6] font-bold">cloud infrastructure</span>, 
-                advanced analytics, and Life Sciences platforms, building enterprise-grade 
+                advanced analytics  and Life Sciences platforms, building enterprise-grade 
                 solutions for the modern medical value chain.
               </p>
             </div>

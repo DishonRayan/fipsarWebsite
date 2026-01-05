@@ -94,7 +94,7 @@ const RESOURCE_CATEGORIES: CategoryData[] = [
   {
     id: 'blogs',
     label: 'Blogs',
-    description: 'Practical tips, guides, and updates from our team.',
+    description: 'Practical tips, guides and updates from our team.',
     icon: <FileText className="w-4 h-4" />,
     items: [
       {
@@ -131,7 +131,7 @@ const RESOURCE_CATEGORIES: CategoryData[] = [
     items: [
       {
         id: 'wp-1',
-        title: 'AI Adoption Roadmap: Strategies, Barriers, and Best Practices',
+        title: 'AI Adoption Roadmap: Strategies, Barriers and Best Practices',
         category: 'Whitepaper',
         image: wp1
       },

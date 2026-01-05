@@ -172,7 +172,7 @@ const DeliveryModel: React.FC = () => {
           Delivery <span className="text-[#02A5E6]">Model</span>
         </h2> */}
         {/* <p className="text-gray-500 font-medium max-w-lg mx-auto">
-          Global Delivery. Local Excellence. A unified approach to ensure quality, speed, and reliability.
+          Global Delivery. Local Excellence. A unified approach to ensure quality, speed and reliability.
         </p> */}
         <div className="w-16 h-1 bg-[#02A5E6] mx-auto rounded-full mt-4" />
       </div>

@@ -11,10 +11,10 @@ interface SliderItem {
 
 const PRIMARY_COLOR = "#02A5E6";
 const SLIDER_ITEMS: SliderItem[] = [
-  { id: 1, text: "Scalable, secure, and enterprise-ready solutions", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTWIJejUOMWJx1XHBGzbJZy_knwqIbIObaxg&s", category: "Scalability" },
+  { id: 1, text: "Scalable, secure  and enterprise-ready solutions", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTWIJejUOMWJx1XHBGzbJZy_knwqIbIObaxg&s", category: "Scalability" },
   { id: 2, text: "Faster integrations with your existing systems", imageUrl: "https://cdn.prod.website-files.com/688f85e5e060aa7727c5ba51/68c080ebc110db54a6e4f17f_integration-graphic-blog.jpeg", category: "Integration" },
   { id: 3, text: "Improved data governance and interoperability", imageUrl: "https://img.freepik.com/free-vector/business-infographic-with-image_23-2148340472.jpg?semt=ais_hybrid&w=740&q=80", category: "Governance" },
-  { id: 4, text: "Access to advanced AI, analytics, and cloud capabilities", imageUrl: "https://guptadeepak.com/content/images/size/w2000/2024/06/future-of-website-building-AI-automated.webp", category: "Advanced AI" },
+  { id: 4, text: "Access to advanced AI, analytics  and cloud capabilities", imageUrl: "https://guptadeepak.com/content/images/size/w2000/2024/06/future-of-website-building-AI-automated.webp", category: "Advanced AI" },
   { id: 5, text: "Reduced implementation time and total cost of ownership", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_aHuMKJ3FYQINcwtzilSojWWQzN-aIEyBA&s", category: "Efficiency" },
   { id: 6, text: "Solutions fully tailored to Life Sciences workflows", imageUrl: "https://pmlive.com/wp-content/uploads/2024/12/healthcare_pharma_web_design_strategies_2025-1024x682.webp", category: "Life Sciences" }
 ];
