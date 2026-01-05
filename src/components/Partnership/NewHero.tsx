@@ -10,8 +10,35 @@ import {
 import leftbd from '../../assets/BackgroundPattern&Mask.png'
 
 import herotop from '../../assets/IndustriesHeroElement.png';
-const IndustrySection: React.FC = () => {
-  const ArrowIcon = () => (
+const NewHero: React.FC = () => {
+
+
+ const CloudIcon = () => (
+    <svg 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="#02A5E6" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      className="w-7 h-7"
+    >
+      <path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-2.3-1.7-4.2-4-4.5.3-.6.5-1.3.5-2 0-2.5-2-4.5-4.5-4.5-1.9 0-3.5 1.1-4.2 2.7C9.2 6 8.5 5.8 7.8 5.8c-2.4 0-4.3 1.9-4.3 4.2 0 .4.1.8.2 1.2C1.6 12 0 13.8 0 16c0 2.5 2 4.5 4.5 4.5h13" />
+    </svg>
+  );
+
+    const StarIcon = () => (
+    <svg 
+      viewBox="0 0 24 24" 
+      fill="#02A5E6" 
+      className="w-7 h-7"
+    >
+      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+    </svg>
+  );
+
+
+    const ArrowIcon = () => (
     <svg 
       viewBox="0 0 24 24" 
       fill="#02A5E6" 
@@ -21,6 +48,10 @@ const IndustrySection: React.FC = () => {
       <path opacity="0.4" d="M12 21H3V12" fill="none" stroke="#02A5E6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
+
+
+
+  
     const PuzzleIcon = () => (
     <svg 
       viewBox="0 0 24 24" 
@@ -34,7 +65,9 @@ const IndustrySection: React.FC = () => {
       <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.892m-1.216 6.892a3.96 3.96 0 0 1-3.074-1.057 4 4 0 1 1-5.96-5.026 3.96 3.96 0 0 1 1.057-3.074 4 4 0 1 1 5.026-5.96 3.96 3.96 0 0 1 3.074 1.057 4 4 0 1 1 5.96 5.026 3.96 3.96 0 0 1-1.057 3.074 4 4 0 1 1-5.026 5.96Z" />
     </svg>
   );
-  const [isVisible, setIsVisible] = useState(false);
+ 
+ 
+    const [isVisible, setIsVisible] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -179,15 +212,14 @@ const IndustrySection: React.FC = () => {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#02A5E6] opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[#02A5E6]"></span>
                 </span>
-                 Industry
+                  Partnership
                 </div>
             </div>
         {/* Main Headline - Compact and strictly 3 lines */}
         <div className={`max-w-4xl mx-auto text-center mb-10 entrance-anim ${isVisible ? 'visible' : ''}`}>
-          <h1 className="text-[20px] md:text-[34px] font-bold text-[#0056B3] leading-[1.3] md:leading-[1.25] tracking-tight">
-            At the heart of every breakthrough in<br className="hidden md:block" />
-            healthcare lies a network of <span className="text-[#02A5E6] cursor-default">innovators,</span><br className="hidden md:block" />
-            <span className="text-[#02A5E6] cursor-default">researchers, & providers.</span>
+          <h1 className="text-[20px] md:text-[34px] font-bold text-[#02A5E6] leading-[1.3] md:leading-[1.25] tracking-tight">
+            Powering Innovation  <span className="text-[#0056B3] cursor-default"> Through </span>   <br className="hidden md:block" />
+             <span className="text-[#0056B3] cursor-default">  Strategic Collaboration</span>
           </h1>
         </div>
 
@@ -195,12 +227,11 @@ const IndustrySection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
           
           {/* Card 1 */}
-   
-        <div className="relative group cursor-default">
+<div className="relative group cursor-default">
           {/* Circular Badge - Left Top */}
           <div className="absolute -top-6 -left-6 z-20 w-16 h-16 bg-white rounded-full border border-[#02A5E61a] shadow-[0_4px_20px_rgba(2,165,230,0.15)] flex items-center justify-center overflow-visible transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-[0_8px_30px_rgba(2,165,230,0.3)]">
              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                <PuzzleIcon />
+                <CloudIcon />
              </div>
              {/* Subtle outer rings */}
              <div className="absolute inset-0 rounded-full border-4 border-[#02A5E608] pointer-events-none scale-110 group-hover:scale-125 transition-transform duration-700"></div>
@@ -209,7 +240,10 @@ const IndustrySection: React.FC = () => {
           {/* Main Card Body */}
           <div className="h-full min-h-[160px] bg-white border border-[#02A5E633] rounded-2xl p-8 flex items-center shadow-sm transition-all duration-500 ease-out group-hover:shadow-[0_20px_50px_-12px_rgba(2,165,230,0.2)] group-hover:border-[#02A5E6] group-hover:-translate-y-2">
             <p className="text-[#333] text-lg leading-relaxed font-medium transition-colors duration-300 group-hover:text-black">
-              We partner with organizations across the Life Sciences ecosystem, from drug development to healthcare delivery.
+              
+              We collaborate with platform leaders and cloud  providers to deliver innovation at scale.
+{/* Our solutions improve speed, accuracy, and decision-making across the entire drug development and healthcare lifecycle. */}
+              {/* We partner with organizations across the Life Sciences ecosystem, from drug development to healthcare delivery. */}
             </p>
           </div>
         </div>
@@ -220,7 +254,7 @@ const IndustrySection: React.FC = () => {
           {/* Circular Badge - Right Top */}
           <div className="absolute -top-6 -right-6 z-20 w-16 h-16 bg-white rounded-full border border-[#02A5E61a] shadow-[0_4px_20px_rgba(2,165,230,0.15)] flex items-center justify-center transition-all duration-500 ease-out group-hover:scale-110 group-hover:-rotate-6 group-hover:shadow-[0_8px_30px_rgba(2,165,230,0.3)]">
              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                <ArrowIcon />
+                <StarIcon />
              </div>
              {/* Subtle outer rings */}
              <div className="absolute inset-0 rounded-full border-4 border-[#02A5E608] pointer-events-none scale-110 group-hover:scale-125 transition-transform duration-700"></div>
@@ -229,7 +263,12 @@ const IndustrySection: React.FC = () => {
           {/* Main Card Body */}
           <div className="h-full min-h-[160px] bg-white border border-[#02A5E633] rounded-2xl p-8 flex items-center shadow-sm transition-all duration-500 ease-out group-hover:shadow-[0_20px_50px_-12px_rgba(2,165,230,0.2)] group-hover:border-[#02A5E6] group-hover:-translate-y-2">
             <p className="text-[#333] text-lg leading-relaxed font-medium transition-colors duration-300 group-hover:text-black">
-              Helping them translate ideas into impactful solutions that improve patient outcomes.
+ Our          
+ecosystem integrates best-in-class technologies across data, cloud, analytics and AI to build         
+ high-impact solutions tailored to Life Sciences.
+
+{/* We help biopharma, clinical, regulatory, and medical teams solve real business challenges through data-driven platforms and AI-powered automation. */}
+              {/* Helping them translate ideas into impactful solutions that improve patient outcomes. */}
             </p>
           </div>
         </div>
@@ -238,28 +277,7 @@ const IndustrySection: React.FC = () => {
         </div>
       </div>
 
-      {/* Interactive Marquee Bar - Compact and refined */}
-      <div className={`w-full bg-[#02A5E6] py-8 relative overflow-hidden entrance-anim delay-400 z-20 ${isVisible ? 'visible' : ''}`}>
-        <div className="animate-marquee whitespace-nowrap">
-          {displayItems.map((item, idx) => (
-            <div 
-              key={`${item.id}-${idx}`}
-              className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 px-6 py-4 rounded-[1.2rem] mx-3 transition-all hover:bg-white hover:shadow-xl hover:scale-105 cursor-pointer group/item"
-            >
-              <div className="text-white group-hover/item:text-[#02A5E6] transition-colors duration-300 transform group-hover/item:scale-110">
-                {item.icon}
-              </div>
-              <span className="text-white group-hover/item:text-[#02A5E6] font-bold text-base md:text-lg tracking-wide whitespace-nowrap">
-                {item.label}
-              </span>
-            </div>
-          ))}
-        </div>
-        
-        {/* Soft Edge Gradients */}
-        <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[#02A5E6] to-transparent z-10 pointer-events-none" />
-        <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-[#02A5E6] to-transparent z-10 pointer-events-none" />
-      </div>
+ 
 
       {/* Dynamic Bottom Decoration */}
       <div 
@@ -275,4 +293,4 @@ const IndustrySection: React.FC = () => {
   );
 };
 
-export  default IndustrySection;
+export  default NewHero;

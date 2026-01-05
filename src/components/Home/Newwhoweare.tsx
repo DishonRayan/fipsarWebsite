@@ -105,10 +105,10 @@ const Newwhoweare: React.FC = () => {
 
             <div className="space-y-6 text-lg lg:text-xl font-medium leading-normal max-w-2xl">
               <p>
-                Fipsar is an industry-focused consulting firm specializing in data engineering, analytics, and AI/ML solutions for life sciences and healthcare organizations.
+                Fipsar is an industry-focused consulting firm specializing in data engineering, analytics and AI/ML solutions for life sciences and healthcare organizations.
               </p>
               <p>
-                We help businesses modernize data platforms, automate compliance, and unlock the full value of data to drive innovation and improve outcomes.
+                We help businesses modernize data platforms, automate compliance and unlock the full value of data to drive innovation and improve outcomes.
               </p>
             </div>
           </div>

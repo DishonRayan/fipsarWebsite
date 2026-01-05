@@ -56,7 +56,7 @@ const CtaSection: React.FC = () => {
           </h2>
           
           <p className="mt-6 text-xl leading-8 text-gray-600 max-w-2xl mx-auto">
-            Let's discuss how we can <span className="text-gray-900 font-semibold">reduce downtime</span>, <span className="text-gray-900 font-semibold">eliminate inefficiencies</span>, and <span className="text-gray-900 font-semibold">secure your business</span>.
+            Let's discuss how we can <span className="text-gray-900 font-semibold">reduce downtime</span>, <span className="text-gray-900 font-semibold">eliminate inefficiencies</span> and <span className="text-gray-900 font-semibold">secure your business</span>.
           </p>
 
           <div className="mt-8 flex items-center justify-center gap-x-6">

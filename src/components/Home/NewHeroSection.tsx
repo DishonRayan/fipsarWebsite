@@ -2,6 +2,8 @@
 import React from 'react';
 import homehero from '../../assets/HomeHero.png'
 import herobg from '../../assets/HomeGradient.png'
+import { Link } from 'react-router-dom';
+
 
 /**
  * HeroSection Component
@@ -54,18 +56,20 @@ const NewHeroSection: React.FC = () => {
               </h1>
               
               <p className="text-gray-700 text-lg md:text-xl lg:text-xl max-w-2xl leading-relaxed font-normal">
-                A specialized consulting firm delivering data engineering, advanced analytics, and AI-driven solutions to life sciences and healthcare organizations.
+                A specialized consulting firm delivering data engineering, advanced analytics and AI-driven solutions to life sciences and healthcare organizations.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 lg:gap-6 pt-4 w-full sm:w-auto">
-              <button 
+              
+              
+              <Link  to='/solutions'
                 className="w-full sm:w-auto flex items-center justify-center px-8 py-4 rounded-xl text-white font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
                 style={{ backgroundColor: primaryBlue }}
               >
                 <span>Explore Solutions</span>
                 <ArrowRightIcon className="ml-2 w-5 h-5" />
-              </button>
+              </Link>
 
               <button 
                 className="w-full sm:w-auto flex items-center justify-center px-8 py-4 rounded-xl font-bold text-lg border-2 transition-all duration-300 hover:bg-white/50 active:scale-95"

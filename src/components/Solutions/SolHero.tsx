@@ -11,7 +11,51 @@ import leftbd from '../../assets/BackgroundPattern&Mask.png'
 
 import herotop from '../../assets/IndustriesHeroElement.png';
 const SolHero: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
+const MoleculeIcon = () => (
+    <svg 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="#02A5E6" 
+      strokeWidth="1.8" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      className="w-7 h-7"
+    >
+      <circle cx="12" cy="12" r="3" />
+      <circle cx="19" cy="5" r="3" />
+      <circle cx="5" cy="19" r="3" />
+      <circle cx="19" cy="19" r="3" />
+      <circle cx="5" cy="5" r="3" />
+      <line x1="12" y1="12" x2="19" y2="5" />
+      <line x1="12" y1="12" x2="5" y2="19" />
+      <line x1="12" y1="12" x2="19" y2="19" />
+      <line x1="12" y1="12" x2="5" y2="5" />
+    </svg>
+  );
+
+  const ArrowTargetIcon = () => (
+    <svg 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="#02A5E6" 
+      strokeWidth="1.8" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      className="w-8 h-8"
+    >
+      {/* Target board rings */}
+      <circle cx="10" cy="14" r="8" strokeOpacity="0.3" />
+      <circle cx="10" cy="14" r="5" strokeOpacity="0.6" />
+      <circle cx="10" cy="14" r="2" fill="#02A5E6" stroke="none" />
+      
+      {/* Arrow hitting the center */}
+      <path d="M21 3L11.5 12.5" strokeWidth="2.5" />
+      <path d="M21 3l-3 1.5M21 3l-1.5 3" /> {/* Fletching */}
+      <path d="M12 11l-2 3 3-2z" fill="#02A5E6" stroke="none" /> {/* Arrow tip in bullseye */}
+    </svg>
+  ); 
+ 
+    const [isVisible, setIsVisible] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -171,33 +215,49 @@ const SolHero: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
           
           {/* Card 1 */}
-          <div className={`group relative bg-white/90 backdrop-blur-sm p-7 rounded-[1.5rem] shadow-[0_12px_35px_rgba(0,0,0,0.06)] border border-slate-200 transition-all duration-500 hover:shadow-[0_25px_60px_rgba(2,165,230,0.15)] hover:border-[#02A5E6]/30 hover:-translate-y-1.5 overflow-hidden entrance-anim delay-200 ${isVisible ? 'visible' : ''}`}>
-            <div className="absolute inset-0 bg-gradient-to-br from-[#02A5E6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="absolute top-1/2 -translate-y-1/2 left-0 w-1 h-0 bg-[#02A5E6] group-hover:h-2/3 transition-all duration-500 rounded-r-full" />
-            
-            {/* <h3 className="text-[#0056B3] font-bold text-lg mb-2 group-hover:text-[#02A5E6] transition-colors duration-300 relative z-10">
-              Life Sciences Ecosystem
-            </h3> */}
-            <p className="text-slate-500 text-sm md:text-base leading-relaxed relative z-10">
-               Our solutions improve speed, accuracy, and decision-making across the entire drug development and healthcare lifecycle.
-
-              {/* We partner with organizations across the entire spectrum, from pioneering drug development to real-world healthcare delivery. */}
-            </p>
+<div className="relative group cursor-default">
+          {/* Circular Badge - Left Top */}
+          <div className="absolute -top-6 -left-6 z-20 w-16 h-16 bg-white rounded-full border border-[#02A5E61a] shadow-[0_4px_20px_rgba(2,165,230,0.15)] flex items-center justify-center overflow-visible transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-[0_8px_30px_rgba(2,165,230,0.3)]">
+             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                <MoleculeIcon />
+             </div>
+             {/* Subtle outer rings */}
+             <div className="absolute inset-0 rounded-full border-4 border-[#02A5E608] pointer-events-none scale-110 group-hover:scale-125 transition-transform duration-700"></div>
           </div>
 
-          {/* Card 2 */}
-          <div className={`group relative bg-white/90 backdrop-blur-sm p-7 rounded-[1.5rem] shadow-[0_12px_35px_rgba(0,0,0,0.06)] border border-slate-200 transition-all duration-500 hover:shadow-[0_25px_60px_rgba(2,165,230,0.15)] hover:border-[#02A5E6]/30 hover:-translate-y-1.5 overflow-hidden entrance-anim delay-300 ${isVisible ? 'visible' : ''}`}>
-            <div className="absolute inset-0 bg-gradient-to-br from-[#02A5E6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="absolute top-1/2 -translate-y-1/2 left-0 w-1 h-0 bg-[#02A5E6] group-hover:h-2/3 transition-all duration-500 rounded-r-full" />
-            
-            {/* <h3 className="text-[#0056B3] font-bold text-lg mb-2 group-hover:text-[#02A5E6] transition-colors duration-300 relative z-10">
-              Impactful Solutions
-            </h3> */}
-            <p className="text-slate-500 text-sm md:text-base leading-relaxed relative z-10">
+          {/* Main Card Body */}
+          <div className="h-full min-h-[160px] bg-white border border-[#02A5E633] rounded-2xl p-8 flex items-center shadow-sm transition-all duration-500 ease-out group-hover:shadow-[0_20px_50px_-12px_rgba(2,165,230,0.2)] group-hover:border-[#02A5E6] group-hover:-translate-y-2">
+            <p className="text-[#333] text-lg leading-relaxed font-medium transition-colors duration-300 group-hover:text-black">
+              
+              
+Our solutions improve speed, accuracy, and decision-making across the entire drug development and healthcare lifecycle.
+              {/* We partner with organizations across the Life Sciences ecosystem, from drug development to healthcare delivery. */}
+            </p>
+          </div>
+        </div>
+
+
+              
+        <div className="relative group cursor-default">
+          {/* Circular Badge - Right Top */}
+          <div className="absolute -top-6 -right-6 z-20 w-16 h-16 bg-white rounded-full border border-[#02A5E61a] shadow-[0_4px_20px_rgba(2,165,230,0.15)] flex items-center justify-center transition-all duration-500 ease-out group-hover:scale-110 group-hover:-rotate-6 group-hover:shadow-[0_8px_30px_rgba(2,165,230,0.3)]">
+             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                <ArrowTargetIcon />
+             </div>
+             {/* Subtle outer rings */}
+             <div className="absolute inset-0 rounded-full border-4 border-[#02A5E608] pointer-events-none scale-110 group-hover:scale-125 transition-transform duration-700"></div>
+          </div>
+
+          {/* Main Card Body */}
+          <div className="h-full min-h-[160px] bg-white border border-[#02A5E633] rounded-2xl p-8 flex items-center shadow-sm transition-all duration-500 ease-out group-hover:shadow-[0_20px_50px_-12px_rgba(2,165,230,0.2)] group-hover:border-[#02A5E6] group-hover:-translate-y-2">
+            <p className="text-[#333] text-lg leading-relaxed font-medium transition-colors duration-300 group-hover:text-black">
+
 We help biopharma, clinical, regulatory, and medical teams solve real business challenges through data-driven platforms and AI-powered automation.
-              {/* Helping global leaders translate complex ideas into tangible solutions that fundamentally improve patient health outcomes. */}
+              {/* Helping them translate ideas into impactful solutions that improve patient outcomes. */}
             </p>
           </div>
+        </div>
+
 
         </div>
       </div>

@@ -127,11 +127,11 @@ const GearsIcon: React.FC<IconProps> = (props) => (
 
 const SOLUTIONS_DATA: SolutionItem[] = [
   { id: 1, text: "Complex data ecosystem challenges", icon: NetworkIcon },
-  { id: 2, text: "Regulatory compliance and controls", icon: ShieldCheckIcon },
+  { id: 2, text: "Regulatory compliance & controls", icon: ShieldCheckIcon },
   { id: 3, text: "AI adoption in pharma workflows", icon: CpuIcon },
-  { id: 4, text: "Data integration and modernization", icon: DatabaseIcon },
-  { id: 5, text: "Analytics visibility and performance issues", icon: BarChartIcon },
-  { id: 6, text: "Scalable operations and governance", icon: GearsIcon },
+  { id: 4, text: "Data integration & modernization", icon: DatabaseIcon },
+  { id: 5, text: "Analytics visibility & performance issues", icon: BarChartIcon },
+  { id: 6, text: "Scalable operations & governance", icon: GearsIcon },
 ];
 
 const WhatWeSolve: React.FC = () => {
@@ -244,7 +244,7 @@ const WhatWeSolve: React.FC = () => {
 
                 {/* Text Content */}
                 <div className="flex-1 relative z-10 pt-1">
-                  <p className="text-lg font-medium text-gray-800 leading-snug transition-colors duration-300 group-hover:text-gray-900">
+                  <p className=" capitalize text-lg font-medium text-gray-800 leading-snug transition-colors duration-300 group-hover:text-gray-900">
                     {item.text}
                   </p>
                   
