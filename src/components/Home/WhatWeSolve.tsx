@@ -1,4 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import {
+  Share2,
+  FileCheck2,
+  BrainCircuit,
+  DatabaseZap,
+  LineChart,
+  Scale
+} from "lucide-react";
+
+
 
 // Brand color constant
 const BRAND_COLOR = '#02A5E6';
@@ -126,12 +136,12 @@ const GearsIcon: React.FC<IconProps> = (props) => (
 );
 
 const SOLUTIONS_DATA: SolutionItem[] = [
-  { id: 1, text: "Complex data ecosystem challenges", icon: NetworkIcon },
+  { id: 1, text: "Complex data ecosystem challenges", icon: Share2 },
   { id: 2, text: "Regulatory compliance & controls", icon: ShieldCheckIcon },
-  { id: 3, text: "AI adoption in pharma workflows", icon: CpuIcon },
+  { id: 3, text: "AI adoption in pharma workflows", icon: BrainCircuit },
   { id: 4, text: "Data integration & modernization", icon: DatabaseIcon },
   { id: 5, text: "Analytics visibility & performance issues", icon: BarChartIcon },
-  { id: 6, text: "Scalable operations & governance", icon: GearsIcon },
+  { id: 6, text: "Scalable operations & governance", icon: Scale },
 ];
 
 const WhatWeSolve: React.FC = () => {

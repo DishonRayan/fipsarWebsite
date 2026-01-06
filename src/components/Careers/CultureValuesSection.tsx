@@ -158,7 +158,7 @@ const CultureValuesSection: React.FC = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="pt-3">
+            {/* <div className="pt-3">
               <button className="group flex items-center px-8 py-4 bg-white text-[#02A5E6] font-black text-sm rounded-xl hover:bg-blue-50 hover:scale-[1.05] transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.2)] active:scale-95">
                 Join Our Team
                 <div className="ml-3 p-1 bg-[#02A5E6]/5 rounded-lg transform group-hover:translate-x-1 transition-transform">
@@ -167,7 +167,7 @@ const CultureValuesSection: React.FC = () => {
                   </svg>
                 </div>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
 

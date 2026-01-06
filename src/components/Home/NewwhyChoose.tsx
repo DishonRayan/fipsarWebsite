@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 
 import homebg from '../../assets/HomeBg.png'
+import { Link } from 'react-router-dom';
 
 /**
  * Feature Card Component
@@ -63,7 +64,7 @@ const NewwhyChoose: React.FC = () => {
     {
       icon: ShieldCheck,
       title: 'Security & Compliance',
-      description: 'Security & compliance first: SOC 2, ISO, GDPR-aligned processes.'
+      description: 'Security & compliance first SOC 2, ISO, GDPR-aligned processes.'
     },
     {
       icon: BarChart,
@@ -127,10 +128,10 @@ const NewwhyChoose: React.FC = () => {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <button className="flex items-center gap-2 px-8 py-4 bg-white text-[#1560CE] rounded-xl font-bold text-base hover:bg-blue-50 hover:shadow-[0_15px_30px_rgba(255,255,255,0.15)] transition-all duration-300 group">
+            <Link to='/partners' className="flex items-center gap-2 px-8 py-4 bg-white text-[#1560CE] rounded-xl font-bold text-base hover:bg-blue-50 hover:shadow-[0_15px_30px_rgba(255,255,255,0.15)] transition-all duration-300 group">
               Partner With Us
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </Link>
             {/* <button className="flex items-center gap-2 px-8 py-4 bg-white/5 border border-white/20 text-white rounded-xl font-bold text-base hover:bg-white/10 transition-all duration-300">
               Our Vision
             </button> */}

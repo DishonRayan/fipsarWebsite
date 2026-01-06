@@ -1,6 +1,14 @@
 
 import React from 'react';
 import homebg from '../../assets/HomeBg.png'
+import {
+  Database,
+  BarChart3,
+  Building2,
+  BrainCircuit
+} from "lucide-react";
+
+
 
 const DataEngineeringIcon = () => (
   <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -60,22 +68,22 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, subtitle }) => {
 const Newwhoweare: React.FC = () => {
   const services = [
     {
-      icon: <DataEngineeringIcon />,
+      icon: <Database  />,
       title: 'Data Engineering',
       subtitle: 'Modernize data platforms'
     },
     {
-      icon: <AnalyticsIcon />,
+      icon: <BarChart3 />,
       title: 'Analytics',
       subtitle: 'Unlock the full value of data'
     },
     {
-      icon: <IndustryIcon />,
+      icon: <Building2 />,
       title: 'Industry Focused',
       subtitle: 'Life sciences & health care'
     },
     {
-      icon: <AIMLIcon />,
+      icon: <BrainCircuit />,
       title: 'AI / ML Solutions',
       subtitle: 'Automate compliance'
     }

@@ -532,7 +532,7 @@ const CardItem = ({ item, align, setHoveredId, hoveredId, index }: { item: Value
           />
         </div>
         
-        <h3 className={`font-semibold text-sm leading-tight transition-colors duration-300 ${isHovered ? 'text-gray-900' : 'text-slate-600'}`}>
+        <h3 className={`capitalize font-semibold text-sm leading-tight transition-colors duration-300 ${isHovered ? 'text-gray-900' : 'text-slate-600'}`}>
           {item.text}
         </h3>
       </div>
@@ -569,7 +569,7 @@ const MobileCircuitLayout = () => {
                  <div className="p-2.5 rounded-lg shrink-0 bg-slate-50 text-slate-500">
                    <item.icon size={18} />
                  </div>
-                 <h3 className="font-semibold text-gray-900 text-sm">{item.text}</h3>
+                 <h3 className="capitalize font-semibold text-gray-900 text-sm">{item.text}</h3>
                </div>
              </div>
            </motion.div>

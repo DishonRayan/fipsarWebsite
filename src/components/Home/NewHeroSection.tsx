@@ -71,12 +71,12 @@ const NewHeroSection: React.FC = () => {
                 <ArrowRightIcon className="ml-2 w-5 h-5" />
               </Link>
 
-              <button 
+              <Link to='/contact' 
                 className="w-full sm:w-auto flex items-center justify-center px-8 py-4 rounded-xl font-bold text-lg border-2 transition-all duration-300 hover:bg-white/50 active:scale-95"
                 style={{ color: primaryBlue, borderColor: primaryBlue }}
               >
                 <span>Talk to our Expertise</span>
-              </button>
+              </Link>
             </div>
 
             {/* <div className="flex items-center gap-4 pt-6 text-[#0D2B4D]/60">

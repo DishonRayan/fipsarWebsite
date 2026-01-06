@@ -9,6 +9,7 @@ import {
   ChevronRight 
 } from 'lucide-react';
 import bgsec from '../../assets/HomeBg.png'
+import { Link } from 'react-router-dom';
 
 
 // --- Sub-components for better organization within the same file ---
@@ -89,8 +90,7 @@ export const NewResultyou: React.FC = () => {
               <p className="text-slate-500 leading-relaxed mb-10 max-w-sm">
                 Reduce IT downtime by up to 60% with proactive monitoring and end-to-end managed services.
               </p>
-              <a 
-                href="#" 
+              <Link to='/service/managedservice'
                 className="inline-flex items-center text-[#1560CE] font-bold uppercase tracking-wider text-sm transition-all duration-300 group/link"
               >
                 <span className="relative overflow-hidden inline-block">
@@ -98,7 +98,7 @@ export const NewResultyou: React.FC = () => {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1560CE] transition-all duration-300 group-hover:w-full group-hover/link:w-full"></span>
                 </span>
                 <ChevronRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-2" />
-              </a>
+              </Link>
             </div>
 
             {/* Right Column: Visual Data Representation */}

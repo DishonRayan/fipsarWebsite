@@ -237,7 +237,7 @@ const StorySection: React.FC = () => {
               <div className="relative">
                 <Quote className="absolute -left-12 -top-8 text-[#02A5E6]/10" size={56} strokeWidth={2.5} />
                 <p className="text-lg md:text-xl lg:text-xl text-gray-800 font-bold leading-snug tracking-tight">
-                  FIPSAR is an industry-focused consulting firm specializing in <span className="text-[#02A5E6]">data management, analytics,</span> and <span className="text-[#02A5E6]">AI/ML solutions</span> for the life sciences and healthcare sectors.
+                  FIPSAR is an industry-focused consulting firm specializing in <span className="text-[#02A5E6]">data management, analytics</span> and <span className="text-[#02A5E6]">AI/ML solutions</span> for the life sciences and healthcare sectors.
                 </p>
               </div>
               
