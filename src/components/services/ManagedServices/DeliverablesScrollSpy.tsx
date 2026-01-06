@@ -7,8 +7,7 @@
     UserCog, 
     Zap, 
     Layers, 
-    CheckCircle2, 
-    ChevronRight,
+    CheckCircle2,
     ArrowRight
   } from 'lucide-react';
 

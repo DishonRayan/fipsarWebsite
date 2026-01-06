@@ -26,13 +26,13 @@ import insightfour from '../../assets/InsightsHero/ifour.png'
 const ThoughtLeadership: React.FC = () => {
   const brandColor = "#02A5E6";
   // A very light version of the brand color for the section background
-  const sectionBgColor = "rgba(2, 165, 230, 0.03)"; 
+//   const sectionBgColor = "rgba(2, 165, 230, 0.03)"; 
 
   const articles: Article[] = [
     {
       id: 1,
       title: "The Future of Digital Transformation: What Leaders Need to Prioritize in 2025",
-      image: insightone
+      image: insightfour
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const ThoughtLeadership: React.FC = () => {
     {
       id: 4,
       title: "The Rise of Human-Tech Collaboration: What It Means for the Workforce",
-      image: insightfour
+      image: insightone
     }
   ];
 
@@ -55,13 +55,13 @@ const ThoughtLeadership: React.FC = () => {
   const sidebarItems = articles.slice(1);
 
   // Custom SVG background using the brand color #02A5E6 for extra texture
-  const brandedBgSvg = `data:image/svg+xml,${encodeURIComponent(`
-    <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="600" cy="200" r="300" fill="${brandColor}" fill-opacity="0.1"/>
-      <circle cx="750" cy="500" r="200" fill="${brandColor}" fill-opacity="0.05"/>
-      <path d="M400 0C600 100 800 50 800 300C800 550 600 700 400 800C200 700 0 550 0 300C0 50 200 100 400 0Z" fill="${brandColor}" fill-opacity="0.03"/>
-    </svg>
-  `)}`;
+//   const brandedBgSvg = `data:image/svg+xml,${encodeURIComponent(`
+//     <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+//       <circle cx="600" cy="200" r="300" fill="${brandColor}" fill-opacity="0.1"/>
+//       <circle cx="750" cy="500" r="200" fill="${brandColor}" fill-opacity="0.05"/>
+//       <path d="M400 0C600 100 800 50 800 300C800 550 600 700 400 800C200 700 0 550 0 300C0 50 200 100 400 0Z" fill="${brandColor}" fill-opacity="0.03"/>
+//     </svg>
+//   `)}`;
 
   return (
     <section 

@@ -10,7 +10,7 @@ import {
 
 // --- Constants & Types ---
 
-const BRAND_COLOR = "#02A5E6";
+// const BRAND_COLOR = "#02A5E6";
 
 interface ServiceItem {
   id: string;

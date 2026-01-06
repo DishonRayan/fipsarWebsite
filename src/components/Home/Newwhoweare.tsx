@@ -9,42 +9,6 @@ import {
 } from "lucide-react";
 
 
-
-const DataEngineeringIcon = () => (
-  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-    <path d="M12 11h4" />
-    <path d="M12 7h4" />
-    <path d="M12 15h4" />
-    <path d="M8 7v10" />
-  </svg>
-);
-
-const AnalyticsIcon = () => (
-  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="11" cy="11" r="8" />
-    <line x1="21" y1="21" x2="16.65" y2="16.65" />
-    <line x1="11" y1="8" x2="11" y2="14" />
-    <line x1="8" y1="11" x2="14" font-weight="bold" />
-  </svg>
-);
-
-const IndustryIcon = () => (
-  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z" />
-  </svg>
-);
-
-const AIMLIcon = () => (
-  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 3v18" />
-    <path d="M3 12h18" />
-    <path d="M16 8l-4 4-4-4" />
-    <path d="M8 16l4-4 4 4" />
-  </svg>
-);
-
 interface ServiceCardProps {
   icon: React.ReactNode;
   title: string;

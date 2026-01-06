@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { DeliverablesScrollSpy } from './DeliverablesScrollSpy'
 import Ourmanaged from './Ourmanaged'
 import { ServicePricingTable } from './ServicePricingTable'

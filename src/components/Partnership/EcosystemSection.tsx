@@ -1,10 +1,9 @@
 
 import React from 'react';
 import { 
-  RefreshCw, Cloud, Database, BarChart3, ShieldCheck, 
+  RefreshCw, Cloud, BarChart3, ShieldCheck, 
   Cpu, Layers, Layout, Activity, Hospital, 
-  Microscope, DatabaseZap, Terminal, Code, Globe, Network, 
-  Server, Binary, Zap, Hexagon, Cpu as Processor
+  Microscope, DatabaseZap, Terminal, Code, Network
 } from 'lucide-react';
 
 interface TechItem {

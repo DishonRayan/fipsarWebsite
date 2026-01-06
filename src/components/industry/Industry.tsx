@@ -1,10 +1,9 @@
-import React from 'react'
+// import React from 'react'
 import CoreLifeSciencesSlider from './CoreLifeSciencesSlider'
 
 // import IndustryHero from './IndustryHero'
 import BioPharmaCard from './BioPharmaCard'
 import HealthcareEcosystem from './HealthcareEcosystem'
-import IndustriesSection from './IndustriesSection'
 import IndustrySection from './IndustrySection'
 // import { IndustrySection } from './IndustrySection'
 

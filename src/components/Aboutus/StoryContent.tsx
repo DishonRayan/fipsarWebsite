@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Sparkles, Quote } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export const StoryContent: React.FC = () => {
   return (

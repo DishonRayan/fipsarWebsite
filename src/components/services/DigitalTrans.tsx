@@ -11,7 +11,6 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-import { Terminal, Database, Cloud, Sparkles } from 'lucide-react';
 
 import heroS from '../../assets/ServicesHero/DIGITALTRANSFORMATION.png'
 import dt1 from '../../assets/Services[whatwedelive]/digital/one.png'
@@ -55,107 +54,6 @@ interface DeliverableItem {
 }
 
 
-
-// --- Abstract Illustrations for "What We Deliver" ---
-
-const IllustrationChart = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <rect x="10" y="10" width="80" height="80" rx="4" className="stroke-white/30" strokeDasharray="4 4" />
-    <path d="M20 80 L35 50 L50 65 L80 20" strokeLinecap="round" strokeLinejoin="round" className="stroke-white" strokeWidth="3" />
-    <circle cx="35" cy="50" r="3" fill="currentColor" />
-    <circle cx="50" cy="65" r="3" fill="currentColor" />
-    <circle cx="80" cy="20" r="3" fill="currentColor" />
-    <path d="M20 80 H80" className="stroke-white/50" />
-    <path d="M20 80 V20" className="stroke-white/50" />
-  </svg>
-);
-
-const IllustrationGenAI = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-     <path d="M50 20 L75 35 V65 L50 80 L25 65 V35 Z" className="stroke-white" strokeWidth="3" />
-     <path d="M50 20 V50 M50 50 L75 65 M50 50 L25 65" className="stroke-white/50" />
-     <circle cx="50" cy="50" r="6" fill="currentColor" className="text-white" />
-     <circle cx="50" cy="20" r="3" fill="currentColor" className="text-white/70" />
-     <circle cx="75" cy="35" r="3" fill="currentColor" className="text-white/70" />
-     <circle cx="75" cy="65" r="3" fill="currentColor" className="text-white/70" />
-     <circle cx="50" cy="80" r="3" fill="currentColor" className="text-white/70" />
-     <circle cx="25" cy="65" r="3" fill="currentColor" className="text-white/70" />
-     <circle cx="25" cy="35" r="3" fill="currentColor" className="text-white/70" />
-  </svg>
-);
-
-const IllustrationUsers = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <circle cx="50" cy="40" r="15" className="stroke-white" strokeWidth="3" />
-    <path d="M25 85 C25 70 35 60 50 60 C65 60 75 70 75 85" className="stroke-white" strokeWidth="3" strokeLinecap="round" />
-    <circle cx="80" cy="35" r="8" className="stroke-white/50" />
-    <path d="M68 55 C72 52 80 52 88 55" className="stroke-white/50" strokeLinecap="round" />
-    <circle cx="20" cy="35" r="8" className="stroke-white/50" />
-    <path d="M32 55 C28 52 20 52 12 55" className="stroke-white/50" strokeLinecap="round" />
-  </svg>
-);
-
-const IllustrationDoc = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <rect x="25" y="15" width="50" height="70" rx="4" className="stroke-white" strokeWidth="3" />
-    <path d="M35 30 H65" className="stroke-white/70" strokeWidth="2" strokeLinecap="round" />
-    <path d="M35 45 H65" className="stroke-white/70" strokeWidth="2" strokeLinecap="round" />
-    <path d="M35 60 H55" className="stroke-white/70" strokeWidth="2" strokeLinecap="round" />
-    <circle cx="65" cy="70" r="12" className="fill-white stroke-none opacity-20" />
-    <path d="M60 70 L64 74 L72 66" className="stroke-white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
-const IllustrationChat = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M20 30 A10 10 0 0 1 30 20 H70 A10 10 0 0 1 80 30 V60 A10 10 0 0 1 70 70 H35 L20 85 V30 Z" className="stroke-white" strokeWidth="3" />
-    <circle cx="35" cy="45" r="3" fill="currentColor" />
-    <circle cx="50" cy="45" r="3" fill="currentColor" />
-    <circle cx="65" cy="45" r="3" fill="currentColor" />
-  </svg>
-);
-
-const IllustrationPipeline = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <rect x="10" y="40" width="20" height="20" rx="2" className="stroke-white" />
-    <rect x="40" y="40" width="20" height="20" rx="2" className="stroke-white" />
-    <rect x="70" y="40" width="20" height="20" rx="2" className="stroke-white" />
-    <path d="M30 50 H40" className="stroke-white/70" strokeDasharray="3 2" />
-    <path d="M60 50 H70" className="stroke-white/70" strokeDasharray="3 2" />
-    <path d="M50 30 V40" className="stroke-white/70" />
-    <path d="M50 60 V70" className="stroke-white/70" />
-    <circle cx="50" cy="25" r="5" className="stroke-white/50" />
-  </svg>
-);
-
-const IllustrationMonitor = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <rect x="15" y="20" width="70" height="50" rx="4" className="stroke-white" strokeWidth="3" />
-    <path d="M15 70 H85 L80 85 H20 L15 70" className="stroke-white/70" />
-    <path d="M25 45 L40 55 L55 35 L75 50" className="stroke-white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
-const IllustrationShield = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M50 15 L80 25 V50 C80 70 50 85 50 85 C50 85 20 70 20 50 V25 L50 15 Z" className="stroke-white" strokeWidth="3" />
-    <path d="M35 50 L45 60 L65 40" className="stroke-white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
-const getIllustration = (type: DeliverableItem['iconType']) => {
-  switch (type) {
-    case 'chart': return <IllustrationChart />;
-    case 'genai': return <IllustrationGenAI />;
-    case 'users': return <IllustrationUsers />;
-    case 'doc': return <IllustrationDoc />;
-    case 'chat': return <IllustrationChat />;
-    case 'pipeline': return <IllustrationPipeline />;
-    case 'monitor': return <IllustrationMonitor />;
-    case 'shield': return <IllustrationShield />;
-    default: return <IllustrationChart />;
-  }
-};
 
 
 
@@ -228,14 +126,6 @@ const imges = [
 ]
 
 
-const headingStyles = 
-  `
- .own-h1-css{position:relative;padding:0;margin:0;font-weight:800;font-size:30px;color:#080808;text-align:center;text-transform:uppercase;padding-bottom:5px;transition:all .4s ease}
-.own-h1-css:before{width:28px;height:5px;display:block;content:"";position:absolute;bottom:3px;left:50%;margin-left:-14px;background-color:#000}
-.own-h1-css:after{width:100px;height:1px;display:block;content:"";position:relative;margin-top:15px;left:50%;margin-left:-50px;background-color:#000}
-
-
-  `
 
 
 
@@ -301,7 +191,7 @@ const valueProps: ValueProp[] = [
   { id: 5, text: " Reduced technical debt", icon: BarChart3 },
   { id: 6, text: " Sustainable transformation outcomes", icon: Cpu },
 ];
-    
+
 const leftProps = valueProps.slice(0, 3);
 const rightProps = valueProps.slice(3, 6);
 
@@ -515,7 +405,7 @@ const CardItem = ({ item, align, setHoveredId, hoveredId, index }: { item: Value
           />
         </div>
         
-        <h3 className={`font-semibold text-sm leading-tight transition-colors duration-300 ${isHovered ? 'text-gray-900' : 'text-slate-600'}`}>
+        <h3 className={`capitalize font-semibold text-sm leading-tight transition-colors duration-300 ${isHovered ? 'text-gray-900' : 'text-slate-600'}`}>
           {item.text}
         </h3>
       </div>
@@ -552,7 +442,7 @@ const MobileCircuitLayout = () => {
                  <div className="p-2.5 rounded-lg shrink-0 bg-slate-50 text-slate-500">
                    <item.icon size={18} />
                  </div>
-                 <h3 className="font-semibold text-gray-900 text-sm">{item.text}</h3>
+                 <h3 className="capitalize font-semibold text-gray-900 text-sm">{item.text}</h3>
                </div>
              </div>
            </motion.div>
@@ -568,78 +458,10 @@ const MobileCircuitLayout = () => {
 
 // --- Main Export ---
 // Default items defined within the component
-const DEFAULT_ITEMS: TechItem[] = [
-  { id: '1', name: 'Snowflake ', icon: Terminal },
-  { id: '2', name: 'Talend ', icon: Cpu },
-  { id: '3', name: 'Databricks ', icon: Database },
-  { id: '4', name: 'AWS', icon: Cloud },
-  { id: '5', name: 'SQL ', icon: Sparkles },
-];
 
 
-const TechSlider: React.FC<SliderProps> = ({ items = DEFAULT_ITEMS, speed =45 }) => {
-  // Quadruple the items to ensure seamless infinite loop effect on large screens
-  // This prevents empty space at the end of the loop if the screen width > total item width
-  const displayItems = [...items, ...items, ...items, ...items];
 
-  return (
-    <section className="w-full py-10 overflow-hidden select-none bg-[#02A5E6]">
-      {/* Inject styles locally so the component works standalone without external CSS */}
-      <style>{`
-        @keyframes tech-slider-scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-tech-slider {
-          animation: tech-slider-scroll var(--slider-speed) linear infinite;
-        }
-        .pause-on-hover:hover .animate-tech-slider {
-          animation-play-state: paused;
-        }
-      `}</style>
 
-      <div className="container mx-auto px-4 mb-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
-          Technologies We Support
-        </h2>
-        <div className="w-24 h-1 bg-white/30 mx-auto rounded-full"></div>
-      </div>
-
-      <div className="relative w-full group">
-        {/* Gradient Masks for smooth fade on edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-[#02A5E6] to-transparent pointer-events-none"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-[#02A5E6] to-transparent pointer-events-none"></div>
-
-        <div 
-          className="flex overflow-hidden pause-on-hover"
-          style={{ '--slider-speed': `${speed}s` } as React.CSSProperties}
-        >
-          <div className="flex animate-tech-slider flex-nowrap">
-            {displayItems.map((item, index) => (
-              <div
-                key={`${item.id}-${index}`}
-                className="flex-shrink-0 mx-6 md:mx-8 w-64 group/card cursor-default"
-              >
-                <div className="flex flex-col items-center justify-center p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-xl h-full">
-                  <div className="mb-4 p-4 bg-white/20 rounded-full text-white group-hover/card:bg-white group-hover/card:text-[#02A5E6] transition-colors duration-300">
-                    {item.icon ? (
-                      <item.icon size={32} strokeWidth={1.5} />
-                    ) : (
-                      <Terminal size={32} />
-                    )}
-                  </div>
-                  <h3 className="text-xl font-semibold text-white text-center">
-                    {item.name}
-                  </h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 
 export const DigitalTrans: React.FC<SliderProps> = () => {

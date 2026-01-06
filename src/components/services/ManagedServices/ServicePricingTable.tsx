@@ -9,7 +9,6 @@ import {
   HelpCircle 
 } from 'lucide-react';
 import { MessageCircle, MonitorPlay } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 /**
  * --- TYPES & INTERFACES ---
@@ -126,7 +125,7 @@ const TABLE_DATA: RowData[] = [
  */
 
 // Renders a list of features with optional highlighting
-const FeatureList: React.FC<{ items: (string | FeatureItem)[], alignment?: 'left' | 'center' }> = ({ items, alignment = 'center' }) => {
+const FeatureList: React.FC<{ items: (string | FeatureItem)[], alignment?: 'left' | 'center' }> = ({ items }) => {
   return (
     <ul className={`space-y-2 text-sm leading-tight inline-block text-left`}>
       {items.map((item, idx) => {

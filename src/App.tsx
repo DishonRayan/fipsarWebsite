@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -9,7 +9,8 @@ import AboutUs from './components/Aboutus/AboutUs'
 // import AiService from './components/AiService'
 
 
-import {BrowserRouter,Routes, Route} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
+// import {BrowserRouter,Routes, Route} from 'react-router-dom'
 import Home from './components/Home/Home'
 import { ScrollToTop } from './components/ScrollToTop'
 import { AiMachine } from './components/services/AiMachine'

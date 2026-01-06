@@ -11,7 +11,6 @@ import {
   FileText, 
   MessageCircleHeart, 
   ArrowRight,
-  ChevronRight,
   ArrowUpRight
 } from 'lucide-react';
 

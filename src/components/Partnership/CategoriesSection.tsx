@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import bgImage from "../../assets/Partnerships_Background.svg";
 
 import icon1 from "../../assets/Analytics & Insights/image 13.png";

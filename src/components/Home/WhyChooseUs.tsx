@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion,type Variants } from 'framer-motion';
-import { ShieldCheck, TrendingUp, Coins, Sparkles, Headset, Zap, Briefcase, Activity, ArrowRight } from 'lucide-react';
+import { ShieldCheck, TrendingUp, Coins, Sparkles, Headset, Zap, Briefcase, ArrowRight } from 'lucide-react';
 
 const WhyChooseUs: React.FC = () => {
   const containerVariants: Variants = {

@@ -5,6 +5,9 @@ import corelife1 from "../../assets/CoreLifeSciences/BioPharma.png";
 import corelife2 from "../../assets/CoreLifeSciences/ContractResearchOrganizations(CROs).png";
 import corelife3 from "../../assets/CoreLifeSciences/Regulatory&SafetyTeams.png";
 import corelife4 from "../../assets/CoreLifeSciences/MedicalAffairsTeams.png";
+import { Link } from 'react-router-dom';
+
+
 
 // --- Types ---
 interface SlideData {
@@ -15,6 +18,7 @@ interface SlideData {
   description: string;
   image: string;
   Icon: React.ElementType;
+     links : string ;
 }
 
 
@@ -28,8 +32,9 @@ const SLIDES: SlideData[] = [
     displayTitle: 'Bio - Pharma',
     subtitle: 'Driving innovation in pharmaceuticals and biotech therapies',
     description: 'From pioneering new therapies to advancing biotech innovations, we support biopharma companies in their mission to transform patient care. Our work helps them navigate complex challenges, accelerate development timelines and bring life-changing medicines to market.',
-    image: corelife1, // Lab/Chemistry
+    image: corelife1, 
     Icon: Leaf,
+    links: '/service/aimachine',
   },
   {
     id: 'cros',
@@ -37,8 +42,9 @@ const SLIDES: SlideData[] = [
     displayTitle: 'CROs',
     subtitle: 'Supporting clinical trials and research programs',
     description: 'Clinical trials are the backbone of drug development and we collaborate closely with CROs to streamline research programs, ensure quality data and optimize trial execution. By fostering efficiency and scientific rigor, we help our clients achieve their goals faster.',
-    image: corelife2, // Notebook/Research
+    image: corelife2, 
     Icon: Activity,
+     links: '/solutions',
   },
   {
     id: 'regulatory',
@@ -46,8 +52,9 @@ const SLIDES: SlideData[] = [
     displayTitle: 'Regulatory & Safety',
     subtitle: 'Ensuring compliance, approvals and patient safety',
     description: 'Compliance and patient safety are non-negotiable in Life Sciences. We assist regulatory and safety teams in managing submissions, navigating global regulations and maintaining the highest standards of pharmacovigilance, so that innovative therapies reach patients safely and efficiently.',
-    image: corelife3, // Technical/Code/Data
+    image: corelife3, 
     Icon: ShieldCheck,
+       links: '/service/governance',
   },
   {
     id: 'medical-affairs',
@@ -57,6 +64,7 @@ const SLIDES: SlideData[] = [
     description: 'Bridging science and healthcare, medical affairs teams turn clinical insights into meaningful action. We empower these teams to communicate complex data effectively, engage with healthcare professionals and ensure that scientific evidence drives better outcomes in the real world.',
     image: corelife4, // People/Meeting
     Icon: Users,
+       links: '/solutions',
   }
 ];
 
@@ -114,19 +122,19 @@ const DnaBg = () => (
 const CoreLifeSciencesSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [direction, setDirection] = useState<'left' | 'right'>('right');
+//   const [direction, setDirection] = useState<'left' | 'right'>('right');
 
   const handleNext = useCallback(() => {
     if (isAnimating) return;
     setIsAnimating(true);
-    setDirection('right');
+    // setDirection('right');
     setCurrentIndex((prev) => (prev + 1) % SLIDES.length);
   }, [isAnimating]);
 
   const handlePrev = useCallback(() => {
     if (isAnimating) return;
     setIsAnimating(true);
-    setDirection('left');
+    // setDirection('left');
     setCurrentIndex((prev) => (prev - 1 + SLIDES.length) % SLIDES.length);
   }, [isAnimating]);
 
@@ -204,10 +212,10 @@ const CoreLifeSciencesSlider: React.FC = () => {
             </p>
 
             <div className="mt-auto">
-              <button className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#E6F6FD] text-[#02A5E6] font-medium hover:bg-[#02A5E6] hover:text-white transition-all duration-300 group/btn">
+              <Link to={currentSlide.links} className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#E6F6FD] text-[#02A5E6] font-medium hover:bg-[#02A5E6] hover:text-white transition-all duration-300 group/btn">
                 <span>Learn More</span>
                 <ArrowRight size={18} className="transform group-hover/btn:translate-x-1 transition-transform" />
-              </button>
+              </Link>
             </div>
           </div>
           

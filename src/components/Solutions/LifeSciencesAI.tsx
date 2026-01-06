@@ -11,7 +11,6 @@ import {
   Users, 
   Globe, 
   Activity,
-  ArrowRight,
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
@@ -150,7 +149,7 @@ const useCases: UseCaseData[] = [
 
 // --- Helper Components ---
 
-const DetailSection: React.FC<{ title: string; content: string; delay: number }> = ({ title, content, delay }) => (
+const DetailSection: React.FC<{ title: string; content: string; delay: number }> = ({ title, content }) => (
   <div className="mb-4 last:mb-0">
     <h4 
       className="text-xs font-bold uppercase tracking-wider mb-1" 

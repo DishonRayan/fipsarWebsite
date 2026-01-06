@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Menu, X, ChevronDown, Search, Globe, ArrowRight,
-  Cloud, Code, Shield, Database, Zap,
-  BarChart, Cpu, Server, Layers, Smartphone,
-  Activity, ShoppingCart, Factory, Lightbulb, Users, 
+  Menu, X, ChevronDown, ArrowRight,
+   Layers, 
   BarChart3,Brain ,ShieldCheck, ServerCog, RefreshCcw    
 } from 'lucide-react';
 import { Link } from 'react-router-dom';

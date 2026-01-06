@@ -1,8 +1,7 @@
-import React from 'react'
+// import React from 'react'
 // import { StorySection } from './StorySection'
 import MissionVision from './MissionVision'
 import CoreValuesSection from './CoreValuesSection'
-import { ScrollToTop } from '../ScrollToTop'
 import DeliveryModel from './DeliveryModel'
 import StorySection from './StorySection'
 

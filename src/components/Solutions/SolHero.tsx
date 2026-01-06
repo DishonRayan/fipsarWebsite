@@ -1,13 +1,5 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { 
-  Activity, 
-  ClipboardCheck, 
-  Leaf, 
-  Layers, 
-  PlusSquare
-} from 'lucide-react';
-import leftbd from '../../assets/BackgroundPattern&Mask.png'
 
 import herotop from '../../assets/IndustriesHeroElement.png';
 const SolHero: React.FC = () => {
@@ -88,15 +80,15 @@ const MoleculeIcon = () => (
     });
   };
 
-  const items = [
-    { id: 1, label: 'Medical Affairs', icon: <Activity className="w-5 h-5" /> },
-    { id: 2, label: 'Regulatory', icon: <ClipboardCheck className="w-5 h-5" /> },
-    { id: 3, label: 'Bio Pharma', icon: <Leaf className="w-5 h-5" /> },
-    { id: 4, label: 'CRO\'S', icon: <Layers className="w-5 h-5" /> },
-    { id: 5, label: 'Healthcare Providers', icon: <PlusSquare className="w-5 h-5" /> },
-  ];
+//   const items = [
+//     { id: 1, label: 'Medical Affairs', icon: <Activity className="w-5 h-5" /> },
+//     { id: 2, label: 'Regulatory', icon: <ClipboardCheck className="w-5 h-5" /> },
+//     { id: 3, label: 'Bio Pharma', icon: <Leaf className="w-5 h-5" /> },
+//     { id: 4, label: 'CRO\'S', icon: <Layers className="w-5 h-5" /> },
+//     { id: 5, label: 'Healthcare Providers', icon: <PlusSquare className="w-5 h-5" /> },
+//   ];
 
-  const displayItems = [...items, ...items, ...items];
+//   const displayItems = [...items, ...items, ...items];
 
   return (
     <section 

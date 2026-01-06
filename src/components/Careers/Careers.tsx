@@ -1,7 +1,6 @@
-import React from 'react'
+// import React from 'react'
 import Whywork from './Whywork'
 import JobSection from './JobSection'
-import CultureAndValues from './CultureAndValues'
 import BenefitsSection from './BenefitsSection'
 import CultureValuesSection from './CultureValuesSection'
 import HeroSection from './HeroSection'

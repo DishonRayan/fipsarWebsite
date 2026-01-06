@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import {
   Share2,
-  FileCheck2,
+  
   BrainCircuit,
-  DatabaseZap,
-  LineChart,
+
   Scale
 } from "lucide-react";
 
@@ -26,25 +25,6 @@ interface SolutionItem {
 
 // --- Icons ---
 
-const NetworkIcon: React.FC<IconProps> = (props) => (
-  <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <circle cx="18" cy="5" r="3" />
-    <circle cx="6" cy="12" r="3" />
-    <circle cx="18" cy="19" r="3" />
-    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-  </svg>
-);
-
 const ShieldCheckIcon: React.FC<IconProps> = (props) => (
   <svg
     {...props}
@@ -61,29 +41,6 @@ const ShieldCheckIcon: React.FC<IconProps> = (props) => (
   </svg>
 );
 
-const CpuIcon: React.FC<IconProps> = (props) => (
-  <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <rect x="4" y="4" width="16" height="16" rx="2" />
-    <rect x="9" y="9" width="6" height="6" />
-    <path d="M9 1v3" />
-    <path d="M15 1v3" />
-    <path d="M9 20v3" />
-    <path d="M15 20v3" />
-    <path d="M20 9h3" />
-    <path d="M20 14h3" />
-    <path d="M1 9h3" />
-    <path d="M1 14h3" />
-  </svg>
-);
 
 const DatabaseIcon: React.FC<IconProps> = (props) => (
   <svg
@@ -119,21 +76,7 @@ const BarChartIcon: React.FC<IconProps> = (props) => (
   </svg>
 );
 
-const GearsIcon: React.FC<IconProps> = (props) => (
-  <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <circle cx="12" cy="12" r="3" />
-    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-  </svg>
-);
+
 
 const SOLUTIONS_DATA: SolutionItem[] = [
   { id: 1, text: "Complex data ecosystem challenges", icon: Share2 },

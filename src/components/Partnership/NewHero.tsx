@@ -1,13 +1,12 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { 
-  Activity, 
-  ClipboardCheck, 
-  Leaf, 
-  Layers, 
-  PlusSquare
-} from 'lucide-react';
-import leftbd from '../../assets/BackgroundPattern&Mask.png'
+// import { 
+//   Activity, 
+//   ClipboardCheck, 
+//   Leaf, 
+//   Layers, 
+//   PlusSquare
+// } from 'lucide-react';
 
 import herotop from '../../assets/IndustriesHeroElement.png';
 const NewHero: React.FC = () => {
@@ -38,34 +37,6 @@ const NewHero: React.FC = () => {
   );
 
 
-    const ArrowIcon = () => (
-    <svg 
-      viewBox="0 0 24 24" 
-      fill="#02A5E6" 
-      className="w-8 h-8"
-    >
-      <path d="M13 3L16.29 6.29L9.41 13.17L10.83 14.59L17.71 7.71L21 11V3H13Z" />
-      <path opacity="0.4" d="M12 21H3V12" fill="none" stroke="#02A5E6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-
-
-
-  
-    const PuzzleIcon = () => (
-    <svg 
-      viewBox="0 0 24 24" 
-      fill="none" 
-      stroke="#02A5E6" 
-      strokeWidth="2.5" 
-      strokeLinecap="round" 
-      strokeLinejoin="round" 
-      className="w-6 h-6"
-    >
-      <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.892m-1.216 6.892a3.96 3.96 0 0 1-3.074-1.057 4 4 0 1 1-5.96-5.026 3.96 3.96 0 0 1 1.057-3.074 4 4 0 1 1 5.026-5.96 3.96 3.96 0 0 1 3.074 1.057 4 4 0 1 1 5.96 5.026 3.96 3.96 0 0 1-1.057 3.074 4 4 0 1 1-5.026 5.96Z" />
-    </svg>
-  );
- 
  
     const [isVisible, setIsVisible] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -100,15 +71,15 @@ const NewHero: React.FC = () => {
     });
   };
 
-  const items = [
-    { id: 1, label: 'Medical Affairs', icon: <Activity className="w-5 h-5" /> },
-    { id: 2, label: 'Regulatory', icon: <ClipboardCheck className="w-5 h-5" /> },
-    { id: 3, label: 'Bio Pharma', icon: <Leaf className="w-5 h-5" /> },
-    { id: 4, label: 'CRO\'S', icon: <Layers className="w-5 h-5" /> },
-    { id: 5, label: 'Healthcare Providers', icon: <PlusSquare className="w-5 h-5" /> },
-  ];
+//   const items = [
+//     { id: 1, label: 'Medical Affairs', icon: <Activity className="w-5 h-5" /> },
+//     { id: 2, label: 'Regulatory', icon: <ClipboardCheck className="w-5 h-5" /> },
+//     { id: 3, label: 'Bio Pharma', icon: <Leaf className="w-5 h-5" /> },
+//     { id: 4, label: 'CRO\'S', icon: <Layers className="w-5 h-5" /> },
+//     { id: 5, label: 'Healthcare Providers', icon: <PlusSquare className="w-5 h-5" /> },
+//   ];
 
-  const displayItems = [...items, ...items, ...items];
+//   const displayItems = [...items, ...items, ...items];
 
   return (
     <section 

@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-import { Terminal, Database, Cloud, Sparkles } from 'lucide-react';
+import { Terminal } from 'lucide-react';
 
 import hipaa  from '../../assets/DataGovernacIcons/HIPAA.svg' 
 import gdpr  from '../../assets/DataGovernacIcons/GDPR.svg' 
@@ -62,108 +62,6 @@ interface DeliverableItem {
   iconType: 'chart' | 'genai' | 'users' | 'doc' | 'chat' | 'pipeline' | 'monitor' | 'shield';
 }
 
-
-
-// --- Abstract Illustrations for "What We Deliver" ---
-
-const IllustrationChart = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <rect x="10" y="10" width="80" height="80" rx="4" className="stroke-white/30" strokeDasharray="4 4" />
-    <path d="M20 80 L35 50 L50 65 L80 20" strokeLinecap="round" strokeLinejoin="round" className="stroke-white" strokeWidth="3" />
-    <circle cx="35" cy="50" r="3" fill="currentColor" />
-    <circle cx="50" cy="65" r="3" fill="currentColor" />
-    <circle cx="80" cy="20" r="3" fill="currentColor" />
-    <path d="M20 80 H80" className="stroke-white/50" />
-    <path d="M20 80 V20" className="stroke-white/50" />
-  </svg>
-);
-
-const IllustrationGenAI = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-     <path d="M50 20 L75 35 V65 L50 80 L25 65 V35 Z" className="stroke-white" strokeWidth="3" />
-     <path d="M50 20 V50 M50 50 L75 65 M50 50 L25 65" className="stroke-white/50" />
-     <circle cx="50" cy="50" r="6" fill="currentColor" className="text-white" />
-     <circle cx="50" cy="20" r="3" fill="currentColor" className="text-white/70" />
-     <circle cx="75" cy="35" r="3" fill="currentColor" className="text-white/70" />
-     <circle cx="75" cy="65" r="3" fill="currentColor" className="text-white/70" />
-     <circle cx="50" cy="80" r="3" fill="currentColor" className="text-white/70" />
-     <circle cx="25" cy="65" r="3" fill="currentColor" className="text-white/70" />
-     <circle cx="25" cy="35" r="3" fill="currentColor" className="text-white/70" />
-  </svg>
-);
-
-const IllustrationUsers = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <circle cx="50" cy="40" r="15" className="stroke-white" strokeWidth="3" />
-    <path d="M25 85 C25 70 35 60 50 60 C65 60 75 70 75 85" className="stroke-white" strokeWidth="3" strokeLinecap="round" />
-    <circle cx="80" cy="35" r="8" className="stroke-white/50" />
-    <path d="M68 55 C72 52 80 52 88 55" className="stroke-white/50" strokeLinecap="round" />
-    <circle cx="20" cy="35" r="8" className="stroke-white/50" />
-    <path d="M32 55 C28 52 20 52 12 55" className="stroke-white/50" strokeLinecap="round" />
-  </svg>
-);
-
-const IllustrationDoc = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <rect x="25" y="15" width="50" height="70" rx="4" className="stroke-white" strokeWidth="3" />
-    <path d="M35 30 H65" className="stroke-white/70" strokeWidth="2" strokeLinecap="round" />
-    <path d="M35 45 H65" className="stroke-white/70" strokeWidth="2" strokeLinecap="round" />
-    <path d="M35 60 H55" className="stroke-white/70" strokeWidth="2" strokeLinecap="round" />
-    <circle cx="65" cy="70" r="12" className="fill-white stroke-none opacity-20" />
-    <path d="M60 70 L64 74 L72 66" className="stroke-white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
-const IllustrationChat = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M20 30 A10 10 0 0 1 30 20 H70 A10 10 0 0 1 80 30 V60 A10 10 0 0 1 70 70 H35 L20 85 V30 Z" className="stroke-white" strokeWidth="3" />
-    <circle cx="35" cy="45" r="3" fill="currentColor" />
-    <circle cx="50" cy="45" r="3" fill="currentColor" />
-    <circle cx="65" cy="45" r="3" fill="currentColor" />
-  </svg>
-);
-
-const IllustrationPipeline = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <rect x="10" y="40" width="20" height="20" rx="2" className="stroke-white" />
-    <rect x="40" y="40" width="20" height="20" rx="2" className="stroke-white" />
-    <rect x="70" y="40" width="20" height="20" rx="2" className="stroke-white" />
-    <path d="M30 50 H40" className="stroke-white/70" strokeDasharray="3 2" />
-    <path d="M60 50 H70" className="stroke-white/70" strokeDasharray="3 2" />
-    <path d="M50 30 V40" className="stroke-white/70" />
-    <path d="M50 60 V70" className="stroke-white/70" />
-    <circle cx="50" cy="25" r="5" className="stroke-white/50" />
-  </svg>
-);
-
-const IllustrationMonitor = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <rect x="15" y="20" width="70" height="50" rx="4" className="stroke-white" strokeWidth="3" />
-    <path d="M15 70 H85 L80 85 H20 L15 70" className="stroke-white/70" />
-    <path d="M25 45 L40 55 L55 35 L75 50" className="stroke-white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
-const IllustrationShield = () => (
-  <svg className="w-full h-full text-white/90" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M50 15 L80 25 V50 C80 70 50 85 50 85 C50 85 20 70 20 50 V25 L50 15 Z" className="stroke-white" strokeWidth="3" />
-    <path d="M35 50 L45 60 L65 40" className="stroke-white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
-const getIllustration = (type: DeliverableItem['iconType']) => {
-  switch (type) {
-    case 'chart': return <IllustrationChart />;
-    case 'genai': return <IllustrationGenAI />;
-    case 'users': return <IllustrationUsers />;
-    case 'doc': return <IllustrationDoc />;
-    case 'chat': return <IllustrationChat />;
-    case 'pipeline': return <IllustrationPipeline />;
-    case 'monitor': return <IllustrationMonitor />;
-    case 'shield': return <IllustrationShield />;
-    default: return <IllustrationChart />;
-  }
-};
 
 
 
@@ -237,14 +135,6 @@ dg8
 ]
 
 
-const headingStyles = 
-  `
- .own-h1-css{position:relative;padding:0;margin:0;font-weight:800;font-size:30px;color:#080808;text-align:center;text-transform:uppercase;padding-bottom:5px;transition:all .4s ease}
-.own-h1-css:before{width:28px;height:5px;display:block;content:"";position:absolute;bottom:3px;left:50%;margin-left:-14px;background-color:#000}
-.own-h1-css:after{width:100px;height:1px;display:block;content:"";position:relative;margin-top:15px;left:50%;margin-left:-50px;background-color:#000}
-
-
-  `
 
 
 

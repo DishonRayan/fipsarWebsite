@@ -1,49 +1,42 @@
 
 import React from 'react';
-import { 
-  ClipboardCheck, 
-  Leaf, 
-  Layers, 
-  Activity,
-  Plus
-} from 'lucide-react';
 
 import hero from '../../assets/HeroSecElement.svg'
 
 /**
  * IndustryCard Component
  */
-interface IndustryCardProps {
-  icon: React.ElementType;
-  title: string;
-}
+// interface IndustryCardProps {
+//   icon: React.ElementType;
+//   title: string;
+// }
 
-const IndustryCard: React.FC<IndustryCardProps> = ({ icon: Icon, title }) => {
-  return (
-    <div className="bg-white rounded-lg shadow-sm px-5 py-3.5 flex items-center gap-4 min-w-[220px] mx-3 transition-all duration-300 hover:scale-105 cursor-pointer border border-blue-50/20">
-      <div className="p-1.5 rounded-md bg-blue-50/40">
-        <Icon className="w-5 h-5 text-[#02A5E6]" strokeWidth={2.5} />
-      </div>
-      <span className="text-base font-semibold text-[#02A5E6] whitespace-nowrap tracking-tight">{title}</span>
-    </div>
-  );
-};
+// const IndustryCard: React.FC<IndustryCardProps> = ({ icon: Icon, title }) => {
+//   return (
+//     <div className="bg-white rounded-lg shadow-sm px-5 py-3.5 flex items-center gap-4 min-w-[220px] mx-3 transition-all duration-300 hover:scale-105 cursor-pointer border border-blue-50/20">
+//       <div className="p-1.5 rounded-md bg-blue-50/40">
+//         <Icon className="w-5 h-5 text-[#02A5E6]" strokeWidth={2.5} />
+//       </div>
+//       <span className="text-base font-semibold text-[#02A5E6] whitespace-nowrap tracking-tight">{title}</span>
+//     </div>
+//   );
+// };
 
 /**
  * IndustrySection Component
  * Replicates the provided design with a simple image-based background on the right.
  */
 export const HeroSection: React.FC = () => {
-  const industries = [
-    { icon: Activity, title: 'Medical Affairs' },
-    { icon: ClipboardCheck, title: 'Regulatory' },
-    { icon: Leaf, title: 'Bio Pharma' },
-    { icon: Layers, title: "CRO'S" },
-    { icon: Plus, title: 'Healthcare Providers' },
-  ];
+//   const industries = [
+//     { icon: Activity, title: 'Medical Affairs' },
+//     { icon: ClipboardCheck, title: 'Regulatory' },
+//     { icon: Leaf, title: 'Bio Pharma' },
+//     { icon: Layers, title: "CRO'S" },
+//     { icon: Plus, title: 'Healthcare Providers' },
+//   ];
 
   // Tripling for seamless loop
-  const duplicatedIndustries = [...industries, ...industries, ...industries];
+//   const duplicatedIndustries = [...industries, ...industries, ...industries];
 
   return (
     <section className="relative w-full flex flex-col overflow-hidden bg-white">

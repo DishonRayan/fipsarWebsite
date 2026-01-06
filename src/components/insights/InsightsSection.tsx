@@ -4,11 +4,7 @@ import {
   BookOpen, 
   Video, 
   Briefcase, 
-  TrendingUp, 
-  ArrowRight,
-  ChevronRight,
-  ArrowUpRight,
-  Sparkles
+  TrendingUp
 } from 'lucide-react';
 import ThoughtLeadership from './ThoughtLeadership';
 
@@ -59,36 +55,36 @@ import ip4 from '../../assets/InsightsLibrary/IndustryTrends/IndustryTrends/In4.
 
 // --- Data Configuration ---
 
-const THOUGHT_LEADERSHIP_DATA: InsightItem[] = [
-  {
-    id: 'tl-1',
-    title: 'The Future of Digital Transformation: What Leaders Need to Prioritize in 2025',
-    category: 'Strategy',
-    readTime: '6 min read',
-    image: 'https://picsum.photos/1200/800?random=1'
-  },
-  {
-    id: 'tl-2',
-    title: 'Redefining Customer Experience Through AI-Driven Personalization',
-    category: 'Innovation',
-    readTime: '5 min read',
-    image: 'https://picsum.photos/800/800?random=2'
-  },
-  {
-    id: 'tl-3',
-    title: 'Why Sustainability Is Becoming a Core Business Strategy',
-    category: 'ESG',
-    readTime: '4 min read',
-    image: 'https://picsum.photos/800/800?random=3'
-  },
-  {
-    id: 'tl-4',
-    title: 'The Rise of Human-Tech Collaboration: What It Means for the Workforce',
-    category: 'Talent',
-    readTime: '7 min read',
-    image: 'https://picsum.photos/800/800?random=4'
-  }
-];
+// const THOUGHT_LEADERSHIP_DATA: InsightItem[] = [
+//   {
+//     id: 'tl-1',
+//     title: 'The Future of Digital Transformation: What Leaders Need to Prioritize in 2025',
+//     category: 'Strategy',
+//     readTime: '6 min read',
+//     image: 'https://picsum.photos/1200/800?random=1'
+//   },
+//   {
+//     id: 'tl-2',
+//     title: 'Redefining Customer Experience Through AI-Driven Personalization',
+//     category: 'Innovation',
+//     readTime: '5 min read',
+//     image: 'https://picsum.photos/800/800?random=2'
+//   },
+//   {
+//     id: 'tl-3',
+//     title: 'Why Sustainability Is Becoming a Core Business Strategy',
+//     category: 'ESG',
+//     readTime: '4 min read',
+//     image: 'https://picsum.photos/800/800?random=3'
+//   },
+//   {
+//     id: 'tl-4',
+//     title: 'The Rise of Human-Tech Collaboration: What It Means for the Workforce',
+//     category: 'Talent',
+//     readTime: '7 min read',
+//     image: 'https://picsum.photos/800/800?random=4'
+//   }
+// ];
 
 const RESOURCE_CATEGORIES: CategoryData[] = [
   {
@@ -258,8 +254,8 @@ const InsightsSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('blogs');
 
   // Thought Leadership split: Main featured item vs others
-  const featuredTL = THOUGHT_LEADERSHIP_DATA[0];
-  const sidebarTL = THOUGHT_LEADERSHIP_DATA.slice(1);
+//   const featuredTL = THOUGHT_LEADERSHIP_DATA[0];
+//   const sidebarTL = THOUGHT_LEADERSHIP_DATA.slice(1);
 
   // Helper to get current category data
   const currentCategory = RESOURCE_CATEGORIES.find(c => c.id === activeTab) || RESOURCE_CATEGORIES[0];

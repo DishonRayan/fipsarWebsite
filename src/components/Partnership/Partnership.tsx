@@ -1,9 +1,6 @@
-import React from 'react'
+// import React from 'react'
 import EcosystemSection from './EcosystemSection'
 import CardSlider from './CardSlider'
-import { HeroSection } from './HeroSection'
-import CategoriesSection from './CategoriesSection'
-import HeroSectionIC from './HeroSectionIC'
 import NewHero from './NewHero'
 
 const Partnership = () => {
