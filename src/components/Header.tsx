@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Menu, X, ChevronDown, ArrowRight,
+  Menu, X, ChevronDown,
    Layers, 
   BarChart3,Brain ,ShieldCheck, ServerCog, RefreshCcw    
 } from 'lucide-react';
@@ -91,205 +91,112 @@ export default function Header() {
       >
         <div className="max-w-[1440px] mx-auto px-4 md:px-8 h-full">
           <div className="flex items-center justify-between h-full">
-
-            {/* Logo */}
             <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer z-50">
-              {/* <div className="w-8 h-8 bg-[#02A5E6] rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-200">
-                N
-              </div>
-              <span className="font-bold text-xl tracking-tight text-slate-800">
-                Nexus<span className="text-[#02A5E6]">Corp</span>
-              </span> */}
- <Link to="/">
-  <img
-    src="https://www.fipsar.com/assets/img/Fipsar-logo.jpg"
-    width="110"
-    alt="Fipsar Logo"
-    style={{ cursor: 'pointer' }}
-  />
-</Link>
+                <Link to="/">
+                <img
+                    src="https://www.fipsar.com/assets/img/Fipsar-logo.jpg"
+                    width="110"
+                    alt="Fipsar Logo"
+                    style={{ cursor: 'pointer' }}
+                />
+                </Link>
             </div>
 
             {/* Desktop Nav */}
     {/* Desktop Nav */}
-<nav className="hidden lg:flex items-center gap-1 h-full" role="navigation" aria-label="Primary">
-  {NAV_ITEMS.map((item) => (
-    <div
-      key={item.id}
-      className="relative group h-full flex items-center"
-      onMouseEnter={() => setActiveDropdown(item.id)}
-      onMouseLeave={() => setActiveDropdown(null)}
-    >
-      {/* Top-level label (internal route => Link, external => a) */}
-      {item.href && /^https?:\/\//.test(item.href) ? (
-        <a
-          href={item.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`flex items-center gap-1.5 px-3.5 py-2 text-[15px] font-medium transition-all duration-200 rounded-full
-            ${activeDropdown === item.id ? 'text-[#02A5E6] bg-indigo-50/80' : 'text-slate-600 hover:text-[#02A5E6] hover:bg-slate-50'}`}
-        >
-          {item.label}
-          {(item.type === 'dropdown' || item.type === 'mega') && (
-            <ChevronDown size={14} className={`transition-transform duration-300 ${activeDropdown === item.id ? 'rotate-180' : ''}`} />
-          )}
-        </a>
-      ) : (
-        <Link
-          to={item.href || '#'}
-          className={`flex items-center gap-1.5 px-3.5 py-2 text-[15px] font-medium transition-all duration-200 rounded-full
-            ${activeDropdown === item.id ? 'text-[#02A5E6] bg-indigo-50/80' : 'text-slate-600 hover:text-[#02A5E6] hover:bg-slate-50'}`}
-          aria-haspopup={item.type === 'dropdown' || item.type === 'mega' ? 'true' : undefined}
-          aria-expanded={activeDropdown === item.id}
-        >
-          {item.label}
-          {(item.type === 'dropdown' || item.type === 'mega') && (
-            <ChevronDown size={14} className={`transition-transform duration-300 ${activeDropdown === item.id ? 'rotate-180' : ''}`} />
-          )}
-        </Link>
-      )}
-
-      {/* MEGA Dropdown */}
-      {item.type === 'mega' && (
-        <div
-          className={`fixed left-0 right-0 top-[calc(100%-1px)] w-full bg-white border-y border-gray-100 shadow-xl shadow-slate-200/40
-            transform transition-all duration-300 origin-top z-40
-            ${activeDropdown === item.id ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible pointer-events-none'}`}
-          style={{ top: isScrolled ? '60px' : '76px' }}
-          role="region"
-          aria-hidden={activeDropdown === item.id ? 'false' : 'true'}
-        >
-          <div className="max-w-[1440px] mx-auto px-8 py-10">
-            <div className="grid grid-cols-5 gap-8">
-              {(item.children as { title: string; items: SubItem[] }[]).map((group, gidx) => (
-                <div key={gidx} className="space-y-5">
-                  <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider border-b border-slate-100 pb-2">
-                    {group.title}
-                  </h3>
-                  <ul className="space-y-3">
-                    {group.items.map((sub, sidx) => {
-                      const isExternal = !!sub.href && /^https?:\/\//.test(sub.href);
-                      return (
-                        <li key={sidx}>
-                          {isExternal ? (
-                            <a
-                              href={sub.href}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="group/item flex items-center gap-3 p-2 -mx-2 rounded-lg hover:bg-slate-50 transition-colors"
-                            >
-                              <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-md bg-indigo-50 text-indigo-500 group-hover/item:bg-indigo-100 group-hover/item:text-[#02A5E6] transition-colors">
-                                {sub.icon}
-                              </span>
-                              <span className="text-sm font-medium text-slate-600 group-hover/item:text-slate-900">
-                                {sub.label}
-                              </span>
-                            </a>
-                          ) : (
-                            <Link
-                              to={sub.href || '#'}
-                              className="group/item flex items-center gap-3 p-2 -mx-2 rounded-lg hover:bg-slate-50 transition-colors"
-                              onClick={() => setActiveDropdown(null)}
-                            >
-                              <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-md bg-indigo-50 text-[#02A5E6] group-hover/item:bg-indigo-100 group-hover/item:[#02A5E6] transition-colors">
-                                {sub.icon}
-                              </span>
-                              <span className="text-sm font-medium text-slate-600 group-hover/item:text-slate-900">
-                                {sub.label}
-                              </span>
-                            </Link>
-                          )}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-slate-50 flex justify-between items-center bg-slate-50/60 -mx-8 -mb-10 px-8 py-4">
-              <div className="flex gap-6 text-xs text-slate-500 font-medium">
-                <span>Comprehensive Solutions for the Digital Age</span>
-                <span className="w-px h-4 bg-slate-300" />
-                <span>24/7 Global Support</span>
-              </div>
-              <Link to="/services" className="text-sm font-semibold text-[#02A5E6] flex items-center gap-1 hover:gap-2 transition-all">
-                View Service Catalog <ArrowRight size={16} />
-              </Link>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* STANDARD Dropdown */}
-      {item.type === 'dropdown' && (
-        <div
-          className={`absolute left-0 top-full mt-2 w-72 bg-white rounded-xl shadow-xl shadow-slate-200/40 border border-gray-100
-            transform transition-all duration-200 origin-top-left overflow-hidden z-50
-            ${activeDropdown === item.id ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible pointer-events-none'}`}
-          role="menu"
-          aria-hidden={activeDropdown === item.id ? 'false' : 'true'}
-        >
-          <div className="p-2 space-y-1">
-            {(item.children as SubItem[])?.map((sub, sidx) => {
-              const isExternal = !!sub.href && /^https?:\/\//.test(sub.href);
-              return isExternal ? (
-                <a
-                  key={sidx}
-                  href={sub.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block p-3 rounded-lg hover:bg-slate-50 transition-all group/sub"
-                  role="menuitem"
+            <nav
+            className="hidden lg:flex items-center gap-1 h-full"
+            role="navigation"
+            aria-label="Primary"
+            >
+            {NAV_ITEMS.map((item) => (
+                <div
+                key={item.id}
+                className="relative h-full flex items-center"
+                onMouseEnter={() => setActiveDropdown(item.id)}
+                onMouseLeave={() => {
+                    setTimeout(() => {
+                    setActiveDropdown((curr) => (curr === item.id ? null : curr));
+                    }, 120);
+                }}
                 >
-                  <div className="flex items-start gap-3">
-                    {sub.icon && <div className="mt-0.5 text-slate-400 group-hover/sub:text-[#02A5E6] transition-colors">{sub.icon}</div>}
-                    <div>
-                      <div className="text-sm font-semibold text-slate-700 group-hover/sub:[#02A5E6]">{sub.label}</div>
-                      {/* {sub.description && <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">{sub.description}</div>} */}
-                    </div>
-                  </div>
-                </a>
-              ) : (
+                {/* TOP LINK */}
                 <Link
-                  key={sidx}
-                  to={sub.href || '#'}
-                  className="block p-3 rounded-lg hover:bg-slate-50 transition-all group/sub"
-                  role="menuitem"
-                  onClick={() => setActiveDropdown(null)}
+                    to={item.href || '#'}
+                    className={`flex items-center gap-1.5 px-3.5 py-2 text-[15px] font-medium rounded-full transition-all duration-200
+                    ${
+                        activeDropdown === item.id
+                        ? 'text-[#02A5E6] bg-indigo-50/80'
+                        : 'text-slate-600 hover:text-[#02A5E6] hover:bg-slate-50'
+                    }
+                    `}
                 >
-                  <div className="flex items-start gap-3">
-                    {sub.icon && <div className="mt-0.5 text-slate-400 group-hover/sub:text-[#02A5E6] transition-colors">{sub.icon}</div>}
-                    <div>
-                      <div className="text-sm font-semibold text-slate-700 group-hover/sub:text-[#02A5E6]">{sub.label}</div>
-                      {/* {sub.description && <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">{sub.description}</div>} */}
-                    </div>
-                  </div>
+                    {item.label}
+                    {item.type === 'dropdown' && (
+                    <ChevronDown
+                        size={14}
+                        className={`ml-0.5 transition-transform duration-300 ease-out
+                        ${activeDropdown === item.id ? 'rotate-180 text-[#02A5E6]' : 'text-slate-400'}
+                        `}
+                    />
+                    )}
                 </Link>
-              );
-            })}
-          </div>
-        </div>
-      )}
-    </div>
-  ))}
-</nav>
+
+                {/* DROPDOWN */}
+                {item.type === 'dropdown' && (
+                    <div
+                    className={`
+                        absolute left-0 top-full mt-3 w-72
+                        bg-white rounded-2xl border border-slate-100
+                        shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)]
+                        z-50
+                        transform-gpu origin-top
+                        transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]
+                        will-change-[opacity,transform]
+                        ${
+                        activeDropdown === item.id
+                            ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto'
+                            : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
+                        }
+                    `}
+                    >
+                  
+                    <div className="absolute -top-3 left-0 right-0 h-3" />
+
+                    <div className="p-2 space-y-1">
+                        {(item.children as SubItem[])?.map((sub, idx) => (
+                        <Link
+                            key={idx}
+                            to={sub.href}
+                            onClick={() => setActiveDropdown(null)}
+                            className="
+                            flex items-start gap-3 p-3 rounded-xl
+                            transition-all duration-200 ease-out
+                            hover:bg-slate-50 hover:translate-x-1
+                            group
+                            "
+                        >
+                            {sub.icon && (
+                            <div className="mt-0.5 text-slate-400 group-hover:text-[#02A5E6] transition-colors">
+                                {sub.icon}
+                            </div>
+                            )}
+                            <span className="text-sm font-semibold text-slate-700 group-hover:text-[#02A5E6]">
+                            {sub.label}
+                            </span>
+                        </Link>
+                        ))}
+                    </div>
+                    </div>
+                )}
+                </div>
+            ))}
+            </nav>
 
 
             {/* Right Actions */}
             <div className="hidden lg:flex items-center gap-4">
-              {/* <button className="p-2 text-slate-500 hover:text-[#02A5E6] hover:[#02A5E6] rounded-full transition-colors">
-                <Search size={20} />
-              </button> */}
               <div className="h-6 w-px bg-slate-200"></div>
-              {/* <a
-                href="#contact"
-                className="px-6 py-2.5 bg-slate-900 hover:bg-[#02A5E6] text-white text-sm font-medium rounded-full transition-colors shadow-lg shadow-slate-200"
-              >
-                Contact us
-              </a> */}
-
-
               <Link
                     to="/contact"
                     className="px-6 py-2.5 bg-slate-900 hover:bg-[#02A5E6] text-white text-sm font-medium rounded-full transition-colors shadow-lg shadow-slate-200"

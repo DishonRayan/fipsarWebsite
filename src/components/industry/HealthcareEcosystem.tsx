@@ -34,8 +34,8 @@ const HealthcareEcosystem: React.FC = () => {
               {/* Typography */}
               <h3 className="text-4xl sm:text-5xl lg:text-5xl font-extrabold text-slate-900 leading-[1.1] tracking-tight mb-8">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#02A5E6] to-[#0077a8]">Healthcare Providers</span>
-                <span className="block text-slate-800 mt-3 text-2xl sm:text-3xl lg:text-2xl font-bold tracking-normal">
-                  Hospitals, clinics and clinicians participating in trials and therapy adoption
+                <span className="capitalize block text-slate-800 mt-3 text-2xl sm:text-3xl lg:text-2xl font-bold tracking-normal">
+                  Hospitals, clinics and clinicians participating in trials & therapy adoption
                 </span>
               </h3>
               

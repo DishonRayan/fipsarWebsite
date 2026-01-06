@@ -162,7 +162,8 @@ const StorySection: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative flex-1 overflow-hidden mask-vertical-focus" style={{ height: `${viewportHeight}px` }}>
+          {/* <div className="relative flex-1 overflow-hidden mask-vertical-focus" style={{ height: `${viewportHeight}px` }}> */}
+          <div className="relative flex-1 overflow-hidden " style={{ height: `${viewportHeight}px` }}>
             <div 
               className={`w-full flex flex-col gap-4 ${isTransitioning ? 'transition-transform duration-[1200ms]' : ''}`}
               style={{ 
@@ -185,7 +186,7 @@ const StorySection: React.FC = () => {
                       <h4 className="font-extrabold text-gray-900 text-[16px] mb-1 leading-tight tracking-tight">
                           {m.title}
                       </h4>
-                      <p className="text-gray-500 text-[11px] leading-relaxed line-clamp-3 font-medium">
+                      <p className="text-gray-500 text-[15px] leading-relaxed line-clamp-3 font-medium">
                         {m.content}
                       </p>
                     </div>

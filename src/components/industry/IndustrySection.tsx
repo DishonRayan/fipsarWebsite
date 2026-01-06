@@ -183,10 +183,10 @@ const IndustrySection: React.FC = () => {
             </div>
         {/* Main Headline - Compact and strictly 3 lines */}
         <div className={`max-w-4xl mx-auto text-center mb-10 entrance-anim ${isVisible ? 'visible' : ''}`}>
-          <h1 className="text-[20px] md:text-[34px] font-bold text-[#0056B3] leading-[1.3] md:leading-[1.25] tracking-tight">
-            At the heart of every breakthrough in<br className="hidden md:block" />
-            healthcare lies a network of <span className="text-[#02A5E6] cursor-default">innovators,</span><br className="hidden md:block" />
-            <span className="text-[#02A5E6] cursor-default">researchers, & providers.</span>
+          <h1 className="capitalize text-[30px] md:text-[34px] font-bold text-[#0056B3] leading-[1.3] md:leading-[1.25] tracking-tight">
+            At the heart of every breakthrough in <br className="hidden md:block" />
+            healthcare lies a network of <span className="text-[#02A5E6] cursor-default">innovators, </span><br className="hidden md:block" />
+            <span className="text-[#02A5E6] cursor-default">researchers & providers.</span>
           </h1>
         </div>
 
@@ -208,7 +208,7 @@ const IndustrySection: React.FC = () => {
           {/* Main Card Body */}
           <div className="h-full min-h-[160px] bg-white border border-[#02A5E633] rounded-2xl p-8 flex items-center shadow-sm transition-all duration-500 ease-out group-hover:shadow-[0_20px_50px_-12px_rgba(2,165,230,0.2)] group-hover:border-[#02A5E6] group-hover:-translate-y-2">
             <p className="text-[#333] text-md leading-relaxed font-medium transition-colors duration-300 group-hover:text-black">
-              We partner with organizations across the Life Sciences ecosystem, from drug development to healthcare delivery.
+              We partner with organizations across the Life Sciences ecosystem from drug development to healthcare delivery.
             </p>
           </div>
         </div>

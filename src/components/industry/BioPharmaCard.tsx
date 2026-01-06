@@ -138,7 +138,7 @@ const BioPharmaCard: React.FC = () => {
           
           {/* Headline */}
           <h1 className="text-3xl md:text-4xl  font-bold text-white leading-tight mb-4 drop-shadow-sm tracking-wide">
-            How We Solve Bio - Pharma<br />
+            How We Solve Biopharma<br />
             Business Problems
           </h1>
 

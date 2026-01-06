@@ -40,7 +40,7 @@ const SLIDES: SlideData[] = [
     id: 'cros',
     title: 'CROs',
     displayTitle: 'CROs',
-    subtitle: 'Supporting clinical trials and research programs',
+    subtitle: 'Supporting clinical trials & research programs',
     description: 'Clinical trials are the backbone of drug development and we collaborate closely with CROs to streamline research programs, ensure quality data and optimize trial execution. By fostering efficiency and scientific rigor, we help our clients achieve their goals faster.',
     image: corelife2, 
     Icon: Activity,
@@ -50,7 +50,7 @@ const SLIDES: SlideData[] = [
     id: 'regulatory',
     title: 'Regulatory & Safety',
     displayTitle: 'Regulatory & Safety',
-    subtitle: 'Ensuring compliance, approvals and patient safety',
+    subtitle: 'Ensuring compliance, approvals & patient safety',
     description: 'Compliance and patient safety are non-negotiable in Life Sciences. We assist regulatory and safety teams in managing submissions, navigating global regulations and maintaining the highest standards of pharmacovigilance, so that innovative therapies reach patients safely and efficiently.',
     image: corelife3, 
     Icon: ShieldCheck,
@@ -200,10 +200,10 @@ const CoreLifeSciencesSlider: React.FC = () => {
                 {currentSlide.displayTitle}
               </h2>
               {/* Standard Icon Display */}
-              <CurrentIcon className="text-[#02A5E6] w-8 h-8 lg:w-10 lg:h-10 opacity-80" strokeWidth={1.5} />
+              <CurrentIcon className=" text-[#02A5E6] w-8 h-8 lg:w-10 lg:h-10 opacity-80" strokeWidth={1.5} />
             </div>
 
-            <h3 className="text-slate-800 text-lg lg:text-xl font-medium mb-6 leading-relaxed">
+            <h3 className="capitalize text-slate-800 text-lg lg:text-xl font-medium mb-6 leading-relaxed">
               {currentSlide.subtitle}
             </h3>
 
